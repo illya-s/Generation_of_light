@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb {
 /* ------------------------------ Фильмы --------------------------------------------- */
 
 .film {
-    width: 100%;
+    width: 95%;
     height: auto;
     display:inline-block;
     font-size: 18px;
@@ -108,8 +108,8 @@ body::-webkit-scrollbar-thumb {
 
 .film-img {
    display:inline-block;
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     border-radius: 15px; 
 }
 
