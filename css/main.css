@@ -1,0 +1,608 @@
+/* ---------------------------- Другое------------------------------------------------ */
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.content {
+    width: 97%;
+    height: 98%;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 3%;
+}
+
+.industrys {
+    width: 97%;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 0px;
+    color: #AC9DA7FF;
+    z-index: -1;
+}
+
+.item_title {
+    padding: 5px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    color: #AC9DA7FF;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+/* ------------------------ Скрол ---------------------------------------------------- */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: #453F43;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #AC9DA7FF;
+    border-radius: 2px;
+    border: 0px solid #453F43;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* !!!Перевести всё в %!!! */
+
+/* ----------------------------- Панель ---------------------------------------------- */
+
+.panel {
+    position: fixed;
+    width: 3%;
+    height: 100%;
+    background: #453F43FF;
+}
+
+.icon {
+    margin: 10%;
+    width: 78%;
+    height: auto;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ------------------------------ Фильмы --------------------------------------------- */
+
+.film {
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Open Sans,sans-serif;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid #453F43FF;
+    background: #453F43FF;
+}
+
+
+.film_0 {
+    display:inline-block;
+    margin: 1% 1.2%;
+}
+
+.film_00 {
+    margin: 50px 274px;
+    padding: 0;
+}
+
+.video {
+    background-color: black;
+}
+
+.film-img {
+   display:inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; 
+}
+
+.film_img {
+    display:inline-block;
+    margin-left: 1%;
+    width: 20%;
+    height: 20%;
+    border-radius: 15px;
+}
+
+.txt {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 10px;
+    display:inline-block;
+    color: #AC9DA7FF;
+}
+
+.txt_1 {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 10px;
+    display:inline-block;
+    color: #AC9DA7FF;
+}
+
+.title {
+    /* display:inline-block; */
+    margin: 1%;
+    color: #AC9DA7FF;
+}
+
+.opis {
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* -------------------------------- Музыка ------------------------------------------- */
+
+.nav_m {
+    background-color: #453F43FF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+#myProgress {
+    background-color: #6d6d6d; 
+    cursor: pointer;
+    border-radius: 10px;
+}
+  
+#myBar {
+    height: 5px;
+    background-color: #AC9DA7FF;
+    border-radius: 10px;
+}
+
+.logo {
+    fill: red;
+}
+  
+.btn-action{
+    cursor: pointer;
+    margin: 1%;
+    padding-top: 10px;
+    width: 30px;
+}
+  
+.btn-ctn, .infos-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infos-ctn{
+    width: 100%;
+    padding: 1% 1% 0% 1%;
+}
+  
+.btn-ctn > div {
+    margin-top: 1%;
+}
+  
+.infos-ctn > div {
+    margin-bottom: 8px;
+    color: #AC9DA7FF;
+}
+
+.info_ctn{
+    position:fixed;
+    bottom:0px;
+    width: 97%;
+    position: fixed;
+    z-index: 10;
+    margin-left: 3%;
+    margin-top: 44.5%;
+    margin-bottom: 0%;
+    background-color: #453F43FF;
+}
+
+.duration {
+    margin-right: 2%;
+}
+  
+.first-btn{
+    margin-left: 3px;
+}
+
+  
+.title_m{
+    margin-left: 10px;
+    width: 95%;
+    text-align: center;
+}
+
+.player-ctn{
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+  
+  .playlist-track-ctn{
+    background-color: #464646;
+    margin-top: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* .playlist-track-ctn:last-child{
+    border: 1px solid #ffc266;
+  } */
+  
+  .playlist-track-ctn > div{
+    margin: 1%;
+  }
+  .playlist-track-ctn {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .playlist-btn-play {
+    width: 1%;
+    margin-left: 1%;
+  }
+  .playlist-info-track{
+    margin-left: 1%;
+    text-align: left;
+    width: 80%;
+  }
+  .playlist-info-track,.playlist-duration{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #AC9DA7FF;
+    font-size: 14px;
+    pointer-events: none;
+  }
+  .playlist-ctn{
+     padding-bottom: 20px;
+  }
+  .active-track{
+    background: #4d4d4d;
+    color: #AC9DA7FF !important;
+    font-weight: bold;
+  }
+
+  .active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+    color: #AC9DA7FF !important;
+  }
+  
+  
+  .playlist-btn-play{
+    pointer-events: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .fas{
+    color: #AC9DA7FF;
+    font-size: 20px;
+  }
+
+.playlist_1, .playlist_2, .playlist_3 {
+    width: 200px;
+    height: 200px;
+    margin-left: 2%;
+    cursor: pointer;
+    border-radius: 10%;
+    display: inline-block;
+    background-color: #453F43;
+}
+
+.playlist_txt {
+    text-decoration: none;
+}
+
+#popup_m_1 {
+    position: fixed;
+    margin-left: 3%;
+    width: 97%;
+    height: 100%; 
+    background-color: rgba(41 ,56, 91, 1);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#popup_m_2 {
+    position: fixed;
+    margin-left: 3%;
+    width: 97%;
+    height: 100%; 
+    background-color: rgba(41 ,56, 91, 1);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#popup_m_3 {
+    position: fixed;
+    margin-left: 3%;
+    width: 97%;
+    height: 100%; 
+    background-color: rgba(41 ,56, 91, 1);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#popup_m_1:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup_m_2:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup_m_3:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.box_m {
+    margin-left: 1.5%;
+    margin-top: 1%;
+    width: 97%;
+    height: 100%;
+    max-height: 550px;
+    overflow-Y: auto;
+}
+
+.close_m {
+    padding: 1px;
+    top: 1%;
+    margin-left: 98%;
+    text-decoration: none;
+    font-size: 35px;
+    color: #688EE7FF;
+}
+
+.box_m::-webkit-scrollbar {
+    width: 12px;
+}
+.box_m::-webkit-scrollbar-track {
+    background: #453F43;
+}
+.box_m::-webkit-scrollbar-thumb {
+    background-color: #AC9DA7FF;
+    border-radius: 2px;
+    border: 0px solid #453F43;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ---------------------------------- Логин ------------------------------------------ */
+
+.intro {
+    width: 100%;
+}
+
+.login-box,  form a {
+    position: relative;
+    display: inline-block;
+    width: 57%;
+    margin: 0;
+    margin-top: 1%;
+    padding: 2% 21%;
+    color: #688EE7FF;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px
+}
+  
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+  
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #688EE7FF);
+}
+  
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #688EE7FF);
+}
+  
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #688EE7FF);
+}
+  
+  
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #688EE7FF);
+}
+  
+  
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,100% {
+        left: 100%;
+    }
+}
+  
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+}
+  
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%,100% {
+        right: 100%;
+    }
+}
+  
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,100% {
+        bottom: 100%;
+    }
+}
+    
+.login-box a span:nth-child(1) {
+    animation: btn-anim1 1s linear infinite;
+}
+  
+.login-box a span:nth-child(2) {
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+  
+.login-box a span:nth-child(3) {
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+  
+.login-box a span:nth-child(4) {
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+#popup{
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(41 ,56, 91, 1);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.login_close {
+    padding: 1px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    text-decoration: none;
+    color: #688EE7FF;
+}
+
+#login-box {
+    position: fixed;
+    margin: 10% 35%;
+    width: 400px;
+    height: 245px;
+    padding: 20px;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+#popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#login-box h2 {
+    color: #fff;
+    text-align: center;
+}
+  
+#login-box .user-box {
+    position: relative;
+}
+  
+#login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+#login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+  
+#login-box .user-box input:focus ~ label,
+#login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+  
+#login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 0px;
+    letter-spacing: 4px
+}
+  
+#login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+  
+#login-box a span {
+    position: absolute;
+    display: block;
+}
+
+/* ----------------------------------------------------------------------------------- */
