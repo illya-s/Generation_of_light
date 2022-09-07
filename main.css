@@ -305,7 +305,7 @@ body::-webkit-scrollbar-thumb {
 
 #popup_m_1 {
     position: fixed;
-    margin-left: 3%;
+    margin-left: 4%;
     width: 96%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
@@ -316,7 +316,7 @@ body::-webkit-scrollbar-thumb {
 
 #popup_m_2 {
     position: fixed;
-    margin-left: 3%;
+    margin-left: 4%;
     width: 96%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
@@ -327,7 +327,7 @@ body::-webkit-scrollbar-thumb {
 
 #popup_m_3 {
     position: fixed;
-    margin-left: 3%;
+    margin-left: 4%;
     width: 96%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
