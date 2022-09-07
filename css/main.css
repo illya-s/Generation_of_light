@@ -149,13 +149,6 @@ body::-webkit-scrollbar-thumb {
 
 /* -------------------------------- Музыка ------------------------------------------- */
 
-.nav_m {
-    margin: 0;
-    width: 125%;
-    height: 125%;
-    border-radius: 50%;
-}
-
 #myProgress {
     background-color: #6d6d6d; 
     cursor: pointer;
@@ -174,9 +167,16 @@ body::-webkit-scrollbar-thumb {
   
 .btn-action{
     cursor: pointer;
+    padding: 0;
     margin: 1%;
-    padding-top: 10px;
-    width: 30px;
+    width: 3%;
+}
+
+.nav_m {
+    margin: 0;
+    padding: 0;
+    width: 125%;
+    height: 125%;
 }
   
 .btn-ctn, .infos-ctn{
