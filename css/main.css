@@ -150,14 +150,14 @@ body::-webkit-scrollbar-thumb {
 /* -------------------------------- Музыка ------------------------------------------- */
 
 #myProgress {
-    height: 1%;
+    height: 5%;
     background-color: #6d6d6d; 
     cursor: pointer;
     border-radius: 10px;
 }
   
 #myBar {
-    height: 5px;
+    height: 100%;
     background-color: #AC9DA7FF;
     border-radius: 10px;
 }
