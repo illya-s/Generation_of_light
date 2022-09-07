@@ -201,11 +201,11 @@ body::-webkit-scrollbar-thumb {
 .info_ctn{
     position:fixed;
     bottom:0px;
-    width: 97%;
+    width: 96%;
     height: 17%;
     position: fixed;
     z-index: 10;
-    margin-left: 3%;
+    margin-left: 4%;
     margin-top: 44.5%;
     margin-bottom: 0%;
     background-color: #453F43FF;
