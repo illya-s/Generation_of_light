@@ -150,10 +150,12 @@ body::-webkit-scrollbar-thumb {
 /* -------------------------------- Музыка ------------------------------------------- */
 
 .nav_m {
-    background-color: #453F43FF;
+    background-color: #3C3C3C;
+    margin-top: 0;
+    padding: 50%;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
 }
 
 #myProgress {
@@ -202,7 +204,7 @@ body::-webkit-scrollbar-thumb {
     position:fixed;
     bottom:0px;
     width: 97%;
-    height: 15%;
+    height: 17%;
     position: fixed;
     z-index: 10;
     margin-left: 3%;
@@ -232,52 +234,52 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0;
 }
   
-  .playlist-track-ctn{
+.playlist-track-ctn{
     background-color: #464646;
     margin-top: 3px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  /* .playlist-track-ctn:last-child{
+}
+/* .playlist-track-ctn:last-child{
     border: 1px solid #ffc266;
-  } */
+} */
   
-  .playlist-track-ctn > div{
+.playlist-track-ctn > div{
     margin: 1%;
-  }
-  .playlist-track-ctn {
+}
+.playlist-track-ctn {
     display: inline-flex;
     width: 100%;
-  }
+}
 
-  .playlist-btn-play {
+.playlist-btn-play {
     width: 1%;
     margin-left: 1%;
-  }
-  .playlist-info-track{
+}
+.playlist-info-track{
     margin-left: 1%;
     text-align: left;
     width: 80%;
-  }
-  .playlist-info-track,.playlist-duration{
+}
+.playlist-info-track,.playlist-duration{
     padding-top: 7px;
     padding-bottom: 7px;
     color: #AC9DA7FF;
     font-size: 14px;
     pointer-events: none;
-  }
-  .playlist-ctn{
-     padding-bottom: 20px;
-  }
-  .active-track{
+}
+.playlist-ctn{
+    padding-bottom: 20px;
+}
+.active-track{
     background: #4d4d4d;
     color: #AC9DA7FF !important;
     font-weight: bold;
-  }
+}
 
-  .active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
     color: #AC9DA7FF !important;
-  }
+}
   
   
   .playlist-btn-play{
