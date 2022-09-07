@@ -13,11 +13,11 @@ body {
 }
 
 .content {
-    width: 97%;
+    width: 96%;
     height: 98%;
     position: absolute;
     margin-top: 0;
-    margin-left: 3%;
+    margin-left: 4%;
 }
 
 .industrys {
@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 
 .panel {
     position: fixed;
-    width: 3%;
+    width: 4%;
     height: 100%;
     background: #453F43FF;
 }
