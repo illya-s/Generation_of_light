@@ -305,8 +305,8 @@ body::-webkit-scrollbar-thumb {
 
 #popup_m_1 {
     position: fixed;
-    margin-left: 3%;
-    width: 97%;
+    margin-left: 4%;
+    width: 96%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
     top: 0;
@@ -316,8 +316,8 @@ body::-webkit-scrollbar-thumb {
 
 #popup_m_2 {
     position: fixed;
-    margin-left: 3%;
-    width: 97%;
+    margin-left: 4%;
+    width: 96%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
     top: 0;
@@ -327,8 +327,8 @@ body::-webkit-scrollbar-thumb {
 
 #popup_m_3 {
     position: fixed;
-    margin-left: 3%;
-    width: 97%;
+    margin-left: 4%;
+    width: 96%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
     top: 0;
