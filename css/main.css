@@ -69,8 +69,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .icon {
-    margin: 10%;
-    width: 78%;
+    margin: 5%;
+    width: 90%;
     height: auto;
 }
 
@@ -98,19 +98,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .film_00 {
-    margin: 50px 274px;
+    margin: 3% 25%;
     padding: 0;
 }
 
 .video {
-    background-color: black;
-}
-
-.film-img {
-   display:inline-block;
     width: 100%;
     height: 100%;
-    border-radius: 15px; 
+    margin-bottom: 5%;
+    background-color: black;
 }
 
 .film_img {
@@ -118,13 +114,14 @@ body::-webkit-scrollbar-thumb {
     margin-left: 1%;
     width: 20%;
     height: 20%;
-    border-radius: 15px;
+    border-radius: 10%;
 }
 
 .txt {
     position: absolute;
     margin-top: 45px;
     margin-left: 10px;
+    font-size: 100%;
     display:inline-block;
     color: #AC9DA7FF;
 }
@@ -133,6 +130,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     margin-top: 0px;
     margin-left: 10px;
+    font-size: 100%;
     display:inline-block;
     color: #AC9DA7FF;
 }
