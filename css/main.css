@@ -150,11 +150,11 @@ body::-webkit-scrollbar-thumb {
 /* -------------------------------- Музыка ------------------------------------------- */
 
 .nav_m {
-    background-color: #3C3C3C;
-    margin-top: 0;
+    /* background-color: #3C3C3C; */
+    margin: 0;
     padding: 50%;
-    width: 50%;
-    height: 50%;
+    width: 125%;
+    height: 125%;
     border-radius: 50%;
 }
 
