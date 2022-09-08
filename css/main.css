@@ -41,6 +41,38 @@ body {
   color: #AC9DA7FF;
 }
 
+.news {
+  width: 99%;
+  border-radius: 25px;
+  background-color: #453F43;
+  margin: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.news_title {
+  padding-top: 5%;
+  padding-left: 7%;
+  color: #AC9DA7FF;
+}
+
+.news_tab {
+  padding: 2% 7% 5% 7%;
+  width:100%;
+}
+
+.news_txt, .news_pr, .news_day {
+  font-size: 85%;
+  font-weight: normal;
+  border-radius: 10px;
+  text-align: center;
+  color: #AC9DA7FF;
+}
+
+.news_pr, .news_day {
+  padding: 7px;
+  text-align: left;
+}
 
 /* ----------------------------------------------------------------------------------- */
 /* ------------------------ Скрол ---------------------------------------------------- */
@@ -612,6 +644,66 @@ nav img {
     height: auto;
 }
 
+@media only screen and (max-width: 1325px) {
+  .news {
+    width: 99%;
+  }
+  .nav_m {
+      margin: 0;
+      padding: 0;
+      width: 110%;
+      height: auto;
+  }
+  .close_m {
+    margin-left: 95.5%;
+  }
+  nav {
+      border-bottom: 0;
+      width: 2.5%;
+  }
+  nav ul {
+      /* display: none; */
+      height: auto;
+  }
+  nav a#pull {
+      display: block;
+      background-color: #453F43;
+      width: 100%;
+      position: fixed;
+  }
+  .btn-action {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .btn-ctn > div {
+    margin: 0.5% 0.5%;
+  }
+  .playlist_1, .playlist_2, .playlist_3 {
+      width: 115px;
+      height: 115px;
+  }
+  #popup_m_1 {
+    margin-left: 2.5%;
+    width: 97.5%;
+    height: 100%; 
+  }
+  #popup_m_2 {
+    margin-left: 2.5%;
+    width: 97.5%;
+    height: 100%; 
+  }
+  #popup_m_3 {
+    margin-left: 2.5%;
+    width: 97.5%;
+    height: 100%; 
+  }
+  .content {
+    margin-left: 2.5%;
+    width: 97.5%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .nav_m {
       margin: 0;
@@ -767,6 +859,58 @@ nav img {
   .content {
     margin-left: 5%;
     width: 95%;
+  }
+}
+
+@media only screen and (max-width :160px) {
+  .nav_m {
+    margin: 0;
+    padding: 0;
+    width: 350%;
+    height: auto;
+  }
+  .btn-ctn > div {
+    margin: 0 4%;
+  }
+  .close_m {
+    margin-left: 92.5%;
+  }
+  nav {
+      border-bottom: 0;
+      width: 5%;
+  }
+  nav ul {
+      /* display: none; */
+      height: auto;
+  }
+  nav a#pull {
+      display: block;
+      background-color: #453F43;
+      width: 100%;
+      position: fixed;
+  }
+  .playlist_1, .playlist_2, .playlist_3 {
+      width: 50px;
+      height: 50px;
+  }
+  #popup_m_1 {
+    margin-left: 6%;
+    width: 94%;
+    height: 100%; 
+  }
+  #popup_m_2 {
+    margin-left: 6%;
+    width: 94%;
+    height: 100%; 
+  }
+  #popup_m_3 {
+    margin-left: 6%;
+    width: 94%;
+    height: 100%; 
+  }
+  .content {
+    margin-left: 6%;
+    width: 94%;
   }
 }
 
