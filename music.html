@@ -3,33 +3,30 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=devise-width, initial-scale=1, maximum-scale=1">
 <title>M'S industrys</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body background="img/fon_1.jpg">
-	<div class="panel">
-		<div>
-			<a href="index.html">
-				<img class="icon" src="img/icons/home.png" alt="главная" title="главная" />
-			</a>
-		</div>
-		<div>
-			<a href="music.html">
-				<img class="icon" src="img/icons/music.png" alt="музыка" title="музыка" />
-			</a>
-		</div>
-		<!--  <div>
-			<a href="films.html">
-				<img class="icon" src="img/icons/videos.png" alt="фильмы" title="фильмы" />
-			</a>
-		</div> -->
-		<!-- <div>
-			<a href="space.html">
-				<img class="icon" src="img/icons/spase.png" alt="M'S space" title="M'S space" />
-			</a>
-		</div> -->
-	</div>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">
+					<img class="icon" src="img/icons/home.png" alt="главная" title="главная" />
+				</a></li>
+				<li><a href="music.html">
+					<img class="icon" src="img/icons/music.png" alt="музыка" title="музыка" />
+				</a></li>
+				<li><a href="films.html">
+					<img class="icon" src="img/icons/videos.png" alt="фильмы" title="фильмы" />
+				</a></li>
+				<li><a href="space.html">
+					<img class="icon" src="img/icons/spase.png" alt="M'S space" title="M'S space" />
+				</a></li>
+			</ul>
+		</nav>
+	</header>
 
 	<div class="info_ctn">
 		<div class="infos-ctn">
@@ -83,17 +80,25 @@
 			<h1><p>Музыка 2022</p></h1>
 		</div>
 
+		<!-- <span style="background-color: yellow;">...найденное совпадение...</span>
+
+		<form>
+			<input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search" autofocus> 
+			<input class="button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Отменить поиск">
+			<input class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск">
+	  	</form> -->
+
 		<audio id="myAudio" ontimeupdate="onTimeUpdate()">
 			<!-- <source src="audio.mp3" type="audio/mp3"> -->
 			<source id="source-audio" src="" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
 		
-		<a class="playlist_txt" href="#popup_m_1"><div class="playlist_1" ></div></a>
+		<a class="playlist_txt" href="#popup_m_1">playlist_1<div class="playlist_1" ></div></a>
 
-		<a class="playlist_txt" href="#popup_m_2"><div class="playlist_2" ></div></a>
+		<a class="playlist_txt" href="#popup_m_2">playlist_2<div class="playlist_2" ></div></a>
 
-		<a class="playlist_txt" href="#popup_m_3"><div class="playlist_3" ></div></a>
+		<a class="playlist_txt" href="#popup_m_3">playlist_3<div class="playlist_3" ></div></a>
 
 		<div id="popup_m_1" class="popup_m_1">
 			<a href="#head" class="close_m"> x </a>
@@ -115,6 +120,8 @@
 				<div class="playlist-ctn_2"></div>
 			</div>
 		</div>
+
+		<div class="playlist-ctn"></div>
 
 		<script src="js/main.js"></script>
 		
