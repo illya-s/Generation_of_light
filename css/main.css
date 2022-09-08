@@ -614,7 +614,7 @@ nav img {
 @media only screen and (max-width :480px) {
     nav {
         border-bottom: 0;
-        width: 14%;
+        width: 13%;
     }
     nav ul {
         /* display: none; */
@@ -629,6 +629,48 @@ nav img {
     .playlist_1, .playlist_2, .playlist_3 {
         width: 50px;
         height: 50px;
+    }
+    #popup_m_1 {
+        margin-left: 13%;
+        width: 87%;
+        height: 100%; 
+    }
+    #popup_m_2 {
+        margin-left: 13%;
+        width: 87%;
+        height: 100%; 
+    }
+    #popup_m_3 {
+        margin-left: 13%;
+        width: 87%;
+        height: 100%; 
+    }
+    .content {
+        margin-left: 13%;
+        width: 87%;
+    }
+    /* body {
+        background-image: url("img/fon_2.jpg");
+    } */
+}
+@media only screen and (max-width :320px) {
+    nav {
+        border-bottom: 0;
+        width: 14%;
+    }
+    nav ul {
+        /* display: none; */
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #453F43;
+        width: 100%;
+        position: fixed;
+    }
+    .playlist_1, .playlist_2, .playlist_3 {
+        width: 60px;
+        height: 60px;
     }
     #popup_m_1 {
         margin-left: 14%;
@@ -649,16 +691,9 @@ nav img {
         margin-left: 14%;
         width: 86%;
     }
-}
-@media only screen and (max-width :320px) {
-    nav li {
-        display: block;
-        float: none;
-        width: 100%;
-    }
-    nav li a {
-        border-bottom: 1px solid #453F43;
-    }
+    /* body {
+        background-image: url("img/fon_2.jpg");
+    } */
 }
 
 /* ----------------------------------------------------------------------------------- */
