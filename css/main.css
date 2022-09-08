@@ -644,7 +644,7 @@ nav img {
     height: auto;
 }
 
-@media only screen and (max-width: 1325px) {
+@media only screen and (max-width :1680px) and (max-width :1050px){
   .news {
     width: 99%;
   }
@@ -704,7 +704,7 @@ nav img {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) and (max-width: 768px) {
   .nav_m {
       margin: 0;
       padding: 0;
@@ -756,7 +756,7 @@ nav img {
   }
 }
 
-@media only screen and (max-width: 590px) and (max-height: 1280px) {
+@media only screen and (max-width: 480px) and (max-width: 320px) {
   .nav_m {
     margin-top: 75%;
     padding: 0;
@@ -808,164 +808,6 @@ nav img {
   .content {
     margin-left: 8%;
     width: 92%;
-  }
-}
-
-@media only screen and (max-width: 460px) {
-  .nav_m {
-    margin-top: 75%;
-    padding: 0;
-    width: 350%;
-    height: auto;
-  }
-  .box_m {
-    width: 95%;
-}
-  .btn-ctn > div {
-    margin: 0 4%;
-  }
-  .close_m {
-    margin-left: 89%;
-  }
-  nav {
-      border-bottom: 0;
-      width: 7%;
-  }
-  nav ul {
-      /* display: none; */
-      height: auto;
-  }
-  nav a#pull {
-      display: block;
-      background-color: #453F43;
-      width: 100%;
-      position: fixed;
-  }
-  .playlist_1, .playlist_2, .playlist_3 {
-      width: 80px;
-      height: 80px;
-  }
-  #popup_m_1 {
-    margin-left: 7%;
-    width: 93%;
-    height: 100%; 
-  }
-  #popup_m_2 {
-    margin-left: 7%;
-    width: 93%;
-    height: 100%; 
-  }
-  #popup_m_3 {
-    margin-left: 7%;
-    width: 93%;
-    height: 100%; 
-  }
-  .content {
-    margin-left: 7%;
-    width: 93%;
-  }
-}
-@media only screen and (max-width :320px) {
-  .nav_m {
-    margin: 0;
-    padding: 0;
-    width: 300%;
-    height: auto;
-  }
-  .btn-ctn > div {
-    margin: 0 4%;
-  }
-  .close_m {
-    margin-left: 92.5%;
-  }
-  nav {
-      border-bottom: 0;
-      width: 5%;
-  }
-  nav ul {
-      /* display: none; */
-      height: auto;
-  }
-  nav a#pull {
-      display: block;
-      background-color: #453F43;
-      width: 100%;
-      position: fixed;
-  }
-  .playlist_1, .playlist_2, .playlist_3 {
-      width: 50px;
-      height: 50px;
-  }
-  #popup_m_1 {
-      margin-left: 5%;
-      width: 95%;
-      height: 100%; 
-  }
-  #popup_m_2 {
-    margin-left: 5%;
-    width: 95%;
-    height: 100%; 
-  }
-  #popup_m_3 {
-    margin-left: 5%;
-    width: 95%;
-    height: 100%; 
-  }
-  .content {
-    margin-left: 5%;
-    width: 95%;
-  }
-}
-
-@media only screen and (max-width :640px) and (max-width :1135px) {
-  .nav_m {
-    margin: 0;
-    padding: 0;
-    width: 350%;
-    height: auto;
-  }
-  .btn-ctn > div {
-    margin: 0 4%;
-  }
-  .close_m {
-    margin-left: 92.5%;
-  }
-  nav {
-      border-bottom: 0;
-      width: 5%;
-  }
-  nav ul {
-      /* display: none; */
-      height: auto;
-  }
-  nav a#pull {
-      display: block;
-      background-color: #453F43;
-      width: 100%;
-      position: fixed;
-  }
-  .playlist_1, .playlist_2, .playlist_3 {
-      width: 50px;
-      height: 50px;
-  }
-  #popup_m_1 {
-    margin-left: 6%;
-    width: 94%;
-    height: 100%; 
-  }
-  #popup_m_2 {
-    margin-left: 6%;
-    width: 94%;
-    height: 100%; 
-  }
-  #popup_m_3 {
-    margin-left: 6%;
-    width: 94%;
-    height: 100%; 
-  }
-  .content {
-    margin-left: 6%;
-    width: 94%;
   }
 }
 
