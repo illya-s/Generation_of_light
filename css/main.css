@@ -209,9 +209,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .player-ctn{
+    display: inline-block;
     border-radius: 15px;
     padding: 10px;
-    margin-bottom: 0;
 }
   
 .playlist-track-ctn{
@@ -249,7 +249,7 @@ body::-webkit-scrollbar-thumb {
     pointer-events: none;
 }
 .playlist-ctn{
-    padding-bottom: 20px;
+    margin: 0 0 0 0;
 }
 .active-track{
     background: #4d4d4d;
@@ -260,17 +260,16 @@ body::-webkit-scrollbar-thumb {
 .active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
     color: #AC9DA7FF !important;
 }
-  
-  
-  .playlist-btn-play{
+ 
+.playlist-btn-play{
     pointer-events: none;
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-  .fas{
+}
+.fas{
     color: #AC9DA7FF;
     font-size: 20px;
-  }
+}
 
 .playlist_1, .playlist_2, .playlist_3 {
     width: 200px;
@@ -287,6 +286,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #popup_m_1 {
+    display: inline-block;
     position: fixed;
     margin-left: 2.5%;
     width: 97.5%;
@@ -335,18 +335,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .box_m {
-    margin-left: 1.5%;
-    margin-top: 1%;
+    margin-left: 0.2%;
+    margin-bottom: 17%;
     width: 97%;
     height: 100%;
-    max-height: 75%;
+    max-height: 83%;
     overflow-Y: auto;
 }
 
 .close_m {
-    padding: 1px;
-    top: 1%;
-    margin-left: 98%;
+    position: fixed;
+    margin-left: 95.5%;
     text-decoration: none;
     font-size: 35px;
     color: #688EE7FF;
@@ -588,7 +587,7 @@ body::-webkit-scrollbar-thumb {
 
 /* ----------------------------------------------------------------------------------- */
 
-/* ----------------------------- Панель ---------------------------------------------- */
+/* ----------------------------- Адаптация и панель ---------------------------------------------- */
 
 nav {
     height: 100%;
@@ -612,6 +611,12 @@ nav img {
 }
 
 @media only screen and (max-width :480px) {
+    .nav_m {
+        margin: 0;
+        padding: 0;
+        width: 200%;
+        height: 200%;
+    }
     nav {
         border-bottom: 0;
         width: 13%;
