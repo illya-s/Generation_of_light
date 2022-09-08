@@ -13,7 +13,7 @@ body {
 }
 
 .content {
-    width: 96%;
+    width: 97.5%;
     height: 98%;
     position: absolute;
     margin-top: 0;
@@ -53,58 +53,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #AC9DA7FF;
     border-radius: 2px;
     border: 0px solid #453F43;
-}
-
-/* ----------------------------------------------------------------------------------- */
-
-/* ----------------------------- Панель ---------------------------------------------- */
-
-nav {
-    height: 100%;
-    width: 2.5%;
-    background: #453F43FF;
-    position: fixed;
-}
-nav ul {
-    padding: 0%;
-    margin: 0 auto;
-    width: 40;
-    height: 600;
-}
-nav a {
-    display: inline-block;
-    text-decoration: none;
-}
-nav img {
-    width: 33px;
-    height: auto;
-}
-
-@media only screen and (max-width :480px) {
-    nav {
-        border-bottom: 0;
-        width: 14%;
-    }
-    nav ul {
-        /* display: none; */
-        height: auto;
-    }
-    nav a#pull {
-        display: block;
-        background-color: #453F43;
-        width: 100%;
-        position: fixed;
-    }
-}
-@media only screen and (max-width :320px) {
-    nav li {
-        display: block;
-        float: none;
-        width: 100%;
-    }
-    nav li a {
-        border-bottom: 1px solid #453F43;
-    }
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -238,10 +186,10 @@ nav img {
 .info_ctn{
     position:fixed;
     bottom:0px;
-    width: 96%;
+    width: 97.5%;
     height: 17%;
     z-index: 10;
-    margin-left: 4%;
+    margin-left: 2.5%;
     background-color: #453F43FF;
 }
 
@@ -325,8 +273,8 @@ nav img {
   }
 
 .playlist_1, .playlist_2, .playlist_3 {
-    width: 200px;
-    height: 200px;
+    width: 11%;
+    height: 20%;
     margin-left: 2%;
     cursor: pointer;
     border-radius: 10%;
@@ -340,8 +288,8 @@ nav img {
 
 #popup_m_1 {
     position: fixed;
-    margin-left: 4%;
-    width: 96%;
+    margin-left: 2.5%;
+    width: 97.5%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
     top: 0;
@@ -351,8 +299,8 @@ nav img {
 
 #popup_m_2 {
     position: fixed;
-    margin-left: 4%;
-    width: 96%;
+    margin-left: 2.5%;
+    width: 97.5%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
     top: 0;
@@ -362,8 +310,8 @@ nav img {
 
 #popup_m_3 {
     position: fixed;
-    margin-left: 4%;
-    width: 96%;
+    margin-left: 2.5%;
+    width: 97.5%;
     height: 100%; 
     background-color: rgba(41 ,56, 91, 1);
     top: 0;
@@ -636,6 +584,77 @@ nav img {
 #login-box a span {
     position: absolute;
     display: block;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ----------------------------- Панель ---------------------------------------------- */
+
+nav {
+    height: 100%;
+    width: 2.5%;
+    background: #453F43FF;
+    position: fixed;
+}
+nav ul {
+    padding: 0%;
+    margin: 0 auto;
+    width: 40;
+    height: 600;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+nav img {
+    width: 33px;
+    height: auto;
+}
+
+@media only screen and (max-width :480px) {
+    nav {
+        border-bottom: 0;
+        width: 14%;
+    }
+    nav ul {
+        /* display: none; */
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #453F43;
+        width: 100%;
+        position: fixed;
+    }
+    #popup_m_1 {
+        margin-left: 14%;
+        width: 86%;
+        height: 100%; 
+    }
+    #popup_m_2 {
+        margin-left: 14%;
+        width: 86%;
+        height: 100%; 
+    }
+    #popup_m_3 {
+        margin-left: 14%;
+        width: 86%;
+        height: 100%; 
+    }
+    .content {
+        margin-left: 14%;
+        width: 86%;
+    }
+}
+@media only screen and (max-width :320px) {
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #453F43;
+    }
 }
 
 /* ----------------------------------------------------------------------------------- */
