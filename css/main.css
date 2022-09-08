@@ -250,34 +250,35 @@ nav img {
 }
 
 .info_ctn{
-    position:fixed;
-    bottom:0px;
-    width: 97.5%;
-    height: 17%;
-    z-index: 10;
-    margin-left: 2.5%;
-    background-color: #453F43FF;
+  position:fixed;
+  bottom:0px;
+  width: 97.5%;
+  height: 17%;
+  z-index: 10;
+  margin-left: 2.5%;
+  background-color: #453F43FF;
 }
 
 .timer {
+  margin: 0;
   max-width: 720px;
 }
 
 .duration {
-    margin-right: 2%;
-    max-width: 720px;
+  margin-right: 2%;
+  max-width: 720px;
 }
-  
+
 .first-btn{
-    margin-left: 3px;
+  margin-left: 3px;
 }
 
   
 .title_m{
-    margin-left: 10px;
-    width: 95%;
-    max-width: 720px;
-    text-align: center;
+  margin-left: 10px;
+  width: 95%;
+  max-width: 720px;
+  text-align: center;
 }
 
 .player-ctn{
@@ -360,9 +361,10 @@ nav img {
 #popup_m_1 {
     display: inline-block;
     position: fixed;
-    margin-left: 2.5%;
-    width: 97.5%;
+    margin-left: 4%;
+    width: 100%;
     height: 100%; 
+    max-width: 1366px;
     background-color: rgba(41 ,56, 91, 1);
     top: 0;
     left: 0;
@@ -409,15 +411,17 @@ nav img {
 .box_m {
     margin-left: 0.2%;
     margin-bottom: 17%;
-    width: 97%;
+    width: 90%;
     height: 100%;
+    max-width: 1233px;
     max-height: 83%;
     overflow-Y: auto;
 }
 
 .close_m {
     position: fixed;
-    margin-left: 95.5%;
+    margin-left: 91%;
+    max-width: 1233px;
     text-decoration: none;
     font-size: 35px;
     color: #688EE7FF;
