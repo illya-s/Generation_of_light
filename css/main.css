@@ -21,8 +21,8 @@ body {
 }
 
 .industrys {
-  z-index: 1;
-  width: 97%;
+  width: 80%;
+  max-width: 720px;
   position: absolute;
   margin-top: 1%;
   margin-left: 1%;
@@ -43,6 +43,8 @@ body {
 
 .news {
   width: 99%;
+  max-width: 1366px;
+  max-height: 720px;
   border-radius: 25px;
   background-color: #453F43;
   margin: 1%;
@@ -75,6 +77,7 @@ body {
 }
 
 /* ----------------------------------------------------------------------------------- */
+
 /* ------------------------ Скрол ---------------------------------------------------- */
 
 body::-webkit-scrollbar {
@@ -87,6 +90,35 @@ body::-webkit-scrollbar-thumb {
     background-color: #AC9DA7FF;
     border-radius: 2px;
     border: 0px solid #453F43;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ------------------------------ Панель --------------------------------------------- */
+
+nav {
+  height: 100%;
+  width: 4%;
+  max-width: 720px;
+  background: #453F43FF;
+  position: fixed;
+}
+nav ul {
+  padding: 0%;
+  margin: 0 auto;
+  max-width: 720px;
+}
+nav a {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  display: inline-block;
+  text-decoration: none;
+}
+nav img {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -227,8 +259,13 @@ body::-webkit-scrollbar-thumb {
     background-color: #453F43FF;
 }
 
+.timer {
+  max-width: 720px;
+}
+
 .duration {
     margin-right: 2%;
+    max-width: 720px;
 }
   
 .first-btn{
@@ -239,6 +276,7 @@ body::-webkit-scrollbar-thumb {
 .title_m{
     margin-left: 10px;
     width: 95%;
+    max-width: 720px;
     text-align: center;
 }
 
@@ -621,30 +659,10 @@ body::-webkit-scrollbar-thumb {
 
 /* ----------------------------------------------------------------------------------- */
 
-/* ----------------------------- Адаптация и панель ---------------------------------------------- */
+/* ----------------------------- Адаптация ------------------------------------------- */
 
-nav {
-    height: 100%;
-    width: 2.5%;
-    background: #453F43FF;
-    position: fixed;
-}
-nav ul {
-    padding: 0%;
-    margin: 0 auto;
-    width: 40;
-    height: 600;
-}
-nav a {
-    display: inline-block;
-    text-decoration: none;
-}
-nav img {
-    width: 33px;
-    height: auto;
-}
 
-@media only screen and (max-width :1680px) and (max-width :1050px){
+/*@media only screen and (max-width: 1680px) and (max-width: 1050px){
   .news {
     width: 99%;
   }
@@ -662,7 +680,6 @@ nav img {
       width: 2.5%;
   }
   nav ul {
-      /* display: none; */
       height: auto;
   }
   nav a#pull {
@@ -719,7 +736,6 @@ nav img {
       width: 5%;
   }
   nav ul {
-      /* display: none; */
       height: auto;
   }
   nav a#pull {
@@ -777,7 +793,6 @@ nav img {
       width: 8%;
   }
   nav ul {
-      /* display: none; */
       height: auto;
   }
   nav a#pull {
@@ -809,6 +824,6 @@ nav img {
     margin-left: 8%;
     width: 92%;
   }
-}
+}*/
 
 /* ----------------------------------------------------------------------------------- */
