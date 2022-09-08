@@ -57,21 +57,54 @@ body::-webkit-scrollbar-thumb {
 
 /* ----------------------------------------------------------------------------------- */
 
-/* !!!Перевести всё в %!!! */
-
 /* ----------------------------- Панель ---------------------------------------------- */
 
-.panel {
-    position: fixed;
-    width: 4%;
+nav {
     height: 100%;
+    width: 2.5%;
     background: #453F43FF;
+    position: fixed;
+}
+nav ul {
+    padding: 0%;
+    margin: 0 auto;
+    width: 40;
+    height: 600;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+nav img {
+    width: 33px;
+    height: auto;
 }
 
-.icon {
-    margin: 2%;
-    width: 90%;
-    height: auto;
+@media only screen and (max-width :480px) {
+    nav {
+        border-bottom: 0;
+        width: 14%;
+    }
+    nav ul {
+        /* display: none; */
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #453F43;
+        width: 100%;
+        position: fixed;
+    }
+}
+@media only screen and (max-width :320px) {
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #453F43;
+    }
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -194,6 +227,7 @@ body::-webkit-scrollbar-thumb {
   
 .btn-ctn > div {
     margin-top: 1%;
+    width: 3%;
 }
   
 .infos-ctn > div {
@@ -206,11 +240,8 @@ body::-webkit-scrollbar-thumb {
     bottom:0px;
     width: 96%;
     height: 17%;
-    position: fixed;
     z-index: 10;
     margin-left: 4%;
-    margin-top: 44.5%;
-    margin-bottom: 0%;
     background-color: #453F43FF;
 }
 
