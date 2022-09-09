@@ -1,0 +1,497 @@
+/* ---------------------------- Другое------------------------------------------------ */
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.content {
+    width: 97%;
+    height: 100%;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 3%;
+}
+
+.industrys {
+  width: 80%;
+  max-width: 720px;
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 0px;
+  color: #AC9DA7FF;
+  z-index: -1;
+}
+
+.title_home {
+  text-align: center;
+  font-size: 175%;
+}
+
+.item_title {
+  z-index: 1;
+  padding: 5px;
+  margin-left: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  color: #AC9DA7FF;
+}
+
+.news {
+  width: 99%;
+  max-width: 1300px;
+  max-height: 720px;
+  border-radius: 25px;
+  background-color: #453F43;
+  margin: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.news_title {
+  padding-top: 5%;
+  padding-left: 7%;
+  color: #AC9DA7FF;
+}
+
+.news_tab {
+  padding: 2% 7% 5% 7%;
+  width:100%;
+}
+
+.news_txt, .news_pr, .news_day {
+  font-size: 100%;
+  font-weight: normal;
+  border-radius: 10px;
+  text-align: center;
+  color: #AC9DA7FF;
+}
+
+.news_pr, .news_day {
+  padding: 7px;
+  text-align: left;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ------------------------ Скрол ---------------------------------------------------- */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: #453F43;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #AC9DA7FF;
+    border-radius: 2px;
+    border: 0px solid #453F43;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ------------------------------ Панель --------------------------------------------- */
+
+nav {
+  height: 100%;
+  width: 3%;
+  max-width: 720px;
+  background: #453F43FF;
+  position: fixed;
+}
+nav ul {
+  padding: 0%;
+  margin: 0 auto;
+  max-width: 720px;
+}
+nav a {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  display: inline-block;
+  text-decoration: none;
+}
+nav img {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ------------------------------ Фильмы --------------------------------------------- */
+
+.film {
+    width: 95%;
+    height: auto;
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Open Sans,sans-serif;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid #453F43FF;
+    background: #453F43FF;
+}
+
+
+.film_0 {
+    display:inline-block;
+    margin: 1% 1.2%;
+}
+
+.film_00 {
+    margin: 3% 25%;
+    padding: 0;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+    background-color: black;
+}
+
+.film_img {
+    display:inline-block;
+    margin-left: 1%;
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+}
+
+.txt {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 10px;
+    font-size: 100%;
+    display:inline-block;
+    color: #AC9DA7FF;
+}
+
+.txt_1 {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 100%;
+    display:inline-block;
+    color: #AC9DA7FF;
+}
+
+.title {
+    /* display:inline-block; */
+    margin: 1%;
+    color: #AC9DA7FF;
+}
+
+.opis {
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* -------------------------------- Музыка ------------------------------------------- */
+
+#myProgress {
+    height: 5%;
+    background-color: #6d6d6d; 
+    cursor: pointer;
+    border-radius: 10px;
+}
+  
+#myBar {
+    height: 100%;
+    background-color: #AC9DA7FF;
+    border-radius: 10px;
+}
+
+.logo {
+  fill: red;
+}
+  
+.btn-action{
+  cursor: pointer;
+  padding: 0;
+  margin: 0 1% 0 1%;
+  height: 70%;
+}
+
+.nav_m {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+  
+.btn-ctn, .infos-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infos-ctn{
+  width: 100%;
+  height: 30%;
+  padding: 1% 1% 0% 1%;
+}
+  
+.btn-ctn > div {
+  margin-top: 1%;
+  width: 3%;
+}
+  
+.infos-ctn > div {
+    margin-bottom: 8px;
+    color: #AC9DA7FF;
+}
+
+.info_ctn{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 20%;
+  max-height: 720px;
+  z-index: 10;
+  margin-left: 0;
+  background-color: #453F43FF;
+}
+
+.timer {
+  margin: 0;
+  max-width: 720px;
+}
+
+.duration {
+  margin-right: 2%;
+  max-width: 720px;
+}
+
+.first-btn{
+  margin-left: 3px;
+}
+
+  
+.title_m{
+  margin-left: 10px;
+  width: 95%;
+  max-width: 720px;
+  text-align: center;
+}
+
+.player-ctn{
+  display: inline-block;
+  border-radius: 15px;
+  padding: 10px;
+}
+  
+.playlist-track-ctn{
+  background-color: #464646;
+  margin-top: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+.playlist-track-ctn > div{
+  margin: 1%;
+}
+.playlist-track-ctn {
+  display: inline-flex;
+  width: 100%;
+}
+
+.playlist-btn-play {
+  width: 1%;
+  margin-left: 1%;
+}
+.playlist-info-track{
+  margin-left: 1%;
+  text-align: left;
+  width: 80%;
+}
+.playlist-info-track,.playlist-duration{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #AC9DA7FF;
+  font-size: 14px;
+  pointer-events: none;
+}
+.playlist-ctn{
+  margin: 0 0 0% 1%;
+}
+.active-track{
+  background: #4d4d4d;
+  color: #AC9DA7FF !important;
+  font-weight: bold;
+}
+
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+  color: #AC9DA7FF !important;
+}
+ 
+.playlist-btn-play{
+  pointer-events: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.box_m {
+  margin-left: 0.2%;
+  margin-bottom: 17%;
+  width: 90%;
+  height: 100%;
+  max-width: 1233px;
+  max-height: 83%;
+  overflow-Y: auto;
+}
+
+.close_m {
+  position: fixed;
+  margin-left: 91%;
+  max-width: 1233px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #688EE7FF;
+}
+
+#btn-faws-back, #btn-faws-next,
+#btn-faws-play-pause {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ------------------------- Адаптация ----------------------------------------------- */
+@media screen and (max-width: 640px) {
+  nav {
+    width: 20%;
+  }
+  .content {
+    margin-left: 20%;
+    width: 80%;
+  }
+  .intro {
+    width: 80%;
+  }
+  .info_ctn {
+    height: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    padding-top: 0%;
+    margin: 0 8% 0 8%;
+  }
+  .playlist-ctn{
+    margin: 0 0 10% 1%;
+  }
+  .nav_m {
+    width: 150%;
+    height: 150%;
+  }
+  .title_home {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    width: 15%;
+  }
+  .content {
+    margin-left: 15%;
+    width: 90%;
+  }
+  .intro {
+    width: 90%;
+  }
+  .info_ctn {
+    height: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    padding-top: 0%;
+    margin: 0 6% 0 6%;
+  }
+  .playlist-ctn{
+    margin: 0 0 10% 1%;
+  }
+  .title_home {
+    font-size: 125%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  nav {
+    width: 10%;
+  }
+  .content {
+    margin-left: 10%;
+    width: 90%;
+  }
+  .intro {
+    width: 90%;
+  }
+  .info_ctn {
+    height: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    padding-top: 0%;
+    margin: 0 5% 0 5%;
+  }
+  .playlist-ctn{
+    margin: 0 0 5% 1%;
+  }
+  .title_home {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  nav {
+    width: 4%;
+  }
+  .content {
+    margin-left: 4%;
+    width: 96%;
+  }
+  .intro {
+    width: 96%;
+  }
+  .info_ctn {
+    height: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    padding-top: 0%;
+    margin: 0 0.6% 0 0.6%;
+  }
+  .playlist-ctn{
+    margin: 0 0 2% 1%;
+  }
+  .title_home {
+    font-size: 150%;
+  }
+}
+/* ----------------------------------------------------------------------------------- */
