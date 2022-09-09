@@ -400,6 +400,9 @@ nav img {
     width: 150%;
     height: 150%;
   }
+  .title_home {
+    font-size: 100%;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -426,6 +429,9 @@ nav img {
   }
   .playlist-ctn{
     margin: 0 0 10% 1%;
+  }
+  .title_home {
+    font-size: 125%;
   }
 }
 
@@ -454,18 +460,21 @@ nav img {
   .playlist-ctn{
     margin: 0 0 5% 1%;
   }
+  .title_home {
+    font-size: 150%;
+  }
 }
 
 @media screen and (max-width: 1366px) {
   nav {
-    width: 3%;
+    width: 4%;
   }
   .content {
-    margin-left: 3%;
-    width: 97%;
+    margin-left: 4%;
+    width: 96%;
   }
   .intro {
-    width: 97%;
+    width: 96%;
   }
   .info_ctn {
     height: 25%;
@@ -480,6 +489,9 @@ nav img {
   }
   .playlist-ctn{
     margin: 0 0 2% 1%;
+  }
+  .title_home {
+    font-size: 150%;
   }
 }
 /* ----------------------------------------------------------------------------------- */
