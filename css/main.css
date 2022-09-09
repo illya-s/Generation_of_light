@@ -43,7 +43,7 @@ body {
 
 .news {
   width: 99%;
-  max-width: 1366px;
+  max-width: 1300px;
   max-height: 720px;
   border-radius: 25px;
   background-color: #453F43;
@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb {
 
 nav {
   height: 100%;
-  width: 4%;
+  width: 3%;
   max-width: 720px;
   background: #453F43FF;
   position: fixed;
@@ -210,22 +210,21 @@ nav img {
 }
 
 .logo {
-    fill: red;
+  fill: red;
 }
   
 .btn-action{
-    cursor: pointer;
-    padding: 0;
-    margin: 1%;
-    width: 3%;
-    height: 89%;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 1% 0 1%;
+  height: 70%;
 }
 
 .nav_m {
-    margin: 0;
-    padding: 0;
-    width: 125%;
-    height: 125%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
   
 .btn-ctn, .infos-ctn{
@@ -234,9 +233,9 @@ nav img {
     justify-content: center;
 }
 .infos-ctn{
-    width: 100%;
-    height: 30%;
-    padding: 1% 1% 0% 1%;
+  width: 100%;
+  height: 30%;
+  padding: 1% 1% 0% 1%;
 }
   
 .btn-ctn > div {
@@ -252,11 +251,11 @@ nav img {
 .info_ctn{
   position: fixed;
   bottom: 0px;
-  width: 97.5%;
+  width: 100%;
   height: 20%;
   max-height: 720px;
   z-index: 10;
-  margin-left: 4%;
+  margin-left: 0;
   background-color: #453F43FF;
 }
 
@@ -283,34 +282,34 @@ nav img {
 }
 
 .player-ctn{
-    display: inline-block;
-    border-radius: 15px;
-    padding: 10px;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 10px;
 }
   
 .playlist-track-ctn{
-    background-color: #464646;
-    margin-top: 3px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #464646;
+  margin-top: 3px;
+  border-radius: 5px;
+  cursor: pointer;
 }
   
 .playlist-track-ctn > div{
-    margin: 1%;
+  margin: 1%;
 }
 .playlist-track-ctn {
-    display: inline-flex;
-    width: 100%;
+  display: inline-flex;
+  width: 100%;
 }
 
 .playlist-btn-play {
-    width: 1%;
-    margin-left: 1%;
+  width: 1%;
+  margin-left: 1%;
 }
 .playlist-info-track{
-    margin-left: 1%;
-    text-align: left;
-    width: 80%;
+  margin-left: 1%;
+  text-align: left;
+  width: 80%;
 }
 .playlist-info-track,.playlist-duration{
   padding-top: 7px;
@@ -323,54 +322,82 @@ nav img {
   margin: 0 0 6.7% 1%;
 }
 .active-track{
-    background: #4d4d4d;
-    color: #AC9DA7FF !important;
-    font-weight: bold;
+  background: #4d4d4d;
+  color: #AC9DA7FF !important;
+  font-weight: bold;
 }
 
 .active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
-    color: #AC9DA7FF !important;
+  color: #AC9DA7FF !important;
 }
  
 .playlist-btn-play{
-    pointer-events: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  pointer-events: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .fas{
-    color: #AC9DA7FF;
-    font-size: 20px;
+  color: #AC9DA7FF;
+  font-size: 20px;
 }
 
 .box_m {
-    margin-left: 0.2%;
-    margin-bottom: 17%;
-    width: 90%;
-    height: 100%;
-    max-width: 1233px;
-    max-height: 83%;
-    overflow-Y: auto;
+  margin-left: 0.2%;
+  margin-bottom: 17%;
+  width: 90%;
+  height: 100%;
+  max-width: 1233px;
+  max-height: 83%;
+  overflow-Y: auto;
 }
 
 .close_m {
-    position: fixed;
-    margin-left: 91%;
-    max-width: 1233px;
-    text-decoration: none;
-    font-size: 35px;
-    color: #688EE7FF;
+  position: fixed;
+  margin-left: 91%;
+  max-width: 1233px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #688EE7FF;
 }
 
 .box_m::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 .box_m::-webkit-scrollbar-track {
-    background: #453F43;
+  background: #453F43;
 }
 .box_m::-webkit-scrollbar-thumb {
-    background-color: #AC9DA7FF;
-    border-radius: 2px;
-    border: 0px solid #453F43;
+  background-color: #AC9DA7FF;
+  border-radius: 2px;
+  border: 0px solid #453F43;
+}
+
+#btn-faws-back, #btn-faws-next,
+#btn-faws-play-pause {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    width: 7%;
+  }
+  .content {
+    margin-left: 7%;
+    width: 93%;
+  }
+  .info_ctn {
+    height: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    padding-top: 0%;
+    margin: 0 5% 0 5%;
+}
 }
 
 /* ----------------------------------------------------------------------------------- */
