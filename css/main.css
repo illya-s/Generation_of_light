@@ -13,11 +13,11 @@ body {
 }
 
 .content {
-    width: 96%;
-    height: 98%;
+    width: 97%;
+    height: 100%;
     position: absolute;
     margin-top: 0;
-    margin-left: 4%;
+    margin-left: 3%;
 }
 
 .industrys {
