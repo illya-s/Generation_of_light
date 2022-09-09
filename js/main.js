@@ -243,6 +243,318 @@ var listAudio = [
   duration:"06:27"
 },
 
+{
+  name:"JG Youth Worship - Атмосфера",
+  file:"audio/JG Youth Worship - Атмосфера (HolyChords).mp3",
+  duration:"06:37"
+},
+
+{
+  name:"M.Worship - Духом наполняй",
+  file:"audio/M.Worship - Духом наполняй (HolyChords).mp3",
+  duration:"06:29"
+},
+
+{
+  name:"M.Worship - Муж скорбей",
+  file:"audio/M.Worship - Муж скорбей (HolyChords).mp3",
+  duration:"05:32"
+},
+
+{
+  name:"Meredith Mauldin - Yeshua",
+  file:"audio/Meredith Mauldin - Yeshua (HolyChords).mp3",
+  duration:"09:43"
+},
+
+{
+  name:"New Beginnings Church - Буду я восклицать",
+  file:"audio/New Beginnings Church - Буду я восклицать (HolyChords).mp3",
+  duration:"06:06"
+},
+
+{
+  name:"New Beginnings Church - Преклоняюсь",
+  file:"audio/New Beginnings Church - Преклоняюсь (HolyChords).mp3",
+  duration:"06:03"
+},
+
+{
+  name:"Not An Idol - Близко как никогда",
+  file:"audio/Not An Idol - Близко как никогда (HolyChords).mp3",
+  duration:"03:39"
+},
+
+{
+  name:"Not An Idol - Бог (О Боже мой, благодарю)",
+  file:"audio/Not An Idol - Бог (О Боже мой, благодарю) (HolyChords).mp3",
+  duration:"03:59"
+},
+
+{
+  name:"Not An Idol - Достоин славы",
+  file:"audio/Not An Idol - Достоин славы (HolyChords).mp3",
+  duration:"07:05"
+},
+
+{
+  name:"Not An Idol - Иисус-мой друг",
+  file:"audio/Not An Idol - Иисус - мой друг (HolyChords).mp3",
+  duration:"04:51"
+},
+
+{
+  name:"Not An Idol - Когда умолкнут все звуки",
+  file:"audio/Not An Idol - Когда умолкнут все звуки (HolyChords).mp3",
+  duration:"05:03"
+},
+
+{
+  name:"Not An Idol - Лишь для Тебя",
+  file:"audio/Not An Idol - Лишь для Тебя (HolyChords).mp3",
+  duration:"05:02"
+},
+
+{
+  name:"Not An Idol - Любовь с небес",
+  file:"audio/Not An Idol - Любовь с небес (HolyChords).mp3",
+  duration:"05:36"
+},
+
+{
+  name:"Not An Idol - Не боюсь",
+  file:"audio/Not An Idol - Не боюсь (HolyChords).mp3",
+  duration:"04:46"
+},
+
+{
+  name:"Not An Idol - Преклоняюсь",
+  file:"audio/Not An Idol - Преклоняюсь (HolyChords).mp3",
+  duration:"03:26"
+},
+
+{
+  name:"Not An Idol - Ты моя Скала",
+  file:"audio/Not An Idol - Ты моя Скала (HolyChords).mp3",
+  duration:"04:13"
+},
+
+{
+  name:"Not An Idol - Ты со мной навсегда",
+  file:"audio/Not An Idol - Ты со мной навсегда (HolyChords).mp3",
+  duration:"05:38"
+},
+
+{
+  name:"Oles Miro - Божий огонь",
+  file:"audio/Oles Miro - Божий огонь (HolyChords).mp3",
+  duration:"05:55"
+},
+
+{
+  name:"Planetboom - Kamsahamnida",
+  file:"audio/Planetboom - Kamsahamnida (HolyChords).mp3",
+  duration:"03:44"
+},
+
+{
+  name:"Planetboom - Lemme Tellya",
+  file:"audio/Planetboom - Lemme Tellya (HolyChords).mp3",
+  duration:"03:25"
+},
+
+{
+  name:"Planetboom - New Levels",
+  file:"audio/Planetboom - New Levels (HolyChords).mp3",
+  duration:"04:07"
+},
+
+{
+  name:"Planetboom - Saints",
+  file:"audio/Planetboom - Saints (HolyChords).mp3",
+  duration:"03:39"
+},
+
+{
+  name:"Real Ivanna - Меня Ты возлюбил",
+  file:"audio/Real Ivanna - Меня Ты возлюбил (HolyChords).mp3",
+  duration:"04:09"
+},
+
+{
+  name:"Reallife band - Излей от Духа",
+  file:"audio/Reallife band - Излей от Духа (HolyChords).mp3",
+  duration:"06:00"
+},
+
+{
+  name:"Reallife band - Ты Один Святой",
+  file:"audio/Reallife band - Ты Один Святой (HolyChords).mp3",
+  duration:"04:50"
+},
+
+{
+  name:"Reyer - God's Great Dance Floor",
+  file:"audio/Reyer - God's Great Dance Floor (Remix) (HolyChords).mp3",
+  duration:"03:50"
+},
+
+{
+  name:"Skinia Music - Держись за любовь",
+  file:"audio/Skinia Music - Держись за любовь (HolyChords).mp3",
+  duration:"05:31"
+},
+
+{
+  name:"Sokolov Brothers - Буду доверять",
+  file:"audio/SokolovBrothers - Буду доверять (HolyChords).mp3",
+  duration:"04:03"
+},
+
+{
+  name:"Sokolov Brothers - Если не Ты то кто же",
+  file:"audio/SokolovBrothers - Если не Ты то кто же (HolyChords).mp3",
+  duration:"04:46"
+},
+
+{
+  name:"Sokolov Brothers - Имя Твоё",
+  file:"audio/SokolovBrothers - Имя Твоё (HolyChords).mp3",
+  duration:"04:12"
+},
+
+{
+  name:"Sokolov Brothers - Имя Твоё слаще мёда",
+  file:"audio/SokolovBrothers - Имя Твоё слаще мёда (HolyChords).mp3",
+  duration:"05:22"
+},
+
+{
+  name:"Sokolov Brothers - Лети",
+  file:"audio/SokolovBrothers - Лети (HolyChords).mp3",
+  duration:"05:42"
+},
+
+{
+  name:"Sokolov Brothers - Лицом к лицу",
+  file:"audio/SokolovBrothers - Лицом к лицу (HolyChords).mp3",
+  duration:"03:49"
+},
+
+{
+  name:"Sokolov Brothers - Молитва",
+  file:"audio/SokolovBrothers - Молитва (HolyChords).mp3",
+  duration:"05:06"
+},
+
+{
+  name:"Sokolov Brothers - Не бойся, Бог с тобой",
+  file:"audio/SokolovBrothers - Не бойся, Бог с тобой (HolyChords).mp3",
+  duration:"03:17"
+},
+
+{
+  name:"Sokolov Brothers - Не угаснуть мне дай",
+  file:"audio/SokolovBrothers - Не угаснуть мне дай (HolyChords).mp3",
+  duration:"03:19"
+},
+
+{
+  name:"Sokolov Brothers - Небо за нас",
+  file:"audio/SokolovBrothers - Небо за нас (HolyChords).mp3",
+  duration:"04:07"
+},
+
+{
+  name:"Sokolov Brothers - Нет подобного Тебе",
+  file:"audio/SokolovBrothers - Нет подобного Тебе (HolyChords).mp3",
+  duration:"04:25"
+},
+
+{
+  name:"Sokolov Brothers - Отче наш",
+  file:"audio/SokolovBrothers - Отче наш (HolyChords).mp3",
+  duration:"04:57"
+},
+
+{
+  name:"Sokolov Brothers - Рождён нам Спаситель",
+  file:"audio/SokolovBrothers - Рождён нам Спаситель (HolyChords).mp3",
+  duration:"04:56"
+},
+
+{
+  name:"Sokolov Brothers - Ты мой Бог",
+  file:"audio/SokolovBrothers - Ты мой Бог (HolyChords).mp3",
+  duration:"06:20"
+},
+
+{
+  name:"Sokolov Brothers - Ты со мной",
+  file:"audio/SokolovBrothers - Ты со мной (HolyChords).mp3",
+  duration:"03:52"
+},
+
+{
+  name:"Sokolov Brothers - Уходя к Отцу",
+  file:"audio/SokolovBrothers - Уходя к Отцу (HolyChords).mp3",
+  duration:"04:33"
+},
+
+{
+  name:"Sokolov Brothers - Я стану ветром",
+  file:"audio/SokolovBrothers - Я стану ветром (HolyChords).mp3",
+  duration:"04:56"
+},
+
+{
+  name:"Spasinnya Music - Пусть поёт душа",
+  file:"audio/Spasinnya Music - Пусть поёт душа (HolyChords).mp3",
+  duration:"03:55"
+},
+
+{
+  name:"Steiger Worship - Звон монет",
+  file:"audio/Steiger Worship - Звон монет (HolyChords).mp3",
+  duration:"11:24"
+},
+
+{
+  name:"Supernatural Worship - Кровь Христа",
+  file:"audio/Supernatural Worship - Кровь Христа (HolyChords).mp3",
+  duration:"07:06"
+},
+
+{
+  name:"Toby Mac - Til the Day",
+  file:"audio/Til the Day.mp3",
+  duration:"03:47"
+},
+
+{
+  name:"Worship Church - Все источники в Тебе",
+  file:"audio/Worship Church - Все источники в Тебе (HolyChords).mp3",
+  duration:"08:02"
+},
+
+{
+  name:"Андрей Николайчик - Он никогда не играл в любовь",
+  file:"audio/Андрей Николайчик - Он никогда не играл в любовь (HolyChords).mp3",
+  duration:"03:46"
+},
+
+{
+  name:"Виктор Лавриненко - О, эта радость",
+  file:"audio/Виктор Лавриненко - О, эта радость (HolyChords).mp3",
+  duration:"04:16"
+},
+
+{
+  name:"Виктор Лавриненко - Пусть горит твой огонь",
+  file:"audio/Виктор Лавриненко - Пусть горит твой огонь (HolyChords).mp3",
+  duration:"04:44"
+},
+
 ]
 
 for (var i = 0; i < listAudio.length; i++) {
@@ -429,6 +741,7 @@ function toggleMute(){
     volUp.style.display = "block"
   }
 }
+
 
 
 
