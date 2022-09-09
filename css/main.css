@@ -336,10 +336,6 @@ nav img {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.fas{
-  color: #AC9DA7FF;
-  font-size: 20px;
-}
 
 .box_m {
   margin-left: 0.2%;
@@ -360,47 +356,11 @@ nav img {
   color: #688EE7FF;
 }
 
-.box_m::-webkit-scrollbar {
-  width: 12px;
-}
-.box_m::-webkit-scrollbar-track {
-  background: #453F43;
-}
-.box_m::-webkit-scrollbar-thumb {
-  background-color: #AC9DA7FF;
-  border-radius: 2px;
-  border: 0px solid #453F43;
-}
-
 #btn-faws-back, #btn-faws-next,
 #btn-faws-play-pause {
   margin: 0;
   width: 50px;
   height: 50px;
-}
-
-@media screen and (max-width: 720px) {
-  nav {
-    width: 7%;
-  }
-  .content {
-    margin-left: 7%;
-    width: 93%;
-  }
-  .info_ctn {
-    height: 25%;
-  }
-  .btn-ctn {
-    width: 100%;
-    height: 100%;
-  }
-  .btn-action{
-    padding-top: 0%;
-    margin: 0 10% 0 6%;
-  }
-  .playlist-ctn{
-    margin: 0 0 5% 1%;
-  }
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -625,4 +585,29 @@ nav img {
     display: block;
 }
 
+/* ----------------------------------------------------------------------------------- */
+/* ------------------------- Адаптация ----------------------------------------------- */
+@media screen and (max-width: 720px) {
+  nav {
+    width: 7%;
+  }
+  .content {
+    margin-left: 7%;
+    width: 93%;
+  }
+  .info_ctn {
+    height: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    padding-top: 0%;
+    margin: 0 10% 0 6%;
+  }
+  .playlist-ctn{
+    margin: 0 0 5% 1%;
+  }
+}
 /* ----------------------------------------------------------------------------------- */
