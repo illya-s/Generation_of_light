@@ -373,14 +373,14 @@ nav img {
 /* ------------------------- Адаптация ----------------------------------------------- */
 @media screen and (max-width: 720px) {
   nav {
-    width: 7%;
+    width: 10%;
   }
   .content {
-    margin-left: 7%;
-    width: 93%;
+    margin-left: 10%;
+    width: 90%;
   }
   .intro {
-    width: 93%;
+    width: 90%;
   }
   .info_ctn {
     height: 25%;
