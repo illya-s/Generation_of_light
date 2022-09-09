@@ -397,4 +397,58 @@ nav img {
     margin: 0 0 5% 1%;
   }
 }
+
+@media screen and (max-width: 750px) {
+  nav {
+    width: 10%;
+  }
+  .content {
+    margin-left: 7%;
+    width: 93%;
+  }
+  .intro {
+    width: 93%;
+  }
+  .info_ctn {
+    height: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    padding-top: 0%;
+    margin: 0 10% 0 6%;
+  }
+  .playlist-ctn{
+    margin: 0 0 5% 1%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  nav {
+    width: 10%;
+  }
+  .content {
+    margin-left: 7%;
+    width: 93%;
+  }
+  .intro {
+    width: 93%;
+  }
+  .info_ctn {
+    height: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    padding-top: 0%;
+    margin: 0 10% 0 6%;
+  }
+  .playlist-ctn{
+    margin: 0 0 5% 1%;
+  }
+}
 /* ----------------------------------------------------------------------------------- */
