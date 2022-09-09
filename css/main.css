@@ -373,14 +373,14 @@ nav img {
 /* ------------------------- Адаптация ----------------------------------------------- */
 @media screen and (max-width: 640px) {
   nav {
-    width: 15%;
+    width: 20%;
   }
   .content {
-    margin-left: 15%;
-    width: 85%;
+    margin-left: 20%;
+    width: 80%;
   }
   .intro {
-    width: 85%;
+    width: 80%;
   }
   .info_ctn {
     height: 25%;
@@ -458,14 +458,14 @@ nav img {
 
 @media screen and (max-width: 1366px) {
   nav {
-    width: 5%;
+    width: 3%;
   }
   .content {
-    margin-left: 5%;
-    width: 95%;
+    margin-left: 3%;
+    width: 97%;
   }
   .intro {
-    width: 95%;
+    width: 97%;
   }
   .info_ctn {
     height: 25%;
