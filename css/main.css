@@ -406,6 +406,9 @@ nav img {
   .news_txt, .news_pr, .news_day {
     font-size: 150%;
   }
+  .timer, .title_m, .duration {
+    font-size: 18pt;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -442,6 +445,9 @@ nav img {
   }
   .news_txt, .news_pr, .news_day {
     font-size: 125%;
+  }
+  .timer, .title_m, .duration {
+    font-size: 16pt;
   }
 }
 
@@ -480,6 +486,9 @@ nav img {
   .news_txt, .news_pr, .news_day {
     font-size: 125%;
   }
+  .timer, .title_m, .duration {
+    font-size: 14pt;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -517,6 +526,9 @@ nav img {
   .news_txt, .news_pr, .news_day {
     font-size: 100%;
   }
+  .timer, .title_m, .duration {
+    font-size: 14pt;
+  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -552,6 +564,8 @@ nav img {
     height: 100%;
   }
   .news_txt, .news_pr, .news_day {
+    font-size: 100%;
+  }.timer, .title_m, .duration {
     font-size: 100%;
   }
 }
