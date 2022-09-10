@@ -555,6 +555,126 @@ var listAudio = [
   duration:"04:44"
 },
 
+{
+  name:"Виталии Ефремочкин - Адонаи",
+  file:"audio/виталии-ефремочкин-адонаи.mp3",
+  duration:"05:26"
+},
+
+{
+  name:"Виталии Ефремочкин - Благословлю тебя",
+  file:"audio/виталии-ефремочкин-благословлю-тебя.mp3",
+  duration:"03:56"
+},
+
+{
+  name:"Виталии Ефремочкин - Божии дождь",
+  file:"audio/виталии-ефремочкин-божии-дождь.mp3",
+  duration:"04:29"
+},
+
+{
+  name:"Виталии Ефремочкин - Воплощение добра",
+  file:"audio/виталии-ефремочкин-воплощение-добра.mp3",
+  duration:"07:46"
+},
+
+{
+  name:"Виталии Ефремочкин - Выше солнца выше неба",
+  file:"audio/виталии-ефремочкин-выше-солнца-выше-неба.mp3",
+  duration:"06:29"
+},
+
+{
+  name:"Виталии Ефремочкин - Не умру я но буду",
+  file:"audio/виталии-ефремочкин-не-умру-я-но-буду.mp3",
+  duration:"06:21"
+},
+
+{
+  name:"Виталии Ефремочкин - Святои",
+  file:"audio/виталии-ефремочкин-святои.mp3",
+  duration:"10:04"
+},
+
+{
+  name:"Виталии Ефремочкин - Танцуи",
+  file:"audio/виталии-ефремочкин-танцуи.mp3",
+  duration:"10:05"
+},
+
+{
+  name:"Виталии Ефремочкин - Царь цареи",
+  file:"audio/виталии-ефремочкин-царь-цареи.mp3",
+  duration:"04:23"
+},
+
+{
+  name:"Виталии Ефремочкин - Адонай",
+  file:"audio/Виталий Ефремочкин - Адонай (HolyChords).mp3",
+  duration:"05:27"
+},
+
+{
+  name:"Виталии Ефремочкин - Аллилуйя",
+  file:"audio/Виталий Ефремочкин - Аллилуйя (www.hotplayer.ru).mp3",
+  duration:"08:47"
+},
+
+{
+  name:"Виталии Ефремочкин - Благославлю тебя",
+  file:"audio/Виталий Ефремочкин - Благославлю тебя (www.hotplayer.ru).mp3",
+  duration:"04:43"
+},
+
+{
+  name:"Виталии Ефремочкин - Блажен Народ",
+  file:"audio/Виталий Ефремочкин - Блажен Народ (www.hotplayer.ru).mp3",
+  duration:"09:35"
+},
+
+{
+  name:"Виталии Ефремочкин - Ближе к Тебе",
+  file:"audio/Виталий Ефремочкин - Ближе к Тебе (HolyChords).mp3",
+  duration:"08:31"
+},
+
+{
+  name:"Виталии Ефремочкин - Бог Израиля",
+  file:"audio/Виталий Ефремочкин - Бог Израиля (www.hotplayer.ru).mp3",
+  duration:"06:10"
+},
+
+{
+  name:"Виталии Ефремочкин - Бог мой",
+  file:"audio/Виталий Ефремочкин - Бог мой (HolyChords).mp3",
+  duration:"06:30"
+},
+
+{
+  name:"Виталии Ефремочкин - Божий Дождь",
+  file:"audio/Виталий Ефремочкин - Божий Дождь (www.hotplayer.ru).mp3",
+  duration:"05:42"
+},
+
+{
+  name:"Виталии Ефремочкин - Будем петь",
+  file:"audio/Виталий Ефремочкин - Будем петь (www.hotplayer.ru).mp3",
+  duration:"04:24"
+},
+
+{
+  name:"Виталии Ефремочкин - Будем танцевать",
+  file:"audio/Виталий Ефремочкин - Будем танцевать (www.hotplayer.ru).mp3",
+  duration:"04:17"
+},
+
+{
+  name:"Виталии Ефремочкин - Буду танцевать",
+  file:"audio/Виталий Ефремочкин - Буду танцевать (www.hotplayer.ru).mp3",
+  duration:"04:33"
+},
+
 ]
 
 for (var i = 0; i < listAudio.length; i++) {
@@ -724,22 +844,6 @@ function pauseToPlay(index){
   var ele = document.querySelector('#p-img-'+index)
   ele.classList.remove("fa-pause");
   ele.classList.add("fa-play");
-}
-
-
-function toggleMute(){
-  var btnMute = document.querySelector('#toggleMute');
-  var volUp = document.querySelector('#icon-vol-up');
-  var volMute = document.querySelector('#icon-vol-mute');
-  if (this.currentAudio.muted == false) {
-     this.currentAudio.muted = true
-     volUp.style.display = "none"
-     volMute.style.display = "block"
-  }else{
-    this.currentAudio.muted = false
-    volMute.style.display = "none"
-    volUp.style.display = "block"
-  }
 }
 
 
