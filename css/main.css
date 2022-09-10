@@ -433,6 +433,10 @@ nav img {
   .title_home {
     font-size: 125%;
   }
+  .nav_m {
+    width: 125%;
+    height: 125%;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -463,6 +467,10 @@ nav img {
   .title_home {
     font-size: 150%;
   }
+  .nav_m {
+    width: 125%;
+    height: 125%;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -492,6 +500,10 @@ nav img {
   }
   .title_home {
     font-size: 150%;
+  }
+  .nav_m {
+    width: 100%;
+    height: 100%;
   }
 }
 /* ----------------------------------------------------------------------------------- */
