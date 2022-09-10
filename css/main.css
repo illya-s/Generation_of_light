@@ -102,12 +102,14 @@ body::-webkit-scrollbar-thumb {
 /* ------------------------------ Панель --------------------------------------------- */
 
 nav {
-  height: 100%;
   width: 3%;
+  height: 100%;
+  position: fixed;
   max-width: 720px;
   background: #453F43FF;
-  position: fixed;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
+
 nav ul {
   padding: 0%;
   margin: 0 auto;
@@ -118,13 +120,13 @@ nav a {
   height: 100%;
   max-width: 720px;
   display: inline-block;
-  text-decoration: none;
 }
 nav img {
   width: 100%;
   height: 100%;
   max-width: 720px;
 }
+
 
 /* ----------------------------------------------------------------------------------- */
 
@@ -228,8 +230,8 @@ nav img {
 .nav_m {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 125%;
+  height: 125%;
 }
   
 .btn-ctn, .infos-ctn{
@@ -390,24 +392,24 @@ nav img {
     height: 100%;
   }
   .btn-action{
+    width: 100%;
+    height: 100%;
     padding-top: 0%;
     margin: 0 8% 0 8%;
   }
   .playlist-ctn{
     margin: 0 0 10% 1%;
   }
+  .fas {
+    width: 100%;
+    height: 100%;
+  }
   .nav_m {
-    width: 150%;
-    height: 150%;
+    width: 175%;
+    height: 175%;
   }
   .title_home {
     font-size: 100%;
-  }
-  .news_txt, .news_pr, .news_day {
-    font-size: 150%;
-  }
-  .timer, .title_m, .duration {
-    font-size: 18pt;
   }
 }
 
@@ -440,14 +442,8 @@ nav img {
     font-size: 125%;
   }
   .nav_m {
-    width: 125%;
-    height: 125%;
-  }
-  .news_txt, .news_pr, .news_day {
-    font-size: 125%;
-  }
-  .timer, .title_m, .duration {
-    font-size: 16pt;
+    width: 150%;
+    height: 150%;
   }
 }
 
@@ -483,12 +479,6 @@ nav img {
     width: 125%;
     height: 125%;
   }
-  .news_txt, .news_pr, .news_day {
-    font-size: 125%;
-  }
-  .timer, .title_m, .duration {
-    font-size: 14pt;
-  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -523,12 +513,6 @@ nav img {
     width: 100%;
     height: 100%;
   }
-  .news_txt, .news_pr, .news_day {
-    font-size: 100%;
-  }
-  .timer, .title_m, .duration {
-    font-size: 14pt;
-  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -562,11 +546,6 @@ nav img {
   .nav_m {
     width: 100%;
     height: 100%;
-  }
-  .news_txt, .news_pr, .news_day {
-    font-size: 100%;
-  }.timer, .title_m, .duration {
-    font-size: 100%;
   }
 }
 /* ----------------------------------------------------------------------------------- */
