@@ -10,6 +10,7 @@ body {
     background-attachment: fixed;
     font-family: sans-serif;
     text-decoration: none;
+    color: #6DD5D7;
 }
 
 .content {
@@ -27,7 +28,7 @@ body {
   margin-top: 1%;
   margin-left: 1%;
   margin-bottom: 0px;
-  color: #AC9DA7FF;
+  color: #6DD5D7;
   z-index: -1;
 }
 
@@ -43,7 +44,7 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 19px;
-  color: #AC9DA7FF;
+  color: #6DD5D7;
 }
 
 .news {
@@ -51,7 +52,7 @@ body {
   max-width: 1300px;
   max-height: 720px;
   border-radius: 25px;
-  background-color: #453F43;
+  background-color: #2A2E36;
   margin: 1%;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -60,7 +61,7 @@ body {
 .news_title {
   padding-top: 5%;
   padding-left: 7%;
-  color: #AC9DA7FF;
+  color: #6DD5D7;
 }
 
 .news_tab {
@@ -73,7 +74,7 @@ body {
   font-weight: normal;
   border-radius: 10px;
   text-align: center;
-  color: #AC9DA7FF;
+  color: #6DD5D7;
 }
 
 .news_pr, .news_day {
@@ -89,12 +90,12 @@ body::-webkit-scrollbar {
     width: 12px;
 }
 body::-webkit-scrollbar-track {
-    background: #453F43;
+    background: #876F6D;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #AC9DA7FF;
+    background-color: #2A2E36;
     border-radius: 2px;
-    border: 0px solid #453F43;
+    border: 0px solid #876F6D;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -106,8 +107,7 @@ nav {
   height: 100%;
   position: fixed;
   max-width: 720px;
-  background: #453F43FF;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+  background: #876F6D;
 }
 
 nav ul {
@@ -119,8 +119,17 @@ nav a {
   width: 100%;
   height: 100%;
   max-width: 720px;
+  margin: 10% 0 ;
+  border-radius: 50px;
   display: inline-block;
+  background-color: #2A2E36;
+  transition: 0.6s;
 }
+
+nav a:hover {
+  background-color: #00676F;
+}
+
 nav img {
   width: 100%;
   height: 100%;
@@ -177,7 +186,7 @@ nav img {
     margin-left: 10px;
     font-size: 100%;
     display:inline-block;
-    color: #AC9DA7FF;
+    color: #6DD5D7;
 }
 
 .txt_1 {
@@ -186,13 +195,13 @@ nav img {
     margin-left: 10px;
     font-size: 100%;
     display:inline-block;
-    color: #AC9DA7FF;
+    color: #6DD5D7;
 }
 
 .title {
     /* display:inline-block; */
     margin: 1%;
-    color: #AC9DA7FF;
+    color: #6DD5D7;
 }
 
 .opis {
@@ -205,14 +214,14 @@ nav img {
 
 #myProgress {
     height: 5%;
-    background-color: #6d6d6d; 
+    background-color: #2A2E36; 
     cursor: pointer;
     border-radius: 10px;
 }
   
 #myBar {
     height: 100%;
-    background-color: #AC9DA7FF;
+    background-color: #6DD5D7;
     border-radius: 10px;
 }
 
@@ -232,6 +241,13 @@ nav img {
   padding: 0;
   width: 125%;
   height: 125%;
+  background-color: #2A2E36;
+  border-radius: 50px;
+  transition: 0.6s;
+}
+
+.nav_m:hover {
+  background-color: #00676F;
 }
   
 .btn-ctn, .infos-ctn{
@@ -252,7 +268,7 @@ nav img {
   
 .infos-ctn > div {
     margin-bottom: 8px;
-    color: #AC9DA7FF;
+    color: #8CD3EB;
 }
 
 .info_ctn{
@@ -263,7 +279,7 @@ nav img {
   max-height: 720px;
   z-index: 10;
   margin-left: 0;
-  background-color: #453F43FF;
+  background-color: #876F6D;
 }
 
 .timer {
@@ -295,10 +311,15 @@ nav img {
 }
   
 .playlist-track-ctn{
-  background-color: #464646;
   margin-top: 3px;
   border-radius: 5px;
   cursor: pointer;
+  background-color: #2A2E36;
+  transition: 0.6s;
+}
+
+.playlist-track-ctn:hover {
+  background-color: #00676F;
 }
   
 .playlist-track-ctn > div{
@@ -321,7 +342,7 @@ nav img {
 .playlist-info-track,.playlist-duration{
   padding-top: 7px;
   padding-bottom: 7px;
-  color: #AC9DA7FF;
+  color: #8CD3EB;
   font-size: 14px;
   pointer-events: none;
 }
@@ -329,13 +350,13 @@ nav img {
   margin: 0 0 0% 1%;
 }
 .active-track{
-  background: #4d4d4d;
-  color: #AC9DA7FF !important;
+  background: #739986;
+  color: #00676F !important;
   font-weight: bold;
 }
 
 .active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
-  color: #AC9DA7FF !important;
+  color: #00676F !important;
 }
  
 .playlist-btn-play{
@@ -352,15 +373,6 @@ nav img {
   max-width: 1233px;
   max-height: 83%;
   overflow-Y: auto;
-}
-
-.close_m {
-  position: fixed;
-  margin-left: 91%;
-  max-width: 1233px;
-  text-decoration: none;
-  font-size: 35px;
-  color: #688EE7FF;
 }
 
 #btn-faws-back, #btn-faws-next,
@@ -425,7 +437,7 @@ nav img {
     width: 92%;
   }
   .info_ctn {
-    height: 25%;
+    height: 24%;
   }
   .btn-ctn {
     width: 100%;
@@ -459,7 +471,7 @@ nav img {
     width: 95%;
   }
   .info_ctn {
-    height: 25%;
+    height: 22%;
   }
   .btn-ctn {
     width: 100%;
@@ -493,14 +505,14 @@ nav img {
     width: 96%;
   }
   .info_ctn {
-    height: 25%;
+    height: 21%;
   }
   .btn-ctn {
     width: 100%;
     height: 100%;
   }
   .btn-action{
-    padding-top: 0%;
+    padding-top: 2.7%;
     margin: 0 0.6% 0 0.6%;
   }
   .playlist-ctn{
@@ -527,25 +539,25 @@ nav img {
     width: 96%;
   }
   .info_ctn {
-    height: 25%;
+    height: 20%;
   }
   .btn-ctn {
     width: 100%;
     height: 100%;
   }
   .btn-action{
-    padding-top: 0%;
-    margin: 0 0.6% 0 0.6%;
+    padding-top: 1%;
+    margin: 0 0.8% 0 0.8%;
   }
   .playlist-ctn{
-    margin: 0 0 3% 1%;
+    margin: 0 0 0% 1%;
   }
   .title_home {
     font-size: 150%;
   }
   .nav_m {
-    width: 100%;
-    height: 100%;
+    width: 115%;
+    height: 115%;
   }
 }
 /* ----------------------------------------------------------------------------------- */
