@@ -397,7 +397,7 @@ nav img {
     width: 90%;
   }
   .info_ctn {
-    height: 25%;
+    height: 24%;
   }
   .btn-ctn {
     width: 100%;
@@ -410,15 +410,15 @@ nav img {
     margin: 0 8% 0 8%;
   }
   .playlist-ctn{
-    margin: 0 0 10% 1%;
+    margin: 0 0 16% 1%;
   }
   .fas {
     width: 100%;
     height: 100%;
   }
   .nav_m {
-    width: 175%;
-    height: 175%;
+    width: 200%;
+    height: 200%;
   }
   .title_home {
     font-size: 100%;
@@ -437,7 +437,7 @@ nav img {
     width: 92%;
   }
   .info_ctn {
-    height: 24%;
+    height: 23%;
   }
   .btn-ctn {
     width: 100%;
@@ -448,14 +448,14 @@ nav img {
     margin: 0 6% 0 6%;
   }
   .playlist-ctn{
-    margin: 0 0 10% 1%;
+    margin: 0 0 14% 1%;
   }
   .title_home {
     font-size: 125%;
   }
   .nav_m {
-    width: 150%;
-    height: 150%;
+    width: 175%;
+    height: 175%;
   }
 }
 
