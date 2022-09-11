@@ -845,8 +845,3 @@ function pauseToPlay(index){
   ele.classList.remove("fa-pause");
   ele.classList.add("fa-play");
 }
-
-
-
-
-
