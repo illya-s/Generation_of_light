@@ -136,7 +136,6 @@ var listAudio = [
     file:"audio/Iulia Fridrik - Пусть бушует море (HolyChords).mp3",
     duration:"05:43"
 },
-//new
 {
   name:"Jake Hamilton - Beautiful Rider",
   file:"audio/Jake Hamilton - Beautiful Rider (HolyChords).mp3",
