@@ -24,6 +24,12 @@
 				<!--<li><a href="space.html">
 					<img class="icon" src="img/icons/spase.png" alt="M'S space" title="M'S space" />
 				</a></li>-->
+        <div class="add" id="add_new">
+          <a class="add_new" href="#add_txt">+</a>
+        </div>
+        <li><a class="login_btn" href="#login_in">
+					<img class="icon" src="img/icons/unknown.png" alt="login" title="login" />
+				</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -63,11 +69,55 @@
           <th class="news_txt">11:00</th>
         </tr>
       </table>
+
+      <div class="user_сontent">
+        <div id="user_title"></div>
+        <div id="user_text"></div>
+        <div  id="user_img"></div>
+      </div>
+      <br>
+    </div>
+    
+    <div class="login_in" id="login_in">
+      <div class="login_in_cont">
+        <main id="main-holder">
+          <h1 id="login-header">Login</h1>
+          
+          <div id="login-error-msg-holder">
+            <p id="login-error-msg">Не верно имя пользователя <span id="error-msg-second-line">или пароль</span></p>
+          </div>
+          
+          <form id="login-form">
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+            <button type="submit" id="login-form-submit">
+              <a id="acc" href="#">Login</a>
+            </button>
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <div class="add_txt" id="add_txt">
+      <form class="add_cont">
+        <a class="add_close" href="#">X</a>
+        <p class="add_txt_tite">Название</p>
+        <input class="add_txt_input" id="add_txt_input">
+
+        <p class="add_txt_tite">Текст</p>
+        <textarea class="add_txt_textarea" id="add_txt_textarea" cols="40" rows="3"></textarea><br>
+        
+        <!--<p>Картинка(если есть!)</p>
+        <input type="file" class="add_input_img" id="add_input_img" ><br>-->
+        <button class="add_txt_complete" id="add_txt_complete">complete</button>
+      </form>
+
     </div>
 
 		<div class="industrys">
 			<p>Создано IT компанией © Melanin's industrys 2022</p>
 		</div>
+    <script src="js/main_2.js"></script>
 	</div>
 </body>
 </html>
