@@ -791,6 +791,13 @@ input[type="file"] {
   .intro {
     width: 90%;
   }
+  .music_cont {
+    width: 50%;
+  }
+  .music_close_2 {
+    margin-left: 50%;
+    width: 50%;
+  }
   .info_ctn {
     height: 24%;
   }
@@ -828,6 +835,13 @@ input[type="file"] {
   .intro {
     width: 92%;
   }
+  .music_cont {
+    width: 50%;
+  }
+  .music_close_2 {
+    margin-left: 50%;
+    width: 50%;
+  }
   .info_ctn {
     height: 23%;
   }
@@ -859,6 +873,13 @@ input[type="file"] {
   .intro {
     width: 95%;
   }
+  .music_cont {
+    width: 40%;
+  }
+  .music_close_2 {
+    margin-left: 40%;
+    width: 60%;
+  }
   .info_ctn {
     height: 22%;
   }
@@ -889,6 +910,13 @@ input[type="file"] {
   }
   .intro {
     width: 96%;
+  }
+  .music_cont {
+    width: 30%;
+  }
+  .music_close_2 {
+    margin-left: 30%;
+    width: 70%;
   }
   .info_ctn {
     height: 21%;
