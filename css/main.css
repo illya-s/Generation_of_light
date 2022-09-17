@@ -121,57 +121,46 @@ body::-webkit-scrollbar-thumb {
 
 /* ------------------------------ Панель --------------------------------------------- */
 
-
 nav {
   margin: 0;
   margin-top: 0;
   position: fixed;
-  width: clamp(320px, 50vw ,100%);
 }
 
-nav h2 {
-  font-size: 1.5rem;
+.open_m {
   border-radius: 5px;
   position: relative;
   background: #876F6D;
-  height: 40px;
-  margin-bottom: 0;
+  height: 35px;
+  width: auto;
+  margin: 0;
   display: flex;
-  flex: 1;
   justify-content: center;
   align-items: center;
-  box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.35);
-  transition: all 0.4s;
+  transition: 0.5s;
 }
-
 
 #toggle {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+  height: 100%;
   z-index: 1;
   opacity: 0;
   cursor: pointer;
-  height: 40px;
 }
 
-h2::before{
+.open_m::before{
   position: absolute;
   right: 0;
   top: 0;
-  height: inherit;
-  aspect-ratio: 1;
-  background: currentColor;
   display: flex;
   align-items: center;
-  padding-right: 1rem;
-  content: "";
-  clip-path: polygon(50% 25%, 20% 80%, 80% 80%);
-  transform: rotate(180deg) scale(0.75);
+  transform: rotate(180deg);
 }
 
-#toggle:not(:checked) ~ h2::before {
+.open_m:not(:checked) ~ h2::before {
   transform: rotate(0deg) scale(0.75);
 }
 
@@ -184,7 +173,6 @@ h2::before{
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
-
 
 nav ul {
   border-radius: 6px;
@@ -207,9 +195,13 @@ nav ul li {
   width: 100%;
   margin: 2px 0 0 0;
   background: #2A2E36;
-  transition: background 3s;
+  transition: background 0.5s;
   box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.35);
 } 
+
+nav ul li:hover {
+  background-color: #00676F;
+}
 
 nav ul a {
   display: block;
@@ -827,7 +819,7 @@ input[type="file"] {
 
 @media screen and (min-width: 750px) {
   nav {
-    width: 10%;
+    width: 6%;
   }
   .content {
     margin-left: 8%;
