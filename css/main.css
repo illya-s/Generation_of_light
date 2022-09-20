@@ -25,17 +25,14 @@ body {
 
 .industrys {
   width: 80%;
-  max-width: 720px;
   position: absolute;
-  margin-top: 1%;
-  margin-left: 1%;
-  margin-bottom: 0px;
-  color: #6DD5D7;
+  margin-top: 2%;
+  margin-left: 4.5%;
   z-index: -1;
 }
 
 .title_home {
-  width: 99.037%;
+  width: 98%;
   text-align: center;
   font-size: 175%;
   /*mix-blend-mode: overlay;*/
