@@ -1,8 +1,10 @@
 /* ---------------------------- Другое------------------------------------------------ */
 
 * {
-    margin: 0;
-    text-decoration: none;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #6DD5D7;
 }
 
 body {
@@ -10,9 +12,6 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #6DD5D7;
 }
 
 .content {
@@ -28,7 +27,7 @@ body {
   position: absolute;
   margin-top: 2%;
   margin-left: 4.5%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .title_home {
@@ -275,6 +274,7 @@ nav ul a {
   left: 0;
   top: 0;
   visibility: hidden;
+  z-index: 10;
 }
 
 .music_pop:target {
@@ -494,7 +494,10 @@ nav ul a {
     width: 100%;
     height: 100%;
     padding-top: 0%;
-    margin: 0 16% 0 16%;
+    margin: 0 12% 0 12%;
+  }
+  .playlist-info-track,.playlist-duration{
+    font-size: 20px;
   }
   .fas {
     width: 100%;
@@ -537,7 +540,10 @@ nav ul a {
   }
   .btn-action{
     padding-top: 0%;
-    margin: 0 12% 0 12%;
+    margin: 0 11% 0 11%;
+  }
+  .playlist-info-track,.playlist-duration{
+    font-size: 19px;
   }
   .title_home {
     font-size: 125%;
@@ -576,7 +582,10 @@ nav ul a {
   }
   .btn-action{
     padding-top: 0%;
-    margin: 0 10% 0 10%;
+    margin: 0 9% 0 9;
+  }
+  .playlist-info-track,.playlist-duration{
+    font-size: 16px;
   }
   .title_home {
     font-size: 150%;
@@ -615,7 +624,10 @@ nav ul a {
   }
   .btn-action{
     padding-top: 2.7%;
-    margin: 0 5% 0 5%;
+    margin: 0 6% 0 6%;
+  }
+  .playlist-info-track,.playlist-duration{
+    font-size: 14px;
   }
   .title_home {
     font-size: 150%;
