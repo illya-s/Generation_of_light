@@ -6,13 +6,13 @@
 
 // console.log("ADMIN >>> " + hello + ".");
 
-var num_1 = 1.555;
+//var num_1 = 1.555;
 
-var num_2 = 100;
+//var num_2 = 100;
 
-num_2 += -100;
+//num_2 += -100;
 
-console.log("Math: " + (num_1 + num_2))
+//console.log("Math: " + (num_1 + num_2))
 
 
 function createTrackItem(index,name,duration){
@@ -45,16 +45,19 @@ function createTrackItem(index,name,duration){
     document.querySelector("#ptc-"+index).appendChild(trackDurationItem);
 }
 
+//var download_replacement = '<a href="audio/ARK WORSHIP - Используй Меня Бог (HolyChords).mp3" download="audio.mp3"></a>'
+
 var listAudio = [
 {
     name:"worship - Используй Меня Бог",
     file:"audio/ARK WORSHIP - Используй Меня Бог (HolyChords).mp3",
-    duration:"06:57"
+    duration:"06:57",
+    //download_replacement:'<a href="audio/ARK WORSHIP - Используй Меня Бог (HolyChords).mp3" download="audio.mp3"></a>'
 },
 {
     name:"worship - Любовь Твоя Велика",
     file:"audio/ARK WORSHIP - Любовь Твоя Велика (HolyChords).mp3",
-    duration:"05:56"
+    duration:"05:56",
 },
 {
     name:"worship - Тебя ожидаю",
@@ -674,7 +677,389 @@ var listAudio = [
   duration:"04:33"
 },
 
+{
+  name:"Виталии Ефремочкин - В Тишине",
+  file:"audio/Виталий Ефремочкин - В Тишине (www.hotplayer.ru).mp3",
+  duration:"05:17"
+},
+
+{
+  name:"Виталии Ефремочкин - В этом месте",
+  file:"audio/Виталий Ефремочкин - В этом месте (www.hotplayer.ru).mp3",
+  duration:"04:08"
+},
+
+{
+  name:"Виталии Ефремочкин - Великий бог",
+  file:"audio/Виталий Ефремочкин - Великий бог (www.hotplayer.ru).mp3",
+  duration:"04:08"
+},
+
+{
+  name:"Виталии Ефремочкин - Возвышу громко",
+  file:"audio/Виталий Ефремочкин - Возвышу громко (HolyChords).mp3",
+  duration:"04:01"
+},
+
+{
+  name:"Виталии Ефремочкин - Время",
+  file:"audio/Виталий Ефремочкин - Время (www.hotplayer.ru).mp3",
+  duration:"06:13"
+},
+
+{
+  name:"Виталии Ефремочкин - Всё, Что Мне Надо",
+  file:"audio/Виталий Ефремочкин - Всё, Что Мне Надо (HolyChords).mp3",
+  duration:"10:18"
+},
+
+{
+  name:"Виталии Ефремочкин - Все, что нужно мне",
+  file:"audio/Виталий Ефремочкин - Все, что нужно мне (www.hotplayer.ru).mp3",
+  duration:"06:42"
+},
+
+{
+  name:"Виталии Ефремочкин - Всемогущий Бог Израиля",
+  file:"audio/Виталий Ефремочкин - Всемогущий Бог Израиля (HolyChords).mp3",
+  duration:"03:59"
+},
+
+{
+  name:"Виталии Ефремочкин - Вся Хвала",
+  file:"audio/Виталий Ефремочкин - Вся Хвала (www.hotplayer.ru).mp3",
+  duration:"05:09"
+},
+
+{
+  name:"Виталии Ефремочкин - Дождь придёт",
+  file:"audio/Виталий Ефремочкин - Дождь придёт (HolyChords).mp3",
+  duration:"06:13"
+},
+
+{
+  name:"Виталии Ефремочкин - Дом молитвы",
+  file:"audio/Виталий Ефремочкин - Дом молитвы (HolyChords).mp3",
+  duration:"08:04"
+},
+
+{
+  name:"Виталии Ефремочкин - Достоин Ты",
+  file:"audio/Виталий Ефремочкин - Достоин Ты (HolyChords).mp3",
+  duration:"08:32"
+},
+
+{
+  name:"Виталии Ефремочкин - Дух Живого Бога",
+  file:"audio/Виталий Ефремочкин - Дух Живого Бога (www.hotplayer.ru).mp3",
+  duration:"07:51"
+},
+
+{
+  name:"Виталии Ефремочкин - Дух святой приди",
+  file:"audio/Виталий Ефремочкин - Дух святой приди (www.hotplayer.ru).mp3",
+  duration:"05:56"
+},
+
+{
+  name:"Виталии Ефремочкин - Иешуа",
+  file:"audio/Виталий Ефремочкин - Иешуа (www.hotplayer.ru).mp3",
+  duration:"04:58"
+},
+
+{
+  name:"Виталии Ефремочкин - Иешуа Ха Машиах",
+  file:"audio/Виталий Ефремочкин - Иешуа Ха Машиах (www.hotplayer.ru).mp3",
+  duration:"05:41"
+},
+
+{
+  name:"Виталии Ефремочкин - К Тебе Свои Руки Поднимаем",
+  file:"audio/Виталий Ефремочкин - К Тебе Свои Руки Поднимаем (www.hotplayer.ru).mp3",
+  duration:"08:03"
+},
+
+{
+  name:"Виталии Ефремочкин - Крести Меня Своей Силой",
+  file:"audio/Виталий Ефремочкин - Крести Меня Своей Силой (www.hotplayer.ru).mp3",
+  duration:"11:21"
+},
+
+{
+  name:"Виталии Ефремочкин - Милость твоя",
+  file:"audio/Виталий Ефремочкин - Милость твоя (www.hotplayer.ru).mp3",
+  duration:"04:12"
+},
+
+{
+  name:"Виталии Ефремочкин - Мы Победители",
+  file:"audio/Виталий Ефремочкин - Мы Победители (www.hotplayer.ru).mp3",
+  duration:"05:10"
+},
+
+{
+  name:"Виталии Ефремочкин - Мы Превозносим",
+  file:"audio/Виталий Ефремочкин - Мы Превозносим (www.hotplayer.ru).mp3",
+  duration:"08:48"
+},
+
+{
+  name:"Виталии Ефремочкин - Напои меня живою водой",
+  file:"audio/Виталий Ефремочкин - Напои меня живою водой (HolyChords).mp3",
+  duration:"07:44"
+},
+
+{
+  name:"Виталии Ефремочкин - Не могуществом и не силой",
+  file:"audio/Виталий Ефремочкин - Не могуществом и не силой (HolyChords).mp3",
+  duration:"09:36"
+},
+
+{
+  name:"Виталии Ефремочкин - О будь превознесён",
+  file:"audio/Виталий Ефремочкин - О будь превознесён (www.hotplayer.ru).mp3",
+  duration:"06:09"
+},
+
+{
+  name:"Виталии Ефремочкин - Он Царь",
+  file:"audio/Виталий Ефремочкин - Он Царь (www.hotplayer.ru).mp3",
+  duration:"04:11"
+},
+
+{
+  name:"Виталии Ефремочкин - Пламя",
+  file:"audio/Виталий Ефремочкин - Пламя (www.hotplayer.ru).mp3",
+  duration:"07:13"
+},
+
+{
+  name:"Виталии Ефремочкин - Подобного нет",
+  file:"audio/Виталий Ефремочкин - Подобного нет (www.hotplayer.ru).mp3",
+  duration:"08:10"
+},
+
+{
+  name:"Виталии Ефремочкин - Покаяние",
+  file:"audio/Виталий Ефремочкин - Покаяние (www.hotplayer.ru).mp3",
+  duration:"04:40"
+},
+
+{
+  name:"Виталии Ефремочкин - Пою Тебе аллилуйя",
+  file:"audio/Виталий Ефремочкин - Пою Тебе аллилуйя (HolyChords).mp3",
+  duration:"03:53"
+},
+
+{
+  name:"Виталии Ефремочкин - Прекрасен Ты",
+  file:"audio/Виталий Ефремочкин - Прекрасен Ты (HolyChords).mp3",
+  duration:"07:19"
+},
+
+{
+  name:"Виталии Ефремочкин - Радость",
+  file:"audio/Виталий Ефремочкин - Радость (www.hotplayer.ru).mp3",
+  duration:"03:29"
+},
+
+{
+  name:"Виталии Ефремочкин - Радость В Господе Моём",
+  file:"audio/Виталий Ефремочкин - Радость В Господе Моём (www.hotplayer.ru).mp3",
+  duration:"06:37"
+},
+
+{
+  name:"Виталии Ефремочкин - Хочу я быть ближе",
+  file:"audio/Виталий Ефремочкин - Хочу я быть ближе (HolyChords).mp3",
+  duration:"06:24"
+},
+
+{
+  name:"Виталии Ефремочкин - Я Буду Нырять",
+  file:"audio/Виталий Ефремочкин - Я Буду Нырять (HolyChords).mp3",
+  duration:"06:31"
+},
+
+{
+  name:"Виталии Ефремочкин - Я в Твоих руках",
+  file:"audio/Виталий Ефремочкин - Я в Твоих руках (www.hotplayer.ru).mp3",
+  duration:"05:02"
+},
+
+{
+  name:"Виталии Ефремочкин - Я взойду",
+  file:"audio/Виталий Ефремочкин - Я взойду (www.hotplayer.ru).mp3",
+  duration:"07:53"
+},
+
+{
+  name:"Виталии Ефремочкин - Я помню тот день",
+  file:"audio/Виталий Ефремочкин - Я помню тот день (HolyChords).mp3",
+  duration:"05:37"
+},
+
+{
+  name:"Виталии Ефремочкин - Я Пророчество",
+  file:"audio/Виталий Ефремочкин - Я Пророчество (www.hotplayer.ru).mp3",
+  duration:"04:30"
+},
+
+{
+  name:"Виталии Ефремочкин - Яркий свет Твоей любви",
+  file:"audio/Виталий Ефремочкин - Яркий свет Твоей любви (HolyChords).mp3",
+  duration:"06:41"
+},
+
+{
+  name:"Виталий Ефремочкин и Алексей Захаренко - Иешуа ха машиах",
+  file:"audio/Виталий Ефремочкин & Алексей Захаренко - Иешуа ха машиах.mp3",
+  duration:"05:41"
+},
+
+{
+  name:"Виталий Ефремочкин - О господь",
+  file:"audio/Виталий Ефремочкин, Vitaliy Yefremochkin - О господь (www.hotplayer.ru).mp3",
+  duration:"04:56"
+},
+
+{
+  name:"Елизавета Сулейманова - С неба течёт елей, Папа ещё налей!",
+  file:"audio/Елизавета Сулейманова - С неба течёт елей, Папа ещё налей!!! (HolyChords).mp3",
+  duration:"05:51"
+},
+
+{
+  name:"Каждый день улетают самолеты",
+  file:"audio/Каждый день улетают самолеты.mp3",
+  duration:"03:01"
+},
+
+{
+  name:"Краеугольный Камень Новосибирск - Ты так благ",
+  file:"audio/Краеугольный Камень Новосибирск - Ты так благ (HolyChords).mp3",
+  duration:"04:20"
+},
+
+{
+  name:"Маханаим - Адонай",
+  file:"audio/Маханаим - Адонай (HolyChords).mp3",
+  duration:"05:25"
+},
+
+{
+  name:"Молодежная команда - Пусть несёт меня Божья река",
+  file:"audio/Молодежная команда - Пусть несёт меня Божья река - Спонтан(www.hotplayer.ru).mp3",
+  duration:"19:05"
+},
+
+{
+  name:"Наталья Доценко - И до краев земли",
+  file:"audio/Наталья Доценко - И до краев земли (HolyChords).mp3",
+  duration:"05:05"
+},
+
+{
+  name:"Наталья Доценко - Сильна! Глубока! Велика!",
+  file:"audio/Наталья Доценко - Сильна! Глубока! Велика! (HolyChords).mp3",
+  duration:"05:24"
+},
+
+{
+  name:"Неизвестен - Великий Бог Израиля",
+  file:"audio/Неизвестен - Великий Бог Израиля (www.hotplayer.ru).mp3",
+  duration:"04:04"
+},
+
+{
+  name:"Океан Любви - Хвалите Бога небес",
+  file:"audio/Океан Любви - Хвалите Бога небес (HolyChords).mp3",
+  duration:"06:07"
+},
+
+{
+  name:"Оливковое масло - Я взойду",
+  file:"audio/Оливковое масло - Я взойду (HolyChords).mp3",
+  duration:"02:45"
+},
+
+{
+  name:"Роман Белов - Навеки",
+  file:"audio/Роман Белов - Навеки (HolyChords).mp3",
+  duration:"08:21"
+},
+
+{
+  name:"Слово Жизни Music - Бог сильный",
+  file:"audio/Слово Жизни Music - Бог сильный (HolyChords).mp3",
+  duration:"10:57"
+},
+
+{
+  name:"Соль Земли Worship - В такт",
+  file:"audio/Соль Земли Worship - В такт (HolyChords).mp3",
+  duration:"05:17"
+},
+
+{
+  name:"Соль Земли Worship - Водопад",
+  file:"audio/Соль Земли Worship - Водопад (HolyChords).mp3",
+  duration:"03:18"
+},
+
+{
+  name:"Соль Земли Worship - Он есть",
+  file:"audio/Соль Земли Worship - Он есть (HolyChords).mp3",
+  duration:"04:13"
+},
+
+{
+  name:"Соль Земли Worship - Твоя любовь",
+  file:"audio/Соль Земли Worship - Твоя любовь (HolyChords).mp3",
+  duration:"04:13"
+},
+
+{
+  name:"Соль Земли Worship - Тебе поклонюсь",
+  file:"audio/Соль Земли Worship - Тебе поклонюсь (HolyChords).mp3",
+  duration:"03:24"
+},
+
+{
+  name:"Соль Земли Worship - Я навечно",
+  file:"audio/Соль Земли Worship - Я навечно. Pieces. Кавер (HolyChords).mp3",
+  duration:"05:21"
+},
+
+{
+  name:"Соль Земли Worship - Я с Тобой",
+  file:"audio/Соль Земли Worship - Я с Тобой (HolyChords).mp3",
+  duration:"03:47"
+},
+
+{
+  name:"Стены Карен Карагян - Слово жизни",
+  file:"audio/Стены _ Карен Карагян _ Слово жизни music.mp4",
+  duration:"03:47"
+},
+
+{
+  name:"Карен Карагян - Стены",
+  file:"audio/Стены _ Карен Карагян _ Слово жизни music.mp4",
+  duration:"09:33"
+},
+
+{
+  name:"Настя Шавидзе - Я буду следовать",
+  file:"audio/Я буду следовать _ Pursue _ Настя Шавидзе _ Слово Жизни Music.mp4",
+  duration:"06:46"
+},
+
 ]
+
+//function setDownloadLink() {
+//  document.getElementById('download').innerHTML=download_replacement
+//}
 
 for (var i = 0; i < listAudio.length; i++) {
     createTrackItem(i,listAudio[i].name,listAudio[i].duration);
@@ -844,3 +1229,60 @@ function pauseToPlay(index){
   ele.classList.remove("fa-pause");
   ele.classList.add("fa-play");
 }
+
+
+
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
+const loginErrorMsg = document.getElementById("login-error-msg");
+const add_new = document.getElementById("add_new");
+const login_in = document.getElementById("login_in");
+
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "admin" && password === "L64m53i6") {
+      add_new.style.visibility = 'visible';
+      login_in.style.visibility = 'hidden';
+    } else {
+      loginErrorMsg.style.opacity = 1;
+    }
+})
+
+
+
+
+var  title = document.getElementById('add_txt_input');
+var txt_input = title.value;
+
+function test_input()
+{
+  txt_input = title.value;
+  document.getElementById('user_title').innerHTML = txt_input;
+}
+document.getElementById('add_txt_complete').addEventListener("click", test_input);
+
+
+
+var  textarea = document.getElementById('add_txt_textarea');
+var txt_textarea = textarea.value;
+
+function test()
+{
+  txt_textarea = textarea.value;
+  document.getElementById('user_text').innerHTML = txt_textarea;
+}
+document.getElementById('add_txt_complete').addEventListener("click", test);
+
+
+
+//var  input_img = document.getElementById('add_input_img');
+// var add_input_img = input_img.value;
+//function add_img()
+//{
+//  add_input_img = input_img.value;
+//  document.getElementById('user_img').innerHTML = add_input_img;
+//}
+//document.getElementById('add_txt_complete').addEventListener("click", add_img);
