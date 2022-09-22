@@ -1061,12 +1061,6 @@ var listAudio = [
   duration:"10:57"
 },
 
-{
-  name:"Стены Карен Карагян - Слово жизни",
-  file:"audio/Стены _ Карен Карагян _ Слово жизни music.mp4",
-  duration:"03:47"
-},
-
 ]
 
 for (var i = 0; i < listAudio.length; i++) {
