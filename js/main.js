@@ -16,229 +16,217 @@
 
 
 function createTrackItem(index,name,duration){
-    var trackItem = document.createElement('div');
-    trackItem.setAttribute("class", "playlist-track-ctn");
-    trackItem.setAttribute("id", "ptc-"+index);
-    trackItem.setAttribute("data-index", index);
-    document.querySelector(".playlist-ctn").appendChild(trackItem);
+  var trackItem = document.createElement('div');
+  trackItem.setAttribute("class", "playlist-track-ctn");
+  trackItem.setAttribute("id", "ptc-"+index);
+  trackItem.setAttribute("data-index", index);
+  document.querySelector(".playlist-ctn").appendChild(trackItem);
 
-    var playBtnItem = document.createElement('div');
-    playBtnItem.setAttribute("class", "playlist-btn-play");
-    playBtnItem.setAttribute("id", "pbp-"+index);
-    document.querySelector("#ptc-"+index).appendChild(playBtnItem);
+  var playBtnItem = document.createElement('div');
+  playBtnItem.setAttribute("class", "playlist-btn-play");
+  playBtnItem.setAttribute("id", "pbp-"+index);
+  document.querySelector("#ptc-"+index).appendChild(playBtnItem);
 
-    var btnImg = document.createElement('i');
-    btnImg.setAttribute("class", "fas fa-play");
-    btnImg.setAttribute("height", "40");
-    btnImg.setAttribute("width", "40");
-    btnImg.setAttribute("id", "p-img-"+index);
-    document.querySelector("#pbp-"+index).appendChild(btnImg);
+  var btnImg = document.createElement('i');
+  btnImg.setAttribute("class", "fas fa-play");
+  btnImg.setAttribute("height", "40");
+  btnImg.setAttribute("width", "40");
+  btnImg.setAttribute("id", "p-img-"+index);
+  document.querySelector("#pbp-"+index).appendChild(btnImg);
 
-    var trackInfoItem = document.createElement('div');
-    trackInfoItem.setAttribute("class", "playlist-info-track");
-    trackInfoItem.innerHTML = name
-    document.querySelector("#ptc-"+index).appendChild(trackInfoItem);
+  var trackInfoItem = document.createElement('div');
+  trackInfoItem.setAttribute("class", "playlist-info-track");
+  trackInfoItem.innerHTML = name
+  document.querySelector("#ptc-"+index).appendChild(trackInfoItem);
 
-    var trackDurationItem = document.createElement('div');
-    trackDurationItem.setAttribute("class", "playlist-duration");
-    trackDurationItem.innerHTML = duration
-    document.querySelector("#ptc-"+index).appendChild(trackDurationItem);
+  var trackDurationItem = document.createElement('div');
+  trackDurationItem.setAttribute("class", "playlist-duration");
+  trackDurationItem.innerHTML = duration
+  document.querySelector("#ptc-"+index).appendChild(trackDurationItem);
 }
 
-//var download_replacement = '<a href="audio/ARK WORSHIP - Используй Меня Бог (HolyChords).mp3" download="audio.mp3"></a>'
-
 var listAudio = [
+
 {
-    name:"worship - Используй Меня Бог",
-    file:"audio/ARK WORSHIP - Используй Меня Бог (HolyChords).mp3",
-    duration:"06:57",
-    //download_replacement:'<a href="audio/ARK WORSHIP - Используй Меня Бог (HolyChords).mp3" download="audio.mp3"></a>'
+  name:"Bethel Music - Closer",
+  file:"audio/Bethel Music - Closer (HolyChords).mp3",
+  duration:"06:53"
 },
+
 {
-    name:"worship - Любовь Твоя Велика",
-    file:"audio/ARK WORSHIP - Любовь Твоя Велика (HolyChords).mp3",
-    duration:"05:56",
+  name:"Bible My Love - Не умру я, но буду жить истиной Твоей!",
+  file:"audio/BibleMyLove - Не умру я, но буду жить истиной Твоей! (HolyChords).mp3",
+  duration:"03:19"
 },
+
 {
-    name:"worship - Тебя ожидаю",
-    file:"audio/ARK WORSHIP - Тебя ожидаю (HolyChords).mp3",
-    duration:"07:10"
+  name:"Big Daddy Weave - The Lion and the Lamb",
+  file:"audio/Big Daddy Weave - The Lion and the Lamb (HolyChords).mp3",
+  duration:"05:06"
 },
+
 {
-    name:"Bethel Music - Closer",
-    file:"audio/Bethel Music - Closer (HolyChords).mp3",
-    duration:"06:53"
+  name:"Crest Music - Милость",
+  file:"audio/Crest Music - Милость (HolyChords).mp3",
+  duration:"08:15"
 },
+
 {
-    name:"Bible My Love - Не умру я, но буду жить истиной Твоей!",
-    file:"audio/BibleMyLove - Не умру я, но буду жить истиной Твоей! (HolyChords).mp3",
-    duration:"03:19"
+  name:"Crest Music - Мы поём Аллилуйя",
+  file:"audio/Crest Music - Мы поём Аллилуйя (HolyChords).mp3",
+  duration:"05:24"
 },
+
 {
-    name:"Big Daddy Weave - The Lion and the Lamb",
-    file:"audio/Big Daddy Weave - The Lion and the Lamb (HolyChords).mp3",
-    duration:"05:06"
+  name:"Crowder - Crushing Snakes",
+  file:"audio/Crowder - Crushing Snakes (HolyChords).mp3",
+  duration:"05:02"
 },
+
 {
-    name:"Crest Music - Милость",
-    file:"audio/Crest Music - Милость (HolyChords).mp3",
-    duration:"08:15"
+  name:"Crowder - Good God Almighty",
+  file:"audio/Crowder - Good God Almighty (HolyChords).mp3",
+  duration:"03:11"
 },
+
 {
-    name:"Crest Music - Мы поём Аллилуйя",
-    file:"audio/Crest Music - Мы поём Аллилуйя (HolyChords).mp3",
-    duration:"05:24"
+  name:"Hillsong Ukraine - Любви послание",
+  file:"audio/Hillsong Ukraine - Любви послание (HolyChords).mp3",
+  duration:"05:25"
 },
+
 {
-    name:"Crowder - Crushing Snakes",
-    file:"audio/Crowder - Crushing Snakes (HolyChords).mp3",
-    duration:"05:02"
+  name:"Housefires - Build My Life",
+  file:"audio/Housefires - Build My Life (HolyChords).mp3",
+  duration:"08:11"
 },
+
 {
-    name:"Crowder - Good God Almighty",
-    file:"audio/Crowder - Good God Almighty (HolyChords).mp3",
-    duration:"03:11"
+  name:"Iulia Fridrik - Пусть бушует море",
+  file:"audio/Iulia Fridrik - Пусть бушует море (HolyChords).mp3",
+  duration:"05:43"
 },
-{
-    name:"Elevation Worship - Graves Into Gardens",
-    file:"audio/Elevation Worship - Graves Into Gardens (HolyChords).mp3",
-    duration:"07:32"
-},
-{
-    name:"Elevation Worship - RATTLE",
-    file:"audio/Elevation Worship - RATTLE! (HolyChords).mp3",
-    duration:"07:12"
-},
-{
-    name:"Hillsong Ukraine - Любви послание",
-    file:"audio/Hillsong Ukraine - Любви послание (HolyChords).mp3",
-    duration:"05:25"
-},
-{
-    name:"Housefires - Build My Life",
-    file:"audio/Housefires - Build My Life (HolyChords).mp3",
-    duration:"08:11"
-},
-{
-    name:"IFound Worship - Нужен мне лишь Ты",
-    file:"audio/IFound Worship - Нужен мне лишь Ты (HolyChords).mp3",
-    duration:"03:55"
-},
-{
-    name:"IFound Worship - Один путь",
-    file:"audio/IFound Worship - Один путь (HolyChords).mp3",
-    duration:"03:06"
-},
-{
-    name:"IFound Worship - Чудо",
-    file:"audio/IFound Worship - Чудо (HolyChords).mp3",
-    duration:"04:52"
-},
-{
-    name:"Iulia Fridrik - Пусть бушует море",
-    file:"audio/Iulia Fridrik - Пусть бушует море (HolyChords).mp3",
-    duration:"05:43"
-},
+
 {
   name:"Jake Hamilton - Beautiful Rider",
   file:"audio/Jake Hamilton - Beautiful Rider (HolyChords).mp3",
   duration:"05:39"
 },
+
 {
   name:"Jake Hamilton - Behold God Is Great",
   file:"audio/Jake Hamilton - Behold God Is Great (HolyChords).mp3",
   duration:"04:24"
 },
+
 {
   name:"Jake Hamilton - Convinced",
   file:"audio/Jake Hamilton - Convinced (HolyChords).mp3",
   duration:"05:26"
 },
+
 {
   name:"Jake Hamilton - Drink in Deep",
   file:"audio/Jake Hamilton - Drink in Deep (HolyChords).mp3",
   duration:"08:41"
 },
+
 {
   name:"Jake Hamilton - Embrace",
   file:"audio/Jake Hamilton - Embrace (HolyChords).mp3",
   duration:"06:53"
 },
+
 {
   name:"Jake Hamilton - I Love Your Presence",
   file:"audio/Jake Hamilton - I Love Your Presence (HolyChords).mp3",
   duration:"04:31"
 },
+
 {
   name:"Jake Hamilton - Just Beyond the Breaking",
   file:"audio/Jake Hamilton - Just Beyond the Breaking (HolyChords).mp3",
   duration:"03:42"
 },
+
 {
   name:"Jake Hamilton - Life Redefined",
   file:"audio/Jake Hamilton - Life Redefined (HolyChords).mp3",
   duration:"05:18"
 },
+
 {
   name:"Jake Hamilton - Marked",
   file:"audio/Jake Hamilton - Marked (HolyChords).mp3",
   duration:"07:14"
 },
+
 {
   name:"Jake Hamilton - My Ballad to the Church of Laodicea",
   file:"audio/Jake Hamilton - My Ballad to the Church of Laodicea (HolyChords).mp3",
   duration:"03:21"
 },
+
 {
   name:"Jake Hamilton - Never Let Me Down",
   file:"audio/Jake Hamilton - Never Let Me Down (HolyChords).mp3",
   duration:"04:01"
 },
+
 {
   name:"Jake Hamilton - Sacred Obsession",
   file:"audio/Jake Hamilton - Sacred Obsession (HolyChords).mp3",
   duration:"04:46"
 },
+
 {
   name:"Jake Hamilton - Save Me",
   file:"audio/Jake Hamilton - Save Me (HolyChords).mp3",
   duration:"02:33"
 },
+
 {
   name:"Jake Hamilton - Slow Down",
   file:"audio/Jake Hamilton - Slow Down (HolyChords).mp3",
   duration:"04:35"
 },
+
 {
   name:"Jake Hamilton - Thank You",
   file:"audio/Jake Hamilton - Thank You (HolyChords).mp3",
   duration:"03:25"
 },
+
 {
   name:"Jake Hamilton - The anthem",
   file:"audio/Jake Hamilton - The anthem (HolyChords).mp3",
   duration:"05:42"
 },
+
 {
   name:"Jake Hamilton - The Fathers Song",
   file:"audio/Jake Hamilton - The Fathers Song (HolyChords).mp3",
   duration:"04:11"
 },
+
 {
   name:"Jake Hamilton - The Great I Am",
   file:"audio/Jake Hamilton - The Great I Am (HolyChords).mp3",
   duration:"05:18"
 },
+
 {
   name:"Jake Hamilton - The Next Great Awakening",
   file:"audio/Jake Hamilton - The Next Great Awakening (HolyChords).mp3",
   duration:"04:24"
 },
+
 {
   name:"Jake Hamilton - Watch out Heaven",
   file:"audio/Jake Hamilton - Watch out Heaven (HolyChords).mp3",
   duration:"05:26"
 },
+
 {
   name:"Jake Hamilton - Дух Святой приди",
   file:"audio/Jake Hamilton - Дух Святой приди (HolyChords).mp3",
@@ -261,6 +249,54 @@ var listAudio = [
   name:"M.Worship - Муж скорбей",
   file:"audio/M.Worship - Муж скорбей (HolyChords).mp3",
   duration:"05:32"
+},
+
+{
+  name:"worship - Любовь Твоя Велика",
+  file:"audio/ARK WORSHIP - Используй Меня Бог (HolyChords).mp3",
+  duration:"06:57",
+},
+
+{
+  name:"worship - Любовь Твоя Велика",
+  file:"audio/ARK WORSHIP - Любовь Твоя Велика (HolyChords).mp3",
+  duration:"05:56",
+},
+
+{
+  name:"worship - Тебя ожидаю",
+  file:"audio/ARK WORSHIP - Тебя ожидаю (HolyChords).mp3",
+  duration:"07:10"
+},
+
+{
+  name:"IFound Worship - Нужен мне лишь Ты",
+  file:"audio/IFound Worship - Нужен мне лишь Ты (HolyChords).mp3",
+  duration:"03:55"
+},
+
+{
+  name:"IFound Worship - Один путь",
+  file:"audio/IFound Worship - Один путь (HolyChords).mp3",
+  duration:"03:06"
+},
+
+{
+  name:"IFound Worship - Чудо",
+  file:"audio/IFound Worship - Чудо (HolyChords).mp3",
+  duration:"04:52"
+},
+
+{
+  name:"Elevation Worship - Graves Into Gardens",
+  file:"audio/Elevation Worship - Graves Into Gardens (HolyChords).mp3",
+  duration:"07:32"
+},
+
+{
+  name:"Elevation Worship - RATTLE",
+  file:"audio/Elevation Worship - RATTLE! (HolyChords).mp3",
+  duration:"07:12"
 },
 
 {
@@ -537,6 +573,48 @@ var listAudio = [
   name:"Worship Church - Все источники в Тебе",
   file:"audio/Worship Church - Все источники в Тебе (HolyChords).mp3",
   duration:"08:02"
+},
+
+{
+  name:"Соль Земли Worship - В такт",
+  file:"audio/Соль Земли Worship - В такт (HolyChords).mp3",
+  duration:"05:17"
+},
+
+{
+  name:"Соль Земли Worship - Водопад",
+  file:"audio/Соль Земли Worship - Водопад (HolyChords).mp3",
+  duration:"03:18"
+},
+
+{
+  name:"Соль Земли Worship - Он есть",
+  file:"audio/Соль Земли Worship - Он есть (HolyChords).mp3",
+  duration:"04:13"
+},
+
+{
+  name:"Соль Земли Worship - Твоя любовь",
+  file:"audio/Соль Земли Worship - Твоя любовь (HolyChords).mp3",
+  duration:"04:13"
+},
+
+{
+  name:"Соль Земли Worship - Тебе поклонюсь",
+  file:"audio/Соль Земли Worship - Тебе поклонюсь (HolyChords).mp3",
+  duration:"03:24"
+},
+
+{
+  name:"Соль Земли Worship - Я навечно",
+  file:"audio/Соль Земли Worship - Я навечно. Pieces. Кавер (HolyChords).mp3",
+  duration:"05:21"
+},
+
+{
+  name:"Соль Земли Worship - Я с Тобой",
+  file:"audio/Соль Земли Worship - Я с Тобой (HolyChords).mp3",
+  duration:"03:47"
 },
 
 {
@@ -984,73 +1062,15 @@ var listAudio = [
 },
 
 {
-  name:"Соль Земли Worship - В такт",
-  file:"audio/Соль Земли Worship - В такт (HolyChords).mp3",
-  duration:"05:17"
-},
-
-{
-  name:"Соль Земли Worship - Водопад",
-  file:"audio/Соль Земли Worship - Водопад (HolyChords).mp3",
-  duration:"03:18"
-},
-
-{
-  name:"Соль Земли Worship - Он есть",
-  file:"audio/Соль Земли Worship - Он есть (HolyChords).mp3",
-  duration:"04:13"
-},
-
-{
-  name:"Соль Земли Worship - Твоя любовь",
-  file:"audio/Соль Земли Worship - Твоя любовь (HolyChords).mp3",
-  duration:"04:13"
-},
-
-{
-  name:"Соль Земли Worship - Тебе поклонюсь",
-  file:"audio/Соль Земли Worship - Тебе поклонюсь (HolyChords).mp3",
-  duration:"03:24"
-},
-
-{
-  name:"Соль Земли Worship - Я навечно",
-  file:"audio/Соль Земли Worship - Я навечно. Pieces. Кавер (HolyChords).mp3",
-  duration:"05:21"
-},
-
-{
-  name:"Соль Земли Worship - Я с Тобой",
-  file:"audio/Соль Земли Worship - Я с Тобой (HolyChords).mp3",
-  duration:"03:47"
-},
-
-{
   name:"Стены Карен Карагян - Слово жизни",
   file:"audio/Стены _ Карен Карагян _ Слово жизни music.mp4",
   duration:"03:47"
 },
 
-{
-  name:"Карен Карагян - Стены",
-  file:"audio/Стены _ Карен Карагян _ Слово жизни music.mp4",
-  duration:"09:33"
-},
-
-{
-  name:"Настя Шавидзе - Я буду следовать",
-  file:"audio/Я буду следовать _ Pursue _ Настя Шавидзе _ Слово Жизни Music.mp4",
-  duration:"06:46"
-},
-
 ]
 
-//function setDownloadLink() {
-//  document.getElementById('download').innerHTML=download_replacement
-//}
-
 for (var i = 0; i < listAudio.length; i++) {
-    createTrackItem(i,listAudio[i].name,listAudio[i].duration);
+  createTrackItem(i,listAudio[i].name,listAudio[i].duration);
 }
 var indexAudio = 0;
 
@@ -1141,12 +1161,10 @@ function onTimeUpdate() {
   }
 }
 
-
 function setBarProgress(){
   var progress = (this.currentAudio.currentTime/this.currentAudio.duration)*100;
   document.getElementById("myBar").style.width = progress + "%";
 }
-
 
 function getMinutes(t){
   var min = parseInt(parseInt(t)/60);
@@ -1179,7 +1197,6 @@ function rewind(){
   this.currentAudio.currentTime = this.currentAudio.currentTime - 5
   this.setBarProgress();
 }
-
 
 function next(){
   if (this.indexAudio <listAudio.length-1) {
@@ -1220,49 +1237,49 @@ function pauseToPlay(index){
 
 
 
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
-const add_new = document.getElementById("add_new");
-const login_in = document.getElementById("login_in");
+//const loginForm = document.getElementById("login-form");
+//const loginButton = document.getElementById("login-form-submit");
+//const loginErrorMsg = document.getElementById("login-error-msg");
+//const add_new = document.getElementById("add_new");
+//const login_in = document.getElementById("login_in");
 
-loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
+//loginButton.addEventListener("click", (e) => {
+//    e.preventDefault();
+//    const username = loginForm.username.value;
+//    const password = loginForm.password.value;
 
-    if (username === "admin" && password === "L64m53i6") {
-      add_new.style.visibility = 'visible';
-      login_in.style.visibility = 'hidden';
-    } else {
-      loginErrorMsg.style.opacity = 1;
-    }
-})
-
-
-
-
-var  title = document.getElementById('add_txt_input');
-var txt_input = title.value;
-
-function test_input()
-{
-  txt_input = title.value;
-  document.getElementById('user_title').innerHTML = txt_input;
-}
-document.getElementById('add_txt_complete').addEventListener("click", test_input);
+//    if (username === "admin" && password === "L64m53i6") {
+//      add_new.style.visibility = 'visible';
+//      login_in.style.visibility = 'hidden';
+//    } else {
+//      loginErrorMsg.style.opacity = 1;
+//    }
+//})
 
 
 
-var  textarea = document.getElementById('add_txt_textarea');
-var txt_textarea = textarea.value;
 
-function test()
-{
-  txt_textarea = textarea.value;
-  document.getElementById('user_text').innerHTML = txt_textarea;
-}
-document.getElementById('add_txt_complete').addEventListener("click", test);
+//var  title = document.getElementById('add_txt_input');
+//var txt_input = title.value;
+
+//function test_input()
+//{
+//  txt_input = title.value;
+//  document.getElementById('user_title').innerHTML = txt_input;
+//}
+//document.getElementById('add_txt_complete').addEventListener("click", test_input);
+
+
+
+//var  textarea = document.getElementById('add_txt_textarea');
+//var txt_textarea = textarea.value;
+
+//function test()
+//{
+//  txt_textarea = textarea.value;
+//  document.getElementById('user_text').innerHTML = txt_textarea;
+//}
+//document.getElementById('add_txt_complete').addEventListener("click", test);
 
 
 
