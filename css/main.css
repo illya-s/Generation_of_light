@@ -31,7 +31,9 @@ body {
 }
 
 .title_home {
-  width: 98%;
+  margin: 0;
+  padding: 1% 0 2% 0;
+  width: 100%;
   text-align: center;
   font-size: 175%;
   /*mix-blend-mode: overlay;*/
@@ -695,4 +697,3 @@ nav ul a {
   }
 }
 /* ----------------------------------------------------------------------------------- */
-
