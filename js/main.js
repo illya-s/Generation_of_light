@@ -1,20 +1,3 @@
-// document.write("hello JS");
-
-// var hello = "hello Illya_64536";
-
-// const hello = "hello Illya_64536";
-
-// console.log("ADMIN >>> " + hello + ".");
-
-//var num_1 = 1.555;
-
-//var num_2 = 100;
-
-//num_2 += -100;
-
-//console.log("Math: " + (num_1 + num_2))
-
-
 function createTrackItem(index,name,duration){
   var trackItem = document.createElement('div');
   trackItem.setAttribute("class", "playlist-track-ctn");
@@ -1229,59 +1212,40 @@ function pauseToPlay(index){
   ele.classList.add("fa-play");
 }
 
-
-
-//const loginForm = document.getElementById("login-form");
-//const loginButton = document.getElementById("login-form-submit");
-//const loginErrorMsg = document.getElementById("login-error-msg");
-//const add_new = document.getElementById("add_new");
-//const login_in = document.getElementById("login_in");
-
-//loginButton.addEventListener("click", (e) => {
-//    e.preventDefault();
-//    const username = loginForm.username.value;
-//    const password = loginForm.password.value;
-
-//    if (username === "admin" && password === "L64m53i6") {
-//      add_new.style.visibility = 'visible';
-//      login_in.style.visibility = 'hidden';
-//    } else {
-//      loginErrorMsg.style.opacity = 1;
-//    }
-//})
+function toggleMobileMenu() {
+  document.querySelector('#menu').classList.toggle('active')
+  document.querySelector('.mobile_bar').classList.toggle('active')
+}
 
 
 
 
-//var  title = document.getElementById('add_txt_input');
-//var txt_input = title.value;
 
-//function test_input()
-//{
-//  txt_input = title.value;
-//  document.getElementById('user_title').innerHTML = txt_input;
-//}
-//document.getElementById('add_txt_complete').addEventListener("click", test_input);
+let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+let popup = document.querySelector('.popup'); // Само окно
+let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
+let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
+
+openPopupButtons.forEach((button) => { // Перебираем все кнопки
+  button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+      e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+      popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+      popup.classList.add('active'); // И для самого окна
+  })
+});
+
+closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
+  popupBg.classList.remove('active'); // Убираем активный класс с фона
+  popup.classList.remove('active'); // И с окна
+});
+
+document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+  if(e.target === popupBg) { // Если цель клика - фот, то:
+      popupBg.classList.remove('active'); // Убираем активный класс с фона
+      popup.classList.remove('active'); // И с окна
+  }
+});
 
 
 
-//var  textarea = document.getElementById('add_txt_textarea');
-//var txt_textarea = textarea.value;
 
-//function test()
-//{
-//  txt_textarea = textarea.value;
-//  document.getElementById('user_text').innerHTML = txt_textarea;
-//}
-//document.getElementById('add_txt_complete').addEventListener("click", test);
-
-
-
-//var  input_img = document.getElementById('add_input_img');
-// var add_input_img = input_img.value;
-//function add_img()
-//{
-//  add_input_img = input_img.value;
-//  document.getElementById('user_img').innerHTML = add_input_img;
-//}
-//document.getElementById('add_txt_complete').addEventListener("click", add_img);
