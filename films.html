@@ -3,47 +3,51 @@
 <head>
 
 <meta charset="UTF-8">
-<title>M'S industrys</title>
+<title>Generation of light</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
 
 </head>
 <body background="img/fon_1.jpg">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">
-					<img class="icon" src="img/icons/home.png" alt="главная" title="главная" />
-				</a></li>
-				<li><a href="music.html">
-					<img class="icon" src="img/icons/music.png" alt="музыка" title="музыка" />
-				</a></li>
-				<!--<li><a href="films.html">
-					<img class="icon" src="img/icons/videos.png" alt="фильмы" title="фильмы" />
-				</a></li>
-				<li><a href="space.html">
-					<img class="icon" src="img/icons/spase.png" alt="M'S space" title="M'S space" />
-				</a></li>-->
-			</ul>
-		</nav>
-	</header>
-
 	<div class="content">
-		<div class="title">
-			<h1><p>Фильмы 2022</p></h1>
+    <header>
+      <nav>
+        <ul id="menu">
+          <li><a class="m_home" href="#">
+            <img class="icon" src="img/icons/home.png" alt="главная" title="главная" />
+          </a></li>
+          <li><a class="m_music" href="#music_pop">
+            <img class="icon" src="img/icons/music.png" alt="музыка" title="музыка" />
+          </a></li>
+          <!--<li><a class="m_videos" href="#">
+            <img class="icon" src="img/icons/videos.png" alt="музыка" title="музыка" />
+          </a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+		<div class="page_title">
+			<h1>Фильмы 2022</h1>
 		</div>
 
 		<div class="films_0">
 			<div class="film_0">
 				<div class="film">
-					<a href="film_1.html"><img class="film-img" src="img/5_volna.webp" alt="" title="" /></a>
-					<h3 class="item_title">5 волна</h3>
+					<a href="film_1.html">
+            <img class="film-img" src="img/5_volna.webp" alt="" title="" />
+            <p class="item_title">5 волна</p>
+          </a>
 				</div>
 			</div>
+
+      <dialog class="film_01">
+
+      </dialog>
 
 			<div class="film_0">
 				<div class="film">
 					<a href="film_2.html"><img class="film-img" src="img/b_v_l.webp" alt="" title="" /></a>
-					<h3 class="item_title">Бегущтй в лабиринте 1</h3>
+					<p class="item_title">Бегущтй в лабиринте 1</p>
 				</div>
 			</div>
 
@@ -305,9 +309,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="industrys">
-			<p>Создано IT компанией © Melanin's industrys 2022</p>
+    <div class="industrys">
+			<p>Создано при поддержке © Melanin's industrys 2022</p>
 		</div>
+    <script src="js/main.js"></script>
 	</div>	
 </body>
 </html>

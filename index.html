@@ -9,34 +9,24 @@
 
 </head>
 <body background="img/fon_1.jpg">
-	<header>
+	<div class="content">
+  <header>
     <nav>
-      <li class="open_m"><a href="#">
-        <img class="icon open_m_icon" src="img/icons/menu.png" alt="меню" title="меню" />
-      </a></li>
-      <input id="toggle" type="checkbox" checked>
-      <ul>
-        <li><a href="#">
+      <ul id="menu">
+        <li><a class="m_home" href="#">
           <img class="icon" src="img/icons/home.png" alt="главная" title="главная" />
         </a></li>
-        <li><a href="#music_pop">
+        <li><a href="#" class=" m_music open-popup">
           <img class="icon" src="img/icons/music.png" alt="музыка" title="музыка" />
         </a></li>
-        <!--<li><a href="films.html">
-          <img class="icon" src="img/icons/videos.png" alt="фильмы" title="фильмы" />
-        </a></li>
-        <li><a href="space.html">
-          <img class="icon" src="img/icons/spase.png" alt="M'S space" title="M'S space" />
-        </a></li>
-        <div class="add" id="add_new">
-          <a class="add_new" href="#add_txt">+</a>
-        </div>
-        <li><a class="login_btn" href="#login_in">
-          <img class="icon" src="img/icons/unknown.png" alt="login" title="login" />
+        <!--<li><a class="m_videos" href="#">
+          <img class="icon" src="img/icons/videos.png" alt="музыка" title="музыка" />
         </a></li>-->
       </ul>
     </nav>
-	</header>
+  </header>
+
+
 
 	<div class="content">
     <div class="title_home">
@@ -54,34 +44,33 @@
         <tr class="days">
           <th class="news_day">Вторник:</th>
           <th class="news_pr">Молитвенное служение:</th>
-          <th class="news_txt">14:00</th>
+          <th class="news_txt">##:##</th>
         </tr>
         <tr class="days">
           <td class="news_day">Среда:</td>
           <td class="news_pr">Домашка:</td>
-          <th class="news_txt">17:00</th>
+          <th class="news_txt">##:##</th>
         </tr>
         <tr class="days">
           <td class="news_day">Суббота:</td>
-          <td class="news_pr">Молодёдное служение</td>
-          <th class="news_txt">14:00</th>
+          <td class="news_pr">Молодёждное служение:</td>
+          <th class="news_txt">##:##</th>
         </tr>
         <tr class="days">
           <td class="news_day">Воскресение:</td>
-          <td class="news_pr">Служение</td>
+          <td class="news_pr">Служение:</td>
           <th class="news_txt">11:00</th>
         </tr>
       </table>
     </div>
 
-    <div class="music_pop" id="music_pop">
-      <a class="music_close_2" href="#"></a>
 
-      <div class="music_cont">
-        <div class="music_close">
-          <a class="music_close_1" href="#">X</a>
-        </div>
-
+    <!------------------------------------------------------->
+    
+    <div class="popup__bg"> 
+      <div class="popup">
+        <div class="music_close close-popup">&times;</div>
+        
         <audio preload="metadata" id="myAudio" ontimeupdate="onTimeUpdate()">
           <source id="source-audio" src="" type="audio/mpeg">
           Your browser does'nt support the audio element.
@@ -104,7 +93,7 @@
                 </i>
               </div>
             </div>
-            <div class="btn-action" onclick="toggleAudio()">
+            <div class="btn-action two-btn" onclick="toggleAudio()">
               <div id="btn-faws-play-pause">
                 <i class='fas fa-play' id="icon-play" >
                   <img class="nav_m" src="img/icons/pause.png" />
@@ -114,7 +103,7 @@
                 </i>
               </div>
             </div>
-            <div class="btn-action" onclick="next()">
+            <div class="btn-action three-btn" onclick="next()">
               <div id="btn-faws-next">
                 <i class='fas fa-step-forward'>
                   <img class="nav_m" src="img/icons/forward+.png" />
@@ -125,9 +114,9 @@
         </div>
 
         <div class="playlist-ctn"></div>
+
       </div>
     </div>
-
 		<div class="industrys">
 			<p>Создано при поддержке © Melanin's industrys 2022</p>
 		</div>
