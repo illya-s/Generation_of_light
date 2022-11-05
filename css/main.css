@@ -8,6 +8,7 @@
 }
 
 body {
+  box-sizing: border-box;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -15,7 +16,8 @@ body {
 }
 
 .content {
-  width: 100%;
+  position: absolute;
+  width: 95%;
   height: 100%;
   display: table;
   align-items: center;
@@ -39,17 +41,8 @@ body {
   /*mix-blend-mode: overlay;*/
 }
 
-.item_title {
-  z-index: 1;
-  padding: 5px;
-  margin-left: 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 19px;
-  color: #6DD5D7;
-}
-
 .news_cont {
+  z-index: 3;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -57,6 +50,7 @@ body {
 }
 
 .news_title {
+  z-index: 4;
   text-align: center;
   margin: 0 4.5% 0.5% 4.5%;
   padding: 1% 0 1% 0;
@@ -65,6 +59,7 @@ body {
 }
 
 .news_tab {
+  z-index: 4;
   width: 91%;
   margin: 0 4.5% 0 4.5%;
   padding: 2%;
@@ -73,12 +68,14 @@ body {
 }
 
 .news_txt, .news_pr, .news_day {
+  z-index: 4;
   font-size: 100%;
   font-weight: normal;
   border-radius: 10px;
 }
 
 .news_pr, .news_day {
+  z-index: 4;
   padding: 7px;
   text-align: left;
 }
@@ -103,221 +100,211 @@ body::-webkit-scrollbar-thumb {
 
 /* ------------------------------ Панель --------------------------------------------- */
 
-nav {
-  margin: 0;
-  position: fixed;
-}
-
-nav li {
-  width: 50px;
-  height: 50px;
-}
-
-.icon {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.open_m {
-  border-radius: 5px;
-  background: #876F6D;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-#toggle {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+header {
   z-index: 1;
-  opacity: 0;
-  cursor: pointer;
+  position: fixed;
+  width: 10%;
+  height: 7.5%;
+  background-color: #2A2E36;
+  border-radius: 0 0 35px 0;
 }
 
-.open_m::before{
-  right: 0;
+nav {
   top: 0;
-  display: flex;
-  align-items: center;
-  transform: rotate(180deg);
-}
-
-.open_m:not(:checked) ~ h2::before {
-  transform: rotate(0deg) scale(0.75);
-}
-
-#toggle:checked ~ ul {
-  visibility: hidden;
-  opacity: 0;
-}
-
-#toggle:not(:checked) ~ ul {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 nav ul {
-  border-radius: 6px;
-  padding-left: 0;
-  margin: 0;
   list-style: none;
-  overflow: hidden;
-  text-align: right;
-  text-align: center;
-  transition: all 0.4s ease-out;
-  width: 100%;
+}
+
+nav ul li a {
+  top: 10%;
+  left: 5%;
   position: absolute;
-}
-nav ul li {
-  border-radius: 5px;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
   background: #2A2E36;
+  border-radius: 10px;
   transition: 0.5s;
-} 
-
-nav ul li:hover {
-  background-color: #00676F;
 }
 
-nav ul a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
+.m_music {
+  margin-left: 40%; /*  25  */
 }
+
+.m_videos {
+  margin-left: 50%;
+}
+
+nav ul li a:hover {
+  background: #00676F;
+}
+
+/* ----------------------------------------------------------------------------------- */
 
 /* ------------------------------ Фильмы --------------------------------------------- */
 
 .film {
-    width: 95%;
-    height: auto;
-    display:inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: Open Sans,sans-serif;
-    cursor: pointer;
-    border-radius: 15px;
-    border: 2px solid #453F43FF;
-    background: #453F43FF;
-}
-
-
-.film_0 {
-    display:inline-block;
-    margin: 1% 1.2%;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background: #453F43FF;
 }
 
 .film_00 {
-    margin: 3% 25%;
-    padding: 0;
+  margin: 3% 20%;
+  padding: 0;
 }
 
 .video {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 5%;
-    background-color: black;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+  background-color: black;
 }
 
-.film_img {
-    display:inline-block;
-    margin-left: 1%;
-    width: 20%;
-    height: 20%;
-    border-radius: 10%;
+.item_title {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.films_0 {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 284px 284px 284px 284px;
+  justify-content: center;
+  place-items: center;
+}
+
+.film_0 {
+  margin: 5%;
+  max-width: 284px;
+  max-height: 450px;
+  justify-content: center;
+  place-items: center;
+}
+
+.film-img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .txt {
-    position: absolute;
-    margin-top: 45px;
-    margin-left: 10px;
-    font-size: 100%;
-    display:inline-block;
-    color: #6DD5D7;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 10px;
+  font-size: 100%;
+  display:inline-block;
+  color: #6DD5D7;
 }
 
 .txt_1 {
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 10px;
-    font-size: 100%;
-    display:inline-block;
-    color: #6DD5D7;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 10px;
+  font-size: 100%;
+  display:inline-block;
+  color: #6DD5D7;
 }
 
-.title {
-    /* display:inline-block; */
-    margin: 1%;
-    color: #6DD5D7;
+.page_title {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: #6DD5D7;
+}
+
+.page_title h1 {
+  font-size: 5vh;
 }
 
 .opis {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* ----------------------------------------------------------------------------------- */
 
 /* -------------------------------- Музыка ------------------------------------------- */
 
-.music_pop {
+/* Важная часть */
+.popup__bg {
+  z-index: 2;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
-  visibility: hidden;
-  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.music_pop:target {
-  visibility: visible;
+.popup__bg.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
-.music_cont {
-  z-index: 2;
-  left: 0;
-  top: 0;
-  width: 30%;
+.popup {
+  z-index: 3;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  transform: scale(0);
+  background: #000;
   height: 100%;
-  background-color: #000;
+  width: 30%;
+  padding: 25px;
 }
+
+.popup.active {
+  transform: scale(1);
+}
+/* Конец важной части */
+/* Далее код для стилизации формы */
+
 
 .music_close {
-  margin-left: 96%;
+  z-index: 6;
+  background-color: #000;
+  border-radius: 5% 100% 100% 5%;
+  width: 3.5vh;
+  height: 5.5vh;
+  position: absolute;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  top: 0;
+  left: 72%;
+  text-align: left;
+  transition: 0.5s;
   cursor: pointer;
 }
 
-.music_close_1 {
-  height: 1%;
-  font-size: 135%;
-  text-decoration: none;
-  color: #6DD5D7;
+.music_close:hover {
+  background-color: #00676F;
 }
 
-.music_close_2 {
-  position: fixed;
-  z-index: 1;
-  margin-left: 30%;
-  width: 70%;
-  height: 100%;
-  cursor: auto;
-}
 
 #myProgress {
   height: 5%;
   background-color: #2A2E36; 
   cursor: pointer;
   border-radius: 10px;
+  transition: 0.25s;
+}
+
+#myProgress:hover {
+  background-color: #00676F;
 }
   
 #myBar {
@@ -331,17 +318,14 @@ nav ul a {
   top: 0;
   cursor: pointer;
   padding: 0;
-  /*margin: 0 4% 0 4%;*/
   height: 100%;
 }
 
 .nav_m {
-  margin: 0;
-  padding: 0;
-  width: 125%;
-  height: 125%;
-  background-color: #2A2E36;
   border-radius: 100%;
+  background-color: #2A2E36;
+  left: 0;
+  top: 0;
   transition: 0.5s;
 }
 
@@ -367,10 +351,10 @@ nav ul a {
 
 .info_ctn{
   position: fixed;
-  bottom: 0px;
-  width: 30%;
-  height: 20%;
+  width: 100%;
+  height: 30%;
   left: 0;
+  bottom: 8%;
   background-color: #876F6D;
 }
 
@@ -428,9 +412,10 @@ nav ul a {
 
 .playlist-ctn{
   position: fixed;
-  width: 30%;
-  height: 75%;
-  bottom: 30%;
+  width: 100%;
+  height: 72%;
+  top: 0;
+  left: 0;
   margin-bottom: 0; 
   overflow: auto;
 }
@@ -469,9 +454,24 @@ nav ul a {
 /* ----------------------------------------------------------------------------------- */
 
 /* ------------------------- Адаптация ----------------------------------------------- */
-@media screen and (min-width: 640px) {
-  nav {
-    width: 12%;
+@media screen and (max-width:480) {
+  header {
+    bottom: 0;
+    width: 100%;
+    height: 7.5%;
+    border-radius: 0 0 0 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    bottom: 0;
+    width: 100%;
+    height: 7.5%;
+    border-radius: 0 0 0 0;
+  }
+  .content {
+    width: 95%;
   }
   .intro {
     width: 90%;
@@ -480,12 +480,10 @@ nav ul a {
     width: 75%;
   }
   .info_ctn{
-    width: 75%;
     height: 24%;
   }
-  .playlist-ctn{
-    width: 75%;
-    bottom: 24%;
+  .music_close {
+    margin-left: 73%;
   }
   .music_close_1 {
     height: 1%;
@@ -512,18 +510,73 @@ nav ul a {
     width: 100%;
     height: 100%;
   }
-  .nav_m {
-    width: 200%;
-    height: 200%;
+  .title_home {
+    font-size: 100%;
+  }
+  .films_0 {
+    grid-template-columns: 284px 284px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  header {
+    bottom: 0;
+    width: 100%;
+    height: 7.5%;
+    border-radius: 0 0 0 0;
+  }
+  .intro {
+    width: 90%;
+  }
+  .music_cont {
+    width: 75%;
+  }
+  .info_ctn{
+    height: 24%;
+  }
+  .music_close {
+    margin-left: 73%;
+  }
+  .music_close_1 {
+    height: 1%;
+    font-size: 135%;
+  }
+  .music_close_2 {
+    margin-left: 75%;
+    width: 25%;
+  }
+  .btn-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-action{
+    width: 100%;
+    height: 100%;
+    padding-top: 0%;
+    margin: 0 12% 0 12%;
+  }
+  .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
+    font-size: 24px;
+  }
+  .fas {
+    width: 100%;
+    height: 100%;
   }
   .title_home {
     font-size: 100%;
   }
+  .films_0 {
+    grid-template-columns: 284px 284px;
+  }
 }
 
 @media screen and (min-width: 750px) {
-  nav {
-    width: 6%;
+
+  header {
+    bottom: 0;
+    width: 100%;
+    height: 7.5%;
+    border-radius: 0 0 0 0;
   }
   .intro {
     width: 92%;
@@ -532,12 +585,10 @@ nav ul a {
     width: 75%;
   }
   .info_ctn{
-    width: 75%;
     height: 23%;
   }
-  .playlist-ctn{
-    width: 75%;
-    bottom: 23%;
+  .music_close {
+    margin-left: 73%;
   }
   .music_close_1 {
     height: 3%;
@@ -565,15 +616,17 @@ nav ul a {
   .title_home {
     font-size: 125%;
   }
-  .nav_m {
-    width: 175%;
-    height: 175%;
+  .films_0 {
+    grid-template-columns: 284px 284px;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  nav {
-    width: 5%;
+  header {
+    top: 0;
+    width: 7%;
+    height: 7.5%;
+    border-radius: 0 0 35px 0;
   }
   .intro {
     width: 95%;
@@ -583,11 +636,9 @@ nav ul a {
   }
   .info_ctn{
     height: 22%;
-    width: 50%;
   }
-  .playlist-ctn{
-    width: 50%;
-    bottom: 22%;
+  .music_close {
+    margin-left: 48%;
   }
   .music_close_1 {
     height: 3%;
@@ -611,15 +662,17 @@ nav ul a {
   .title_home {
     font-size: 150%;
   }
-  .nav_m {
-    width: 125%;
-    height: 125%;
+  .films_0 {
+    grid-template-columns: 284px 284px 284px;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  nav {
-    width: 4%;
+  header {
+    top: 0;
+    width: 7%;
+    height: 7.5%;
+    border-radius: 0 0 35px 0;
   }
   .intro {
     width: 96%;
@@ -629,11 +682,9 @@ nav ul a {
   }
   .info_ctn{
     height: 21%;
-    width: 30%;
   }
-  .playlist-ctn{
-    width: 30%;
-    bottom: 21%;
+  .music_close {
+    margin-left: 28%;
   }
   .music_close_1 {
     height: 4%;
@@ -661,11 +712,17 @@ nav ul a {
     width: 100%;
     height: 100%;
   }
+  .films_0 {
+    grid-template-columns: 284px 284px 284px 284px;
+  }
 }
 
 @media screen and (min-width: 1366px) {
-  nav {
-    width: 4%;
+  header {
+    top: 0;
+    width: 7%;
+    height: 7.5%;
+    border-radius: 0 0 35px 0;
   }
   .intro {
     width: 96%;
@@ -673,8 +730,8 @@ nav ul a {
   .info_ctn {
     height: 20%;
   }
-  .playlist-ctn{
-    bottom: 20%;
+  .music_close {
+    margin-left: 28%;
   }
   .music_close_1 {
     height: 5%;
@@ -685,15 +742,13 @@ nav ul a {
     height: 100%;
   }
   .btn-action{
-    padding-top: 1%;
-    margin: 0 6% 0 6%;
+    margin: 0 7% 0 7%;
   }
   .title_home {
     font-size: 150%;
   }
-  .nav_m {
-    width: 115%;
-    height: 115%;
+  .films_0 {
+    grid-template-columns: 284px 284px 284px 284px;
   }
 }
 /* ----------------------------------------------------------------------------------- */
