@@ -117,24 +117,22 @@ nav {
 }
 
 nav ul {
+  width: 100%;
   list-style: none;
+  display: grid;
+  grid-template-columns: 10% 0%;
 }
 
 nav ul li a {
-  top: 10%;
-  left: 5%;
+  top: 2.5%;
   position: absolute;
   background: #2A2E36;
   border-radius: 10px;
   transition: 0.5s;
 }
 
-.m_music {
-  margin-left: 40%; /*  25  */
-}
-
-.m_videos {
-  margin-left: 50%;
+.m_home {
+  left: 10%;
 }
 
 nav ul li a:hover {
@@ -460,6 +458,8 @@ nav ul li a:hover {
     width: 100%;
     height: 7.5%;
     border-radius: 0 0 0 0;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -478,6 +478,12 @@ nav ul li a:hover {
   }
   .music_cont {
     width: 75%;
+  }
+  .m_home {
+    left: 40%;
+  }
+  .m_music {
+    left: 50%;
   }
   .info_ctn{
     height: 24%;
@@ -523,6 +529,12 @@ nav ul li a:hover {
   .music_cont {
     width: 75%;
   }
+  .m_home {
+    left: 40%;
+  }
+  .m_music {
+    left: 50%;
+  }
   .info_ctn{
     height: 24%;
   }
@@ -561,6 +573,12 @@ nav ul li a:hover {
     width: 100%;
     height: 7.5%;
     border-radius: 0 0 0 0;
+  }
+  .m_home {
+    left: 40%;
+  }
+  .m_music {
+    left: 50%;
   }
   .intro {
     width: 92%;
@@ -606,6 +624,12 @@ nav ul li a:hover {
   .music_cont {
     width: 50%;
   }
+  .m_home {
+    left: 10%;
+  }
+  .m_music {
+    left: 50%;
+  }
   .info_ctn{
     height: 22%;
   }
@@ -643,6 +667,12 @@ nav ul li a:hover {
   }
   .music_cont {
     width: 30%;
+  }
+  .m_home {
+    left: 10%;
+  }
+  .m_music {
+    left: 50%;
   }
   .info_ctn{
     height: 21%;
@@ -685,6 +715,12 @@ nav ul li a:hover {
   }
   .popup {
     width: 30%;
+  }
+  .m_home {
+    left: 10%;
+  }
+  .m_music {
+    left: 50%;
   }
   .info_ctn {
     height: 20%;
