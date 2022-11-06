@@ -124,6 +124,8 @@ nav ul {
 }
 
 nav ul li a {
+  height: 100%;
+  width: auto;
   top: 2.5%;
   position: absolute;
   background: #2A2E36;
