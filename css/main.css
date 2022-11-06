@@ -635,6 +635,10 @@ nav ul li a:hover {
     height: 7.5%;
     border-radius: 0 0 35px 0;
   }
+  nav ul li a img {
+    height: 95%;
+    width: auto;
+  }
   .intro {
     width: 95%;
   }
@@ -678,6 +682,10 @@ nav ul li a:hover {
     width: 7%;
     height: 7.5%;
     border-radius: 0 0 35px 0;
+  }
+  nav ul li a img {
+    height: 85%;
+    width: auto;
   }
   .intro {
     width: 96%;
@@ -726,6 +734,10 @@ nav ul li a:hover {
     width: 7%;
     height: 7.5%;
     border-radius: 0 0 35px 0;
+  }
+  nav ul li a img {
+    height: 85%;
+    width: auto;
   }
   .intro {
     width: 96%;
