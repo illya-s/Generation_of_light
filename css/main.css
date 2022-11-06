@@ -284,7 +284,7 @@ nav ul li a:hover {
   font-size: 25px;
   line-height: 30px;
   top: 0;
-  left: 72%;
+  left: 100%;
   text-align: left;
   transition: 0.5s;
   cursor: pointer;
@@ -482,16 +482,8 @@ nav ul li a:hover {
   .info_ctn{
     height: 24%;
   }
-  .music_close {
-    margin-left: 73%;
-  }
-  .music_close_1 {
-    height: 1%;
-    font-size: 135%;
-  }
-  .music_close_2 {
-    margin-left: 75%;
-    width: 25%;
+  .popup {
+    width: 55%;
   }
   .btn-ctn {
     width: 100%;
@@ -534,16 +526,8 @@ nav ul li a:hover {
   .info_ctn{
     height: 24%;
   }
-  .music_close {
-    margin-left: 73%;
-  }
-  .music_close_1 {
-    height: 1%;
-    font-size: 135%;
-  }
-  .music_close_2 {
-    margin-left: 75%;
-    width: 25%;
+  .popup {
+    width: 50%;
   }
   .btn-ctn {
     width: 100%;
@@ -587,20 +571,8 @@ nav ul li a:hover {
   .info_ctn{
     height: 23%;
   }
-  .music_close {
-    margin-left: 73%;
-  }
-  .music_close_1 {
-    height: 3%;
-    font-size: 135%;
-  }
-  .music_close_1 {
-    height: 2%;
-    font-size: 135%;
-  }
-  .music_close_2 {
-    margin-left: 75%;
-    width: 25%;
+  .popup {
+    width: 40%;
   }
   .btn-ctn {
     width: 100%;
@@ -637,16 +609,8 @@ nav ul li a:hover {
   .info_ctn{
     height: 22%;
   }
-  .music_close {
-    margin-left: 48%;
-  }
-  .music_close_1 {
-    height: 3%;
-    font-size: 135%;
-  }
-  .music_close_2 {
-    margin-left: 50%;
-    width: 50%;
+  .popup {
+    width: 40%;
   }
   .btn-ctn {
     width: 100%;
@@ -683,16 +647,8 @@ nav ul li a:hover {
   .info_ctn{
     height: 21%;
   }
-  .music_close {
-    margin-left: 28%;
-  }
-  .music_close_1 {
-    height: 4%;
-    font-size: 135%;
-  }
-  .music_close_2 {
-    margin-left: 30%;
-    width: 70%;
+  .popup {
+    width: 30%;
   }
   .btn-ctn {
     width: 100%;
@@ -727,15 +683,11 @@ nav ul li a:hover {
   .intro {
     width: 96%;
   }
+  .popup {
+    width: 30%;
+  }
   .info_ctn {
     height: 20%;
-  }
-  .music_close {
-    margin-left: 28%;
-  }
-  .music_close_1 {
-    height: 5%;
-    font-size: 135%;
   }
   .btn-ctn {
     width: 100%;
