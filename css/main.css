@@ -2,7 +2,6 @@
 
 * {
   margin: 0;
-  text-decoration: none;
   font-family: sans-serif;
   color: #6DD5D7;
 }
@@ -16,19 +15,14 @@ body {
 }
 
 .content {
-  position: absolute;
   width: 95%;
   height: 100%;
-  display: table;
-  align-items: center;
-  justify-content: center;
+  margin-left: 2.5%;
 }
 
 .industrys {
-  width: 80%;
-  position: absolute;
+  width: 100%;
   margin-top: 2%;
-  margin-left: 4.5%;
   z-index: 1;
 }
 
@@ -38,13 +32,11 @@ body {
   width: 100%;
   text-align: center;
   font-size: 175%;
-  /*mix-blend-mode: overlay;*/
 }
 
 .news_cont {
   z-index: 3;
   width: 100%;
-  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -52,7 +44,6 @@ body {
 .news_title {
   z-index: 4;
   text-align: center;
-  margin: 0 4.5% 0.5% 4.5%;
   padding: 1% 0 1% 0;
   background-color: #2A2E36;
   border-radius: 25px;
@@ -60,8 +51,16 @@ body {
 
 .news_tab {
   z-index: 4;
-  width: 91%;
-  margin: 0 4.5% 0 4.5%;
+  width: 100%;
+  padding: 2%;
+  background-color: #2A2E36;
+  border-radius: 25px;
+}
+
+.news_help {
+  z-index: 4;
+  width: 87%;
+  margin: 0.5% 0 0 0%;
   padding: 2%;
   background-color: #2A2E36;
   border-radius: 25px;
@@ -69,14 +68,13 @@ body {
 
 .news_txt, .news_pr, .news_day {
   z-index: 4;
-  font-size: 100%;
+  font-size: 125%;
   font-weight: normal;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .news_pr, .news_day {
-  z-index: 4;
-  padding: 7px;
+  padding: 7px 0px 7px 2px;
   text-align: left;
 }
 
@@ -101,9 +99,9 @@ body::-webkit-scrollbar-thumb {
 /* ------------------------------ Панель --------------------------------------------- */
 
 header {
-  z-index: 5;
+  z-index: 2;
   position: fixed;
-  width: 10%;
+  width: 8%;
   height: 7.5%;
   background-color: #2A2E36;
   border-radius: 0 0 35px 0;
@@ -139,96 +137,6 @@ nav ul li a {
 
 nav ul li a:hover {
   background: #00676F;
-}
-
-/* ----------------------------------------------------------------------------------- */
-
-/* ------------------------------ Фильмы --------------------------------------------- */
-
-.film {
-  font-size: 18px;
-  text-align: center;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 15px;
-  border: none;
-  background: #453F43FF;
-}
-
-.film_00 {
-  margin: 3% 20%;
-  padding: 0;
-}
-
-.video {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 5%;
-  background-color: black;
-}
-
-.item_title {
-  z-index: 1;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.films_0 {
-  margin: 0;
-  display: grid;
-  grid-template-columns: 284px 284px 284px 284px;
-  justify-content: center;
-  place-items: center;
-}
-
-.film_0 {
-  margin: 5%;
-  max-width: 284px;
-  max-height: 450px;
-  justify-content: center;
-  place-items: center;
-}
-
-.film-img {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.txt {
-  position: absolute;
-  margin-top: 45px;
-  margin-left: 10px;
-  font-size: 100%;
-  display:inline-block;
-  color: #6DD5D7;
-}
-
-.txt_1 {
-  position: absolute;
-  margin-top: 45px;
-  margin-left: 10px;
-  font-size: 100%;
-  display:inline-block;
-  color: #6DD5D7;
-}
-
-.page_title {
-  width: 100%;
-  height: 10%;
-  text-align: center;
-  color: #6DD5D7;
-}
-
-.page_title h1 {
-  font-size: 5vh;
-}
-
-.opis {
-  margin-top: 10px;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -345,8 +253,7 @@ nav ul li a:hover {
 }
   
 .btn-ctn > div {
-  margin-top: 6%;
-  width: 4%;
+  padding: 1%;
 }
 
 .info_ctn{
@@ -354,7 +261,7 @@ nav ul li a:hover {
   width: 100%;
   height: 30%;
   left: 0;
-  bottom: 8%;
+  bottom: 0%;
   background-color: #876F6D;
 }
 
@@ -364,19 +271,12 @@ nav ul li a:hover {
 }
 
 .duration {
-  margin-right: 2%;
   max-width: 720px;
 }
-  
-.title_m{
-  width: 95%;
-  text-align: center;
-}
 
-.player-ctn{
-  display: inline-block;
-  border-radius: 15px;
-  padding: 10px;
+.title_m{
+  width: 100%;
+  text-align: center;
 }
   
 .playlist-track-ctn{
@@ -413,7 +313,7 @@ nav ul li a:hover {
 .playlist-ctn{
   position: fixed;
   width: 100%;
-  height: 72%;
+  height: 70%;
   top: 0;
   left: 0;
   margin-bottom: 0; 
@@ -454,138 +354,18 @@ nav ul li a:hover {
 /* ----------------------------------------------------------------------------------- */
 
 /* ------------------------- Адаптация ----------------------------------------------- */
-@media screen and (max-width:480) {
-  header {
-    bottom: 0;
-    width: 100%;
-    height: 7.5%;
-    border-radius: 0 0 0 0;
-    justify-content: center;
-    align-items: center;
-  }
-  nav ul li a img {
-    height: 100%;
-    width: auto;
-  }
-}
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 720px) {
   header {
     bottom: 0;
     width: 100%;
     height: 7.5%;
-    border-radius: 0 0 0 0;
-  }
-  nav ul li a img {
-    height: 100%;
-    width: auto;
+    border-radius: 0;
   }
   .content {
-    width: 95%;
-  }
-  .intro {
-    width: 90%;
-  }
-  .music_cont {
-    width: 75%;
-  }
-  .m_home {
-    left: 40%;
-  }
-  .m_music {
-    left: 50%;
-  }
-  .info_ctn{
-    height: 24%;
-  }
-  .popup {
-    width: 55%;
-  }
-  .btn-ctn {
     width: 100%;
     height: 100%;
-  }
-  .btn-action{
-    width: 100%;
-    height: 100%;
-    padding-top: 0%;
-    margin: 0 12% 0 12%;
-  }
-  .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 24px;
-  }
-  .fas {
-    width: 100%;
-    height: 100%;
-  }
-  .title_home {
-    font-size: 100%;
-  }
-  .films_0 {
-    grid-template-columns: 284px 284px;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  header {
-    bottom: 0;
-    width: 100%;
-    height: 7.5%;
-    border-radius: 0 0 0 0;
-  }
-  nav ul li a img {
-    height: 100%;
-    width: auto;
-  }
-  .intro {
-    width: 90%;
-  }
-  .music_cont {
-    width: 75%;
-  }
-  .m_home {
-    left: 40%;
-  }
-  .m_music {
-    left: 50%;
-  }
-  .info_ctn{
-    height: 24%;
-  }
-  .popup {
-    width: 50%;
-  }
-  .btn-ctn {
-    width: 100%;
-    height: 100%;
-  }
-  .btn-action{
-    width: 100%;
-    height: 100%;
-    padding-top: 0%;
-    margin: 0 12% 0 12%;
-  }
-  .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 24px;
-  }
-  .fas {
-    width: 100%;
-    height: 100%;
-  }
-  .title_home {
-    font-size: 100%;
-  }
-  .films_0 {
-    grid-template-columns: 284px 284px;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  header {
-    bottom: 0;
-    width: 100%;
-    height: 7.5%;
-    border-radius: 0 0 0 0;
+    margin-left: 0%;
   }
   nav ul li a img {
     height: 100%;
@@ -603,169 +383,16 @@ nav ul li a:hover {
   .music_cont {
     width: 75%;
   }
-  .info_ctn{
-    height: 23%;
-  }
   .popup {
-    width: 40%;
-  }
-  .btn-ctn {
-    width: 100%;
-    height: 100%;
-  }
-  .btn-action{
-    padding-top: 0%;
-    margin: 0 11% 0 11%;
+    width: 50%;
+    height: 92%;
   }
   .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 20px;
+    font-size: 18px;
   }
   .title_home {
     font-size: 125%;
   }
-  .films_0 {
-    grid-template-columns: 284px 284px;
-  }
 }
 
-@media screen and (min-width: 1080px) {
-  header {
-    top: 0;
-    width: 7%;
-    height: 7.5%;
-    border-radius: 0 0 35px 0;
-  }
-  nav ul li a img {
-    height: 95%;
-    width: auto;
-  }
-  .intro {
-    width: 95%;
-  }
-  .music_cont {
-    width: 50%;
-  }
-  .m_home {
-    left: 10%;
-  }
-  .m_music {
-    left: 50%;
-  }
-  .info_ctn{
-    height: 22%;
-  }
-  .popup {
-    width: 40%;
-  }
-  .btn-ctn {
-    width: 100%;
-    height: 100%;
-  }
-  .btn-action{
-    padding-top: 0%;
-    margin: 0 9% 0 9;
-  }
-  .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 16px;
-  }
-  .title_home {
-    font-size: 150%;
-  }
-  .films_0 {
-    grid-template-columns: 284px 284px 284px;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  header {
-    top: 0;
-    width: 7%;
-    height: 7.5%;
-    border-radius: 0 0 35px 0;
-  }
-  nav ul li a img {
-    height: 85%;
-    width: auto;
-  }
-  .intro {
-    width: 96%;
-  }
-  .music_cont {
-    width: 30%;
-  }
-  .m_home {
-    left: 10%;
-  }
-  .m_music {
-    left: 50%;
-  }
-  .info_ctn{
-    height: 21%;
-  }
-  .popup {
-    width: 30%;
-  }
-  .btn-ctn {
-    width: 100%;
-    height: 100%;
-  }
-  .btn-action{
-    padding-top: 2.7%;
-    margin: 0 6% 0 6%;
-  }
-  .playlist-info-track, .playlist-duration, .title_m, .timer, .duration{
-    font-size: 14px;
-  }
-  .title_home {
-    font-size: 150%;
-  }
-  .nav_m {
-    width: 100%;
-    height: 100%;
-  }
-  .films_0 {
-    grid-template-columns: 284px 284px 284px 284px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  header {
-    top: 0;
-    width: 7%;
-    height: 7.5%;
-    border-radius: 0 0 35px 0;
-  }
-  nav ul li a img {
-    height: 85%;
-    width: auto;
-  }
-  .intro {
-    width: 96%;
-  }
-  .popup {
-    width: 30%;
-  }
-  .m_home {
-    left: 10%;
-  }
-  .m_music {
-    left: 50%;
-  }
-  .info_ctn {
-    height: 20%;
-  }
-  .btn-ctn {
-    width: 100%;
-    height: 100%;
-  }
-  .btn-action{
-    margin: 0 7% 0 7%;
-  }
-  .title_home {
-    font-size: 150%;
-  }
-  .films_0 {
-    grid-template-columns: 284px 284px 284px 284px;
-  }
-}
 /* ----------------------------------------------------------------------------------- */
