@@ -356,7 +356,7 @@ nav ul li a:hover {
 
 /* ------------------------- Адаптация ----------------------------------------------- */
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) and (max-width: 480px) {
   header {
     bottom: 0;
     width: 100%;
