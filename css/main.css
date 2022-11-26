@@ -52,6 +52,7 @@ body {
 .news_tab {
   z-index: 4;
   width: 100%;
+  margin-top: 0.5%;
   padding: 2%;
   background-color: #2A2E36;
   border-radius: 25px;
