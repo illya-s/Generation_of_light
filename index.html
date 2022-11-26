@@ -1,126 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Generation of light</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+  </head>
+  <body background="img/fon_1.jpg">
+    <header>
+      <nav>
+        <ul id="menu">
+          <li><a class="m_home" href="http://127.0.0.1:5500/web/index.html">
+            <img class="icon" src="img/icons/home.png" alt="главная" title="главная" />
+          </a></li>
+          <li><a href="#" class="m_music open-popup">
+            <img class="icon" src="img/icons/music.png" alt="музыка" title="музыка" />
+          </a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li>
+            
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<meta charset="UTF-8">
-<title>Generation of light</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
 
-</head>
-<body background="img/fon_1.jpg">
-	<div class="content">
-  <header>
-    <nav>
-      <ul id="menu">
-        <li><a class="m_home" href="#">
-          <img class="icon" src="img/icons/home.png" alt="главная" title="главная" />
-        </a></li>
-        <li><a href="#" class=" m_music open-popup">
-          <img class="icon" src="img/icons/music.png" alt="музыка" title="музыка" />
-        </a></li>
-        <!--<li><a class="m_videos" href="#">
-          <img class="icon" src="img/icons/videos.png" alt="музыка" title="музыка" />
-        </a></li>-->
-      </ul>
-    </nav>
-  </header>
-
-
-
-	<div class="content">
-    <div class="title_home">
-			<h1><p>Generation of light</p></h1>
-    </div>
-
-    <div class="news_cont">
-      <div class="news_title">
-        <h1><p>Новости</p></h1>
+    <div class="content">
+      <div class="title_home">
+        <h1><p>Generation of light</p></h1>
       </div>
-      <table class="news_tab">
-        <colgroup>
-          <col span="3" style="background:#323232">
-        </colgroup>
-        <tr class="days">
-          <th class="news_day">Вторник:</th>
-          <th class="news_pr">Молитвенное служение:</th>
-          <th class="news_txt">##:##</th>
-        </tr>
-        <tr class="days">
-          <td class="news_day">Среда:</td>
-          <td class="news_pr">Домашка:</td>
-          <th class="news_txt">##:##</th>
-        </tr>
-        <tr class="days">
-          <td class="news_day">Суббота:</td>
-          <td class="news_pr">Молодёждное служение:</td>
-          <th class="news_txt">##:##</th>
-        </tr>
-        <tr class="days">
-          <td class="news_day">Воскресение:</td>
-          <td class="news_pr">Служение:</td>
-          <th class="news_txt">11:00</th>
-        </tr>
-      </table>
-    </div>
 
-
-    <!------------------------------------------------------->
-    
-    <div class="popup__bg"> 
-      <div class="popup">
-        <div class="music_close close-popup">&times;</div>
-        
-        <audio preload="metadata" id="myAudio" ontimeupdate="onTimeUpdate()">
-          <source id="source-audio" src="" type="audio/mpeg">
-          Your browser does'nt support the audio element.
-        </audio>
-
-        <div class="info_ctn">
-          <div class="infos-ctn">
-            <div class="timer">00:00</div>
-            <div class="title_m"></div>
-            <div class="duration">00:00</div>
-          </div>
-          <div id="myProgress">
-            <div id="myBar"></div>
-          </div>
-          <div class="btn-ctn">
-            <div class="btn-action first-btn" onclick="previous()">
-              <div id="btn-faws-back">
-                <i class='fas fa-step-backward'>
-                  <img class="nav_m" src="img/icons/back-.png" />
-                </i>
-              </div>
-            </div>
-            <div class="btn-action two-btn" onclick="toggleAudio()">
-              <div id="btn-faws-play-pause">
-                <i class='fas fa-play' id="icon-play" >
-                  <img class="nav_m" src="img/icons/pause.png" />
-                </i>
-                <i class='fas fa-pause' id="icon-pause" style="display: none">
-                  <img class="nav_m" src="img/icons/play.png" />
-                </i>
-              </div>
-            </div>
-            <div class="btn-action three-btn" onclick="next()">
-              <div id="btn-faws-next">
-                <i class='fas fa-step-forward'>
-                  <img class="nav_m" src="img/icons/forward+.png" />
-                </i>
-              </div>
-            </div>
-          </div>
+      <div class="news_cont">
+        <div class="news_title">
+          <h1><p>Новости</p></h1>
         </div>
-
-        <div class="playlist-ctn"></div>
-
+        <table class="news_tab">
+          <colgroup>
+            <col span="3" style="background:#323232">
+          </colgroup>
+          <tr class="days">
+            <th class="news_day">Вторник:</th>
+            <th class="news_pr">Молитвенное служение:</th>
+            <th class="news_txt">##:##</th>
+          </tr>
+          <tr class="days">
+            <td class="news_day">Среда:</td>
+            <td class="news_pr">Домашка:</td>
+            <th class="news_txt">##:##</th>
+          </tr>
+          <tr class="days">
+            <td class="news_day">Суббота:</td>
+            <td class="news_pr">Молодёждное служение:</td>
+            <th class="news_txt">##:##</th>
+          </tr>
+          <tr class="days">
+            <td class="news_day">Воскресение:</td>
+            <td class="news_pr">Служение:</td>
+            <th class="news_txt">11:00</th>
+          </tr>
+        </table>
+        <!--<div class="news_help">
+          <p>Помощь: Лекарства и т.п. 
+            <a href="http://127.0.0.1:5500/web/help.html#">HELP</a>
+          </p>
+        </div>-->
       </div>
+
+
+      <!------------------------------------------------------->
+      
+      <div class="popup__bg"> 
+        <div class="popup">
+          <div class="music_close close-popup">&times;</div>
+          
+          <audio preload="metadata" id="myAudio" ontimeupdate="onTimeUpdate()">
+            <source id="source-audio" src="" type="audio/mpeg">
+            Your browser does'nt support the audio element.
+          </audio>
+
+          <div class="info_ctn">
+            <div class="infos-ctn">
+              <div class="timer">00:00</div>
+              <div class="title_m"></div>
+              <div class="duration">00:00</div>
+            </div>
+            <div id="myProgress">
+              <div id="myBar"></div>
+            </div>
+            <div class="btn-ctn">
+              <div class="btn-action first-btn" onclick="previous()">
+                <div id="btn-faws-back">
+                  <i class='fas fa-step-backward'>
+                    <img class="nav_m" src="img/icons/back-.png" />
+                  </i>
+                </div>
+              </div>
+              <div class="btn-action two-btn" onclick="toggleAudio()">
+                <div id="btn-faws-play-pause">
+                  <i class='fas fa-play' id="icon-play" >
+                    <img class="nav_m" src="img/icons/pause.png" />
+                  </i>
+                  <i class='fas fa-pause' id="icon-pause" style="display: none">
+                    <img class="nav_m" src="img/icons/play.png" />
+                  </i>
+                </div>
+              </div>
+              <div class="btn-action three-btn" onclick="next()">
+                <div id="btn-faws-next">
+                  <i class='fas fa-step-forward'>
+                    <img class="nav_m" src="img/icons/forward+.png" />
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="playlist-ctn"></div>
+
+        </div>
+      </div>
+      <footer class="industrys">
+        <p>Создано при поддержке © Melanin's industrys 2022</p>
+      </footer>
+      <script src="js/main.js"></script>
     </div>
-		<div class="industrys">
-			<p>Создано при поддержке © Melanin's industrys 2022</p>
-		</div>
-    <script src="js/main.js"></script>
-	</div>
-</body>
+  </body>
 </html>
