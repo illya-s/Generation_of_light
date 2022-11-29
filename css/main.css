@@ -389,6 +389,7 @@ nav ul li a:hover {
   }
   .news_txt, .news_pr, .news_day {
     font-size: 8pt;
+    text-align: center;
   }
   .music_cont {
     width: 75%;
@@ -398,7 +399,7 @@ nav ul li a:hover {
     height: 92%;
   }
   .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 14px;
+    font-size: 8pt;
   }
   .title_home {
     font-size: 16pt;
@@ -425,6 +426,7 @@ nav ul li a:hover {
   }
   .news_txt, .news_pr, .news_day {
     font-size: 9pt;
+    text-align: center;
   }
   .m_home {
     left: 35%;
@@ -440,7 +442,7 @@ nav ul li a:hover {
     height: 92%;
   }
   .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 15px;
+    font-size: 9pt;
   }
   .title {
     font-size: 20pt;
@@ -467,6 +469,7 @@ nav ul li a:hover {
   }
   .news_txt, .news_pr, .news_day {
     font-size: 10pt;
+    text-align: center;
   }
   .m_home {
     left: 35%;
@@ -482,7 +485,7 @@ nav ul li a:hover {
     height: 92%;
   }
   .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 16px;
+    font-size: 10pt;
   }
   .title{
     font-size: 18pt;
