@@ -22,7 +22,7 @@ body {
 
 .industrys {
   width: 100%;
-  font-size: 16pt;
+  font-size: 14pt;
   margin-top: 2%;
   z-index: 1;
 }
@@ -49,7 +49,7 @@ body {
 .news_title {
   z-index: 4;
   text-align: center;
-  font-size: 22pt;
+  font-size: 18pt;
   padding: 1% 0 1% 0;
   background-color: #2A2E36;
   border-radius: 25px;
@@ -77,7 +77,7 @@ body {
   z-index: 4;
   font-size: 14pt;
   font-weight: normal;
-  border-radius: 15px;
+  border-radius: 14px;
 }
 
 .news_pr, .news_day {
@@ -90,7 +90,7 @@ body {
 /* ------------------------ Скрол ---------------------------------------------------- */
 
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 6px;
 }
 body::-webkit-scrollbar-track {
     background: #876F6D;
@@ -382,10 +382,10 @@ nav ul li a:hover {
     margin-left: 0%;
   }
   .industrys {
-    font-size: 12pt;
+    font-size: 8pt;
   }
   .news_title {
-    font-size: 14pt;
+    font-size: 10pt;
   }
   .news_txt, .news_pr, .news_day {
     font-size: 8pt;
@@ -418,10 +418,10 @@ nav ul li a:hover {
     margin-left: 0%;
   }
   .industrys {
-    font-size: 14pt;
+    font-size: 9pt;
   }
   .news_title {
-    font-size: 15pt;
+    font-size: 12pt;
   }
   .news_txt, .news_pr, .news_day {
     font-size: 9pt;
@@ -460,7 +460,7 @@ nav ul li a:hover {
     margin-left: 0%;
   }
   .industrys {
-    font-size: 16pt;
+    font-size: 10pt;
   }
   .news_title {
     font-size: 16pt;
