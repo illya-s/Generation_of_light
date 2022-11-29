@@ -102,8 +102,8 @@ body::-webkit-scrollbar-thumb {
 header {
   z-index: 2;
   position: fixed;
-  width: 8%;
-  height: 7.5%;
+  width: 100px;
+  height: 45px;
   background-color: #2A2E36;
   border-radius: 0 0 35px 0;
 }
@@ -123,17 +123,24 @@ nav ul {
 }
 
 nav ul li a {
-  height: 100%;
-  width: auto;
-  top: 2.5%;
+  width: 40px;
+  height: 40px;
   position: absolute;
   background: #2A2E36;
   border-radius: 10px;
   transition: 0.5s;
 }
-
 .m_home {
-  left: 10%;
+  left: 5%;
+}
+
+.m_music {
+  left: 46%;
+}
+
+nav ul li a img {
+  width: 100%;
+  height: 100%;
 }
 
 nav ul li a:hover {
@@ -356,21 +363,17 @@ nav ul li a:hover {
 
 /* ------------------------- Адаптация ----------------------------------------------- */
 
-@media screen and (max-width: 720px)  {
+@media screen and (max-width: 480px)  {
   header {
     bottom: 0;
     width: 100%;
-    height: 7.5%;
+    height: 45px;
     border-radius: 0;
   }
   .content {
     width: 100%;
     height: 100%;
     margin-left: 0%;
-  }
-  nav ul li a img {
-    height: 100%;
-    width: auto;
   }
   .m_home {
     left: 40%;
@@ -393,32 +396,66 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 1370px)  {
+@media screen and (max-width: 568px)  {
   header {
-    z-index: 2;
-    position: fixed;
-    width: 8%;
-    height: 7.5%;
-    background-color: #2A2E36;
-    border-radius: 0 0 35px 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    border-radius: 0;
   }
   .content {
-    width: 95%;
+    width: 100%;
     height: 100%;
-    margin-left: 2.5%;
+    margin-left: 0%;
   }
   .m_home {
-    left: 10%;
+    left: 40%;
   }
   .m_music {
     left: 50%;
   }
+  .music_cont {
+    width: 75%;
+  }
   .popup {
-    width: 35%;
-    height: 100%;
+    width: 50%;
+    height: 92%;
   }
   .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 14pt;
+    font-size: 18px;
+  }
+  .title_home {
+    font-size: 125%;
+  }
+}
+
+@media screen and (max-width: 720px)  {
+  header {
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    border-radius: 0;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+  }
+  .m_home {
+    left: 40%;
+  }
+  .m_music {
+    left: 50%;
+  }
+  .music_cont {
+    width: 75%;
+  }
+  .popup {
+    width: 50%;
+    height: 92%;
+  }
+  .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
+    font-size: 18px;
   }
   .title_home {
     font-size: 125%;
