@@ -31,10 +31,12 @@ body {
   margin: 0;
   padding: 1% 0 2% 0;
   width: 100%;
+  text-align: center;
 }
 .title {
   text-align: center;
   font-size: 40pt;
+  font-weight: 1000;
 }
 
 .news_cont {
@@ -382,6 +384,9 @@ nav ul li a:hover {
   .industrys {
     font-size: 12pt;
   }
+  .news_title {
+    font-size: 14pt;
+  }
   .news_txt, .news_pr, .news_day {
     font-size: 8pt;
   }
@@ -414,6 +419,9 @@ nav ul li a:hover {
   }
   .industrys {
     font-size: 14pt;
+  }
+  .news_title {
+    font-size: 15pt;
   }
   .news_txt, .news_pr, .news_day {
     font-size: 9pt;
@@ -452,6 +460,9 @@ nav ul li a:hover {
     margin-left: 0%;
   }
   .industrys {
+    font-size: 16pt;
+  }
+  .news_title {
     font-size: 16pt;
   }
   .news_txt, .news_pr, .news_day {
