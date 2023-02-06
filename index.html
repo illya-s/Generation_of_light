@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generation of light</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!--<link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">-->
+    <link rel="icon" href="img/icons/icon.png" type="image/png">
   </head>
   <body background="img/fon_1.jpg">
     <header>
       <nav>
         <ul id="menu">
-          <li><a class="m_home" href="https://illya-s.github.io/Generation_of_light/">
+          <li><a class="m_home" href="https://illya-s.github.io/M-s-industrys.github.io/#">
             <img class="icon" src="img/icons/home.png" alt="главная" title="главная" />
           </a></li>
           <li><a href="#" class="m_music open-popup">
@@ -21,8 +21,7 @@
       </nav>
     </header>
 
-
-    <div class="content">
+    <main>
       <div class="title_home">
         <p class="title">Generation of light</p>
       </div>
@@ -43,7 +42,7 @@
           <tr class="days">
             <td class="news_day">Среда:</td>
             <td class="news_pr">Домашка:</td>
-            <th class="news_txt">14:00</th>
+            <th class="news_txt">##:##</th>
           </tr>
           <tr class="days">
             <td class="news_day">Суббота:</td>
@@ -53,7 +52,7 @@
           <tr class="days">
             <td class="news_day">Воскресение:</td>
             <td class="news_pr">Служение:</td>
-            <th class="news_txt">10:00</th>
+            <th class="news_txt">11:00</th>
           </tr>
         </table>
         <!--<div class="news_help">
@@ -63,63 +62,64 @@
         </div>-->
       </div>
 
-
       <!------------------------------------------------------->
       
+      <audio preload="metadata" id="myAudio" ontimeupdate="onTimeUpdate()">
+				<source id="source-audio" src="" type="audio/mpeg">
+				Your browser does'nt support the audio element.
+			</audio>
+
+			<div class="info_ctn">
+				<div class="btn-ctn">
+					<div class="btn-action first-btn" onclick="previous()">
+						<div id="btn-faws-back">
+							<i class='fas fa-step-backward'>
+								<img class="nav_m" src="img/icons/back-.png" />
+							</i>
+						</div>
+					</div>
+
+					<div class="btn-action two-btn" onclick="toggleAudio()">
+						<div id="btn-faws-play-pause">
+							<i class='fas fa-play' id="icon-play" >
+								<img class="nav_m" src="img/icons/pause.png" />
+							</i>
+							<i class='fas fa-pause' id="icon-pause" style="display: none">
+								<img class="nav_m" src="img/icons/play.png" />
+							</i>
+						</div>
+					</div>
+
+					<div class="btn-action three-btn" onclick="next()">
+						<div id="btn-faws-next">
+							<i class='fas fa-step-forward'>
+								<img class="nav_m" src="img/icons/forward+.png" />
+							</i>
+						</div>
+					</div>
+				</div>
+				<div class="infos-ctn">
+					<div class="title_m"></div>
+
+					<div id="myProgress">
+						<div id="myBar"></div>
+					</div>
+
+					<div class="timer">00:00</div><p>/</p>
+					<div class="duration">00:00</div>
+				</div>
+			</div>
+
       <div class="popup__bg"> 
         <div class="popup">
-          <div class="music_close close-popup">&times;</div>
-          
-          <audio preload="metadata" id="myAudio" ontimeupdate="onTimeUpdate()">
-            <source id="source-audio" src="" type="audio/mpeg">
-            Your browser does'nt support the audio element.
-          </audio>
-
-          <div class="info_ctn">
-            <div class="infos-ctn">
-              <div class="timer">00:00</div>
-              <div class="title_m"></div>
-              <div class="duration">00:00</div>
-            </div>
-            <div id="myProgress">
-              <div id="myBar"></div>
-            </div>
-            <div class="btn-ctn">
-              <div class="btn-action first-btn" onclick="previous()">
-                <div id="btn-faws-back">
-                  <i class='fas fa-step-backward'>
-                    <img class="nav_m" src="img/icons/back-.png" />
-                  </i>
-                </div>
-              </div>
-              <div class="btn-action two-btn" onclick="toggleAudio()">
-                <div id="btn-faws-play-pause">
-                  <i class='fas fa-play' id="icon-play" >
-                    <img class="nav_m" src="img/icons/pause.png" />
-                  </i>
-                  <i class='fas fa-pause' id="icon-pause" style="display: none">
-                    <img class="nav_m" src="img/icons/play.png" />
-                  </i>
-                </div>
-              </div>
-              <div class="btn-action three-btn" onclick="next()">
-                <div id="btn-faws-next">
-                  <i class='fas fa-step-forward'>
-                    <img class="nav_m" src="img/icons/forward+.png" />
-                  </i>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <a class="close-popup">&times;</a>
           <div class="playlist-ctn"></div>
-
         </div>
       </div>
       <footer class="industrys">
-        <p>Создано при поддержке © Melanin industrys 2022</p>
+        <p>Создано при поддержке © Melanin industry 2022</p>
       </footer>
       <script src="js/main.js"></script>
-    </div>
+    </main>
   </body>
 </html>
