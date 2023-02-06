@@ -1084,7 +1084,6 @@ function getClickedElement(event) {
 document.querySelector('#source-audio').src = listAudio[indexAudio].file
 document.querySelector('.title_m').innerHTML = listAudio[indexAudio].name
 
-
 var currentAudio = document.getElementById("myAudio");
 
 currentAudio.load()
@@ -1119,7 +1118,6 @@ function pauseAudio() {
 var timer = document.getElementsByClassName('timer')[0]
 
 var barProgress = document.getElementById("myBar");
-
 
 var width = 0;
 
@@ -1245,7 +1243,3 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
       popup.classList.remove('active'); // И с окна
   }
 });
-
-
-
-
