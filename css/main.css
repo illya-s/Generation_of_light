@@ -232,19 +232,19 @@ header {
   position: absolute;
   left: 100%;
   top: 0;
-  font-size: 16pt;
+  font-size: 24pt;
   cursor: pointer;
   text-decoration: none;
   border-radius: 0 0 5px 0;
-  background-color: #000;
+  background-color: var(--main-tb-color);
 }
 
 .popup {
   position: fixed;
-  top: 0%;
+  top: 50px;
+  bottom: 75px;
   left: 0%;
   background: var(--main-bg-color);
-  height: 90%;
   width: 35%;
 }
 
@@ -254,51 +254,42 @@ header {
   overflow: auto;
 }
 
+.playlist-ctn::-webkit-scrollbar {
+  width: 6px;
+}
+.playlist-ctn::-webkit-scrollbar-track {
+  background: var(--main-tb-color);
+}
+.playlist-ctn::-webkit-scrollbar-thumb {
+  background-color: var(--main-bg-color);
+}
+
 .playlist-track-ctn{
   width: 100%;
   display: inline-flex;
   margin: 1px 0;
   cursor: pointer;
-  background-color: #2A2E36;
+  background-color: var(--main-bl-color);
   transition: 0.2s;
 }
-
 .playlist-track-ctn:hover {
   background-color: #00676F;
-}
-  
-.playlist-track-ctn > div{
-  margin: 0.25%;
 }
 
 .playlist-info-track{
   width: 80%;
   text-align: left;
-  padding: 7px;
-  color: #8CD3EB;
+  padding: 7px 0 7px 2px;
   font-size: 12pt;
   pointer-events: none;
 }
 
 .playlist-duration {
-  width: 80%;
-  text-align: right;
+  width: 20%;
+  text-align: center;
   padding: 7px;
-  color: #8CD3EB;
   font-size: 12pt;
   pointer-events: none;
-}
-
-
-
-.playlist-ctn::-webkit-scrollbar {
-  width: 6px;
-}
-.playlist-ctn::-webkit-scrollbar-track {
-  background: #876F6D;
-}
-.playlist-ctn::-webkit-scrollbar-thumb {
-  background-color: #2A2E36;
 }
 
 .active-track{
@@ -306,7 +297,6 @@ header {
   color: #00676F;
   font-weight: bold;
 }
-
 .active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
   color: #00676F;
 }
