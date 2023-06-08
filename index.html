@@ -40,52 +40,35 @@
       <!------------------------------------------------------->
       
       <audio preload="metadata" id="myAudio" ontimeupdate="onTimeUpdate()">
-				<source id="source-audio" src="" type="audio/mpeg">
-				Your browser does'nt support the audio element.
-			</audio>
+        <source id="source-audio" src="" type="audio/mpeg">
+        Your browser does'nt support the audio element.
+      </audio>
 
-			<div class="info_ctn">
-				<div class="btn-ctn">
-					<div class="btn-action first-btn" onclick="previous()">
-						<div id="btn-faws-back">
-							<i class='fas fa-step-backward'>
-								<img class="nav_m" src="img/icons/back-.png" />
-							</i>
-						</div>
-					</div>
-
-					<div class="btn-action two-btn" onclick="toggleAudio()">
-						<div id="btn-faws-play-pause">
-							<i class='fas fa-play' id="icon-play" >
-								<img class="nav_m" src="img/icons/pause.png" />
-							</i>
-							<i class='fas fa-pause' id="icon-pause" style="display: none">
-								<img class="nav_m" src="img/icons/play.png" />
-							</i>
-						</div>
-					</div>
-
-					<div class="btn-action three-btn" onclick="next()">
-						<div id="btn-faws-next">
-							<i class='fas fa-step-forward'>
-								<img class="nav_m" src="img/icons/forward+.png" />
-							</i>
-						</div>
-					</div>
-				</div>
-				<div class="infos-ctn">
-					<div class="title_m"></div>
-
-					<div id="myProgress">
-						<div id="myBar"></div>
-					</div>
-          <div class="time">
-            <div class="timer">00:00</div>
-            <p class="slesh">/</p>
-					  <div class="duration">00:00</div>
-          </div>
-				</div>
-			</div>
+      <div class="info_ctn">
+        <button onclick="previous()">
+          <img src="img/icons/back-.png"/>
+        </button>
+        <button onclick="toggleAudio()">
+          <i id="icon-play" >
+            <img src="img/icons/pause.png"/>
+          </i>
+          <i id="icon-pause" style="display: none">
+            <img src="img/icons/play.png"/>
+          </i>
+        </button>
+        <button onclick="next()">
+          <img src="img/icons/forward+.png"/>
+        </button>
+        <div class="infos-ctn">
+          <div class="title_m"></div>
+          <div class="timer">00:00</div>
+          <input type="range" id="myBar">
+          <!-- <div id="myProgress">
+            <div id="myBar"></div>
+          </div> -->
+          <div class="duration">00:00</div>
+        </div>
+      </div>
 
       <div class="popup__bg"> 
         <div class="popup">
