@@ -39,83 +39,61 @@ main {
 }
 
 .industrys {
-  width: 100%;
-  font-size: 14pt;
-  margin-top: 2%;
-  z-index: 1;
+	width: 80vw;
+	margin: 1.5% 0;
+	text-align: center;
+	font-size: var(--text-font-size);
 }
+
+/* -- home ------------ */
 
 .title_home {
-  margin: 0;
-  padding: 1% 0 2% 0;
-  width: 100%;
-  text-align: center;
-}
-.title {
-  text-align: center;
-  font-size: 40pt;
-  font-weight: 1000;
+  width: 80vw;
+	padding: .5% 0;
+	text-align: center;
+	font-size: var(--title-font-size);
 }
 
-.news_cont {
-  z-index: 3;
-  width: 100%;
+/* news_title */
+.news_title {
+	width: 80vw;
+	padding: .5% 0;
+	text-align: center;
+	font-size: var(--title-font-size);
+	border-radius: 10px;
+	background-color: var(--main-bl-color);
+}
+
+/* news_days */
+.news_days {
+	width: 80vw;
+	margin: 1.5% 0 0 0;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 39% 39% 20%;
+}
+.news_days p {
+  display: flex;
+	padding: 5px 0;
+	border-radius: 10px;
+	background-color: var(--main-bl-color);
+  text-align: center;
+	font-size: var(--text-micro-font-size);
   align-items: center;
   justify-content: center;
-}
-
-.news_title {
-  z-index: 4;
-  text-align: center;
-  font-size: 18pt;
-  padding: 1% 0 1% 0;
-  background-color: #2A2E36;
-  border-radius: 25px;
-}
-
-.news_tab {
-  z-index: 4;
-  width: 100%;
-  margin-top: 0.5%;
-  padding: 2%;
-  background-color: #2A2E36;
-  border-radius: 25px;
-}
-
-.news_help {
-  z-index: 4;
-  width: 87%;
-  margin: 0.5% 0 0 0%;
-  padding: 2%;
-  background-color: #2A2E36;
-  border-radius: 25px;
-}
-
-.news_txt, .news_pr, .news_day {
-  z-index: 4;
-  font-size: 14pt;
-  font-weight: normal;
-  border-radius: 14px;
-}
-
-.news_pr, .news_day {
-  padding: 7px 0px 7px 2px;
-  text-align: left;
 }
 
 /* ----------------------------------------------------------------------------------- */
 /* ------------------------ Скрол ---------------------------------------------------- */
 
 body::-webkit-scrollbar {
-    width: 4px;
+  width: 6px;
 }
 body::-webkit-scrollbar-track {
-    background: #876F6D;
+  background: var(--main-bl-color);
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #2A2E36;
-    border-radius: 2px;
-    border: 0px solid #876F6D;
+  background-color: var(--main-tb-color);
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -124,49 +102,32 @@ body::-webkit-scrollbar-thumb {
 header {
   z-index: 2;
   position: fixed;
-  width: 100px;
-  height: 45px;
-  background-color: #2A2E36;
-  border-radius: 0 0 35px 0;
-}
-
-nav {
   top: 0;
   left: 0;
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
   width: 100%;
+  height: 50px;
+  background-color: var(--main-bl-color);
+  justify-content: left;
+  align-items: center;
 }
 
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 10% 0%;
-}
-
-nav ul li a {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  background: #2A2E36;
+.header_linc {
+  display: flex;
+  width: fit-content;
+  width: 45px;
+  height: 45px;
+  margin: 0 0 0 10px;
   border-radius: 10px;
-  transition: 0.5s;
-}
-.m_home {
-  left: 5%;
-}
-
-.m_music {
-  left: 50%;
+  transition: background-color .5s;
+  justify-self: center;
+  align-items: center;
 }
 
-nav ul li a img {
-  width: 100%;
-  height: 100%;
-}
-
-nav ul li a:hover {
-  background: #00676F;
+.header_linc:hover {
+  background-color: #FFFFFF12;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -379,163 +340,4 @@ nav ul li a:hover {
 }
 /* ----------------------------------------------------------------------------------- */
 /* ------------------------- Адаптация ----------------------------------------------- */
-
-@media screen and (max-width: 480px)  {
-  header {
-    top: 0;
-    width: 100%;
-    height: 45px;
-    border-radius: 0;
-  }
-
-  main {
-    width: 100%;
-    height: 100%;
-    margin-left: 0%;
-  }
-  .industrys {
-    font-size: 8pt;
-  }
-  .news_title {
-    font-size: 10pt;
-  }
-  .news_txt, .news_pr, .news_day {
-    font-size: 8pt;
-    text-align: center;
-  }
-  .music_cont {
-    width: 75%;
-  }
-  .popup {
-    width: 75%;
-    height: 90%;
-  }
-  .title_m {
-    display: flex;
-    flex-flow: column;
-    width: 30%;
-  }
-  .slesh {
-    display: none;
-  }
-  .timer, .duration{
-    display: flex;
-    flex-flow: column;
-    width: 20%;
-    font-size: 8pt;
-  }
-  .title_home {
-    margin-top: 9vh;
-    font-size: 16pt;
-  }
-  #btn-faws-back, #btn-faws-next,
-  #btn-faws-play-pause {
-    margin: 2.5px 0 0 0;
-    width: 45px;
-    height: 45px;
-    transform: translate(0%, 0%);
-  }
-  #myProgress {
-    width: 35%;
-    height: 15%;
-    border-radius: 3px;
-    transition: 0.25s;
-  }
-  #myBar {
-    border-radius: 3px;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  header {
-    top: 0;
-    width: 100%;
-    height: 45px;
-    border-radius: 0;
-  }
-  main {
-    width: 100%;
-    height: 100%;
-    margin-left: 0%;
-  }
-  .industrys {
-    font-size: 9pt;
-  }
-  .news_title {
-    font-size: 12pt;
-  }
-  .news_txt, .news_pr, .news_day {
-    font-size: 9pt;
-    text-align: center;
-  }
-  .m_home {
-    left: 35%;
-  }
-  .m_music {
-    left: 55%;
-  }
-  .music_cont {
-    width: 75%;
-  }
-  .popup {
-    width: 65%;
-    height: 90%;
-  }
-  .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 9pt;
-  }
-  .title {
-    font-size: 20pt;
-  }
-  .slesh {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  header {
-    top: 0;
-    width: 100%;
-    height: 45px;
-    border-radius: 0;
-  }
-  main {
-    width: 100%;
-    height: 100%;
-    margin-left: 0%;
-  }
-  .industrys {
-    font-size: 10pt;
-  }
-  .news_title {
-    font-size: 16pt;
-  }
-  .news_txt, .news_pr, .news_day {
-    font-size: 10pt;
-    text-align: center;
-  }
-  .m_home {
-    left: 35%;
-  }
-  .m_music {
-    left: 55%;
-  }
-  .music_cont {
-    width: 75%;
-  }
-  .popup {
-    width: 55%;
-    height: 90%;
-  }
-  .playlist-info-track,.playlist-duration, .title_m, .timer, .duration{
-    font-size: 10pt;
-  }
-  .title{
-    font-size: 18pt;
-  }
-  .slesh {
-    display: flex;
-  }
-}
-
 /* ----------------------------------------------------------------------------------- */
