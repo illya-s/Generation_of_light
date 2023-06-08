@@ -1135,7 +1135,7 @@ function onTimeUpdate() {
 }
 
 function setBarProgress(){
-  var progress = (this.currentAudio.currentTime/this.currentAudio.duration);
+  var progress = this.currentAudio.currentTime;
   barProgress.value = progress;
 }
 
@@ -1149,12 +1149,6 @@ function getMinutes(t){
     min = "0"+min
   }
   return min+":"+sec
-}
-
-function seek(event) {
-  var percent = event.offsetX;
-  this.currentAudio.currentTime = this.currentAudio.duration;
-  barProgress.value = this.currentAudio.duration;
 }
 
 function forward(){
