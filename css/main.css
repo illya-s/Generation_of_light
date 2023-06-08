@@ -311,6 +311,14 @@ header {
   .popup {
     width: 60%;
   }
+  .info_btn {
+    width: 6vh;
+    height: 6vh;
+    padding: 3px;
+  }
+  .info_btn:hover {
+    background-color: #FFFFFF00;
+  }
 }
 
 /* ----------------------------------------------------------------------------------- */
