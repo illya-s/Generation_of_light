@@ -45,28 +45,29 @@
       </audio>
 
       <div class="info_ctn">
-        <button class="info_btn" onclick="previous()">
-          <img src="img/icons/back.png"/>
-        </button>
-        <button class="info_btn" onclick="toggleAudio()">
-          <i id="icon-play" >
-            <img src="img/icons/pause.png"/>
-          </i>
-          <i id="icon-pause" style="display: none">
-            <img src="img/icons/play.png"/>
-          </i>
-        </button>
-        <button class="info_btn" onclick="next()">
-          <img src="img/icons/forward.png"/>
-        </button>
+        <input type="range" id="myBar">
         <div class="infos-ctn">
-          <div class="title_m"></div>
+          <button class="info_btn" onclick="previous()">
+            <img src="img/icons/back.png"/>
+          </button>
+          <button class="info_btn" onclick="toggleAudio()">
+            <i id="icon-play" >
+              <img src="img/icons/pause.png"/>
+            </i>
+            <i id="icon-pause" style="display: none">
+              <img src="img/icons/play.png"/>
+            </i>
+          </button>
+          <button class="info_btn" onclick="next()">
+            <img src="img/icons/forward.png"/>
+          </button>
           <div class="timer">00:00</div>
-          <input type="range" id="myBar">
+          <p>/</p>
+          <div class="duration">00:00</div>
+          <div class="title_m"></div>
           <!-- <div id="myProgress">
             <div id="myBar"></div>
           </div> -->
-          <div class="duration">00:00</div>
         </div>
       </div>
 

@@ -126,7 +126,6 @@ header {
   justify-self: center;
   align-items: center;
 }
-
 .header_linc:hover {
   background-color: #FFFFFF12;
 }
@@ -138,36 +137,16 @@ header {
   position: fixed;
   left: 0;
   bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 8vh) 76vh;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 75px;
   background-color: var(--main-bl-color);
   align-items: center;
 }
 
-.info_btn {
-  width: 8vh;
-  height: 8vh;
-  padding: 5px;
-  border: none;
-  border-radius: 10px;
-  background-color: var(--main-bg-color);
-  transition: background-color .3s;
-}
-.info_btn:hover {
-  background-color: #FFFFFF12;
-}
-
-.infos-ctn {
-  display: flex;
-  align-items: center;
+#myBar[type=range] {
   width: 100%;
-  height: 100%;
-  align-items: center;
-}
-
-#myBar[type=range]  {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -203,6 +182,33 @@ header {
   border-radius: 50%;
   border: solid 1px var(--main-tx-color);
   background: var(--main-bg-color);
+}
+
+.info_btn {
+  width: 8vh;
+  height: 8vh;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFFFFF00;
+  transition: background-color .3s;
+}
+.info_btn:hover {
+  background-color: #FFFFFF12;
+}
+
+.infos-ctn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.infos-ctn p {
+  margin: 0 5px;
+} .duration {
+  margin: 0 15px 0 0;
 }
 
 .popup__bg {
