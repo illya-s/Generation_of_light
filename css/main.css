@@ -150,11 +150,9 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 5px;
 }
 #myBar[type=range]::-webkit-slider-runnable-track {
   height: 7px;
-  border-radius: 5px;
   background-color: var(--main-tx-color);
 }
 #myBar[type=range]::-webkit-slider-thumb {
@@ -170,7 +168,6 @@ header {
 
 #myBar[type=range]::-moz-range-track {
   height: 7px;
-  border-radius: 5px;
   background-color: var(--main-tx-color);
 }
 #myBar[type=range]::-moz-range-thumb {

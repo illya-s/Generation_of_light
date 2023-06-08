@@ -1119,8 +1119,6 @@ var timer = document.getElementsByClassName('timer')[0]
 
 var barProgress = document.getElementById("myBar");
 
-var width = 0;
-
 function onTimeUpdate() {
   var t = this.currentAudio.currentTime
   timer.innerHTML = this.getMinutes(t);
@@ -1138,7 +1136,7 @@ function onTimeUpdate() {
 
 function setBarProgress(){
   var progress = (this.currentAudio.currentTime/this.currentAudio.duration);
-  document.getElementById("myBar").value = progress;
+  barProgress.value = progress;
 }
 
 function getMinutes(t){
@@ -1153,14 +1151,10 @@ function getMinutes(t){
   return min+":"+sec
 }
 
-var progressbar = document.querySelector('#myProgress')
-progressbar.addEventListener("click", seek.bind(this));
-
-
 function seek(event) {
-  var percent = event.offsetX / progressbar.offsetWidth;
-  this.currentAudio.currentTime = percent * this.currentAudio.duration;
-  barProgress.value = percent;
+  var percent = event.offsetX;
+  this.currentAudio.currentTime = this.currentAudio.duration;
+  barProgress.value = this.currentAudio.duration;
 }
 
 function forward(){
