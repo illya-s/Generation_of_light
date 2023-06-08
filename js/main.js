@@ -1065,20 +1065,20 @@ function loadNewTrack(index){
 var playListItems = document.querySelectorAll(".playlist-track-ctn");
 
 for (let i = 0; i < playListItems.length; i++){
-    playListItems[i].addEventListener("click", getClickedElement.bind(this));
+  playListItems[i].addEventListener("click", getClickedElement.bind(this));
 }
 
 function getClickedElement(event) {
-    for (let i = 0; i < playListItems.length; i++){
-        if(playListItems[i] == event.target){
-            var clickedIndex = event.target.getAttribute("data-index")
-            if (clickedIndex == this.indexAudio ) { // alert('Same audio');
-                this.toggleAudio()
-        }else{
-            loadNewTrack(clickedIndex);
-        }
-        }
+  for (let i = 0; i < playListItems.length; i++){
+    if(playListItems[i] == event.target){
+      var clickedIndex = event.target.getAttribute("data-index")
+      if (clickedIndex == this.indexAudio ) {
+        this.toggleAudio()
+    }else{
+      loadNewTrack(clickedIndex);
     }
+    }
+  }
 }
 
 document.querySelector('#source-audio').src = listAudio[indexAudio].file
@@ -1092,27 +1092,19 @@ currentAudio.onloadedmetadata = function() {
     document.getElementsByClassName('duration')[0].innerHTML = this.getMinutes(this.currentAudio.duration)
 }.bind(this);
 
-var interval1;
-
 function toggleAudio() {
-
   if (this.currentAudio.paused) {
     document.querySelector('#icon-play').style.display = 'none';
     document.querySelector('#icon-pause').style.display = 'block';
     document.querySelector('#ptc-'+this.indexAudio).classList.add("active-track");
     this.playToPause(this.indexAudio)
     this.currentAudio.play();
-  }else{
+  } else {
     document.querySelector('#icon-play').style.display = 'block';
     document.querySelector('#icon-pause').style.display = 'none';
     this.pauseToPlay(this.indexAudio)
     this.currentAudio.pause();
   }
-}
-
-function pauseAudio() {
-  this.currentAudio.pause();
-  clearInterval(interval1);
 }
 
 var timer = document.getElementsByClassName('timer')[0]
@@ -1151,16 +1143,6 @@ function getMinutes(t){
   return min+":"+sec
 }
 
-function forward(){
-  this.currentAudio.currentTime = this.currentAudio.currentTime + 5
-  this.setBarProgress();
-}
-
-function rewind(){
-  this.currentAudio.currentTime = this.currentAudio.currentTime - 5
-  this.setBarProgress();
-}
-
 function next(){
   if (this.indexAudio <listAudio.length-1) {
       var oldIndex = this.indexAudio
@@ -1197,13 +1179,6 @@ function pauseToPlay(index){
   ele.classList.remove("fa-pause");
   ele.classList.add("fa-play");
 }
-
-function toggleMobileMenu() {
-  document.querySelector('#menu').classList.toggle('active')
-  document.querySelector('.mobile_bar').classList.toggle('active')
-}
-
-
 
 
 
