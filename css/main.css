@@ -1,5 +1,16 @@
 /* ---------------------------- Другое------------------------------------------------ */
 
+:root {
+  --main-bg-color: #323232;
+  --main-bl-color: #2A2E36;
+  --main-tb-color: #876F6D;
+  --main-tx-color: #6DD5D7;
+
+  --title-font-size: 32pt;
+  --text-font-size: 18pt;
+  --text-micro-font-size: 14pt;
+}
+
 * {
   margin: 0;
   padding: 0;
