@@ -9,6 +9,9 @@
   --title-font-size: 32pt;
   --text-font-size: 18pt;
   --text-micro-font-size: 14pt;
+
+  --main-bl: 80vw;
+  --main-br: 10px;
 }
 
 * {
@@ -39,7 +42,7 @@ main {
 }
 
 .industrys {
-	width: 80vw;
+	width: var(--main-bl);
 	margin: 1.5% 0;
 	text-align: center;
 	font-size: var(--text-font-size);
@@ -48,7 +51,7 @@ main {
 /* -- home ------------ */
 
 .title_home {
-  width: 80vw;
+  width: var(--main-bl);
 	padding: .5% 0;
 	text-align: center;
 	font-size: var(--title-font-size);
@@ -56,17 +59,17 @@ main {
 
 /* news_title */
 .news_title {
-	width: 80vw;
+	width: var(--main-bl);
 	padding: .5% 0;
 	text-align: center;
 	font-size: var(--title-font-size);
-	border-radius: 10px;
+	border-radius: var(--main-br);
 	background-color: var(--main-bl-color);
 }
 
 /* news_days */
 .news_days {
-	width: 80vw;
+	width: var(--main-bl);
 	margin: 1.5% 0 0 0;
 	display: grid;
 	grid-gap: 10px;
@@ -75,7 +78,7 @@ main {
 .news_days p {
   display: flex;
 	padding: 5px 0;
-	border-radius: 10px;
+	border-radius: var(--main-br);
 	background-color: var(--main-bl-color);
   text-align: center;
 	font-size: var(--text-micro-font-size);
@@ -121,7 +124,7 @@ header {
   height: 45px;
   margin: 0 0 0 10px;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: var(--main-br);
   transition: background-color .5s;
   justify-self: center;
   align-items: center;
@@ -134,6 +137,7 @@ header {
 /* -------------------------------- Музыка ------------------------------------------- */
 
 .info_ctn{
+  z-index: 3;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -186,7 +190,7 @@ header {
   height: 8vh;
   padding: 5px;
   border: none;
-  border-radius: 10px;
+  border-radius: var(--main-br);
   background-color: #FFFFFF00;
   transition: background-color .3s;
 }
@@ -239,9 +243,9 @@ header {
   position: fixed;
   top: 0%;
   left: 0%;
-  background: #000;
+  background: var(--main-bg-color);
   height: 90%;
-  width: 32%;
+  width: 35%;
 }
 
 .playlist-ctn{
@@ -255,7 +259,6 @@ header {
   display: inline-flex;
   margin: 1px 0;
   cursor: pointer;
-  border-radius: 6px;
   background-color: #2A2E36;
   transition: 0.2s;
 }
@@ -289,15 +292,13 @@ header {
 
 
 .playlist-ctn::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 .playlist-ctn::-webkit-scrollbar-track {
   background: #876F6D;
 }
 .playlist-ctn::-webkit-scrollbar-thumb {
   background-color: #2A2E36;
-  border-radius: 2px;
-  border: 0px solid #876F6D;
 }
 
 .active-track{
@@ -311,4 +312,12 @@ header {
 }
 /* ----------------------------------------------------------------------------------- */
 /* ------------------------- Адаптация ----------------------------------------------- */
+
+@media screen and (max-width: 720px) {
+  :root {
+    --main-bl: 100vw;
+    --main-br: 0px;
+  }
+}
+
 /* ----------------------------------------------------------------------------------- */
