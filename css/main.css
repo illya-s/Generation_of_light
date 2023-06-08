@@ -162,22 +162,23 @@ header {
 .infos-ctn {
   display: flex;
   align-items: center;
-  width: 79%;
+  width: 100%;
   height: 100%;
-  justify-content: center;
+  align-items: center;
 }
 
-
-input[type=range]  {
+#myBar[type=range]  {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border-radius: 5px;
 }
-input[type=range]::-webkit-slider-runnable-track {
+#myBar[type=range]::-webkit-slider-runnable-track {
   height: 7px;
+  border-radius: 5px;
   background-color: var(--main-tx-color);
 }
-input[type=range]::-webkit-slider-thumb {
+#myBar[type=range]::-webkit-slider-thumb {
   cursor: pointer;
   width: 15px;
   height: 15px;
@@ -188,11 +189,12 @@ input[type=range]::-webkit-slider-thumb {
   background: var(--main-bg-color);
 }
 
-input[type=range]::-moz-range-track {
+#myBar[type=range]::-moz-range-track {
   height: 7px;
+  border-radius: 5px;
   background-color: var(--main-tx-color);
 }
-input[type=range]::-moz-range-thumb {
+#myBar[type=range]::-moz-range-thumb {
   cursor: pointer;
   width: 15px;
   height: 15px;
