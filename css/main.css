@@ -73,8 +73,8 @@ main {
 	width: var(--main-bl);
 	margin: 1.5% 0 0 0;
 	display: grid;
-	grid-gap: 1vw;
-	grid-template-columns: 39vw 39vw 20vw;
+	grid-gap: 5px 1%;
+	grid-template-columns: 39% 39% 20%;
 }
 .news_days p {
   display: flex;
