@@ -305,7 +305,7 @@ header {
 
 @media screen and (max-width: 720px) {
   :root {
-    --main-bl: 100vw;
+    --main-bl: 100%;
     --main-br: 0px;
   }
   .popup {
