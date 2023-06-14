@@ -1127,9 +1127,18 @@ function onTimeUpdate() {
 }
 
 function setBarProgress(){
-  var progress = this.currentAudio.currentTime;
-  barProgress.value = progress;
+  var time = this.currentAudio.currentTime;
+  var duration = this.currentAudio.duration;
+  t = time / duration;
+  v = t * 100;
+  barProgress.value = v;
 }
+// function setBarProgress(){
+//   var t = this.currentAudio.currentTime;
+//   var d = this.currentAudio.duration;
+//   var progress = (t/d)*100;
+//   barProgress.value = progress;
+// }
 
 function getMinutes(t){
   var min = parseInt(parseInt(t)/60);
