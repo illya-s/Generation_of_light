@@ -72,20 +72,17 @@ main {
 /* news_days */
 .news_days {
 	width: var(--main-bl);
-	margin: 1.5% 0 0 0;
+	margin: 15px 0 0 0;
 	display: grid;
-	grid-gap: 5px 1%;
-	grid-template-columns: 39% 39% 20%;
+	grid-gap: 5px;
+	grid-template-columns: calc(20% - 3.33px) calc(60% - 3.33px) calc(20% - 3.33px);
 }
 .news_days p {
-  display: flex;
 	padding: 5px 0;
-	border-radius: var(--main-br);
+	border-radius: 5px;
 	background-color: var(--main-bl-color);
   text-align: center;
-	font-size: var(--tm-fs);
-  align-items: center;
-  justify-content: center;
+	font-size: 1.2em;
 }
 
 /* ----------------------------------------------------------------------------------- */
