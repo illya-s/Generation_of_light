@@ -1052,14 +1052,14 @@ for (var i = 0; i < listAudio.length; i++) {
 var indexAudio = 0;
 
 function loadNewTrack(index){
-    var player = document.querySelector('#source-audio')
-    player.src = listAudio[index].file
-    document.querySelector('.title_m').innerHTML = listAudio[index].name
-    this.currentAudio = document.getElementById("myAudio");
-    this.currentAudio.load()
-    this.toggleAudio()
-    this.updateStylePlaylist(this.indexAudio,index)
-    this.indexAudio = index;
+  var player = document.querySelector('#source-audio')
+  player.src = listAudio[index].file
+  document.querySelector('.title_m').innerHTML = listAudio[index].name
+  this.currentAudio = document.getElementById("myAudio");
+  this.currentAudio.load()
+  this.toggleAudio()
+  this.updateStylePlaylist(this.indexAudio,index)
+  this.indexAudio = index;
 }
 
 var playListItems = document.querySelectorAll(".playlist-track-ctn");
