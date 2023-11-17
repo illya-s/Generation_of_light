@@ -3,16 +3,13 @@
 :root {
   --main-bg-color: #141319;
   --main-bl-color: #2A2E36;
-  --main-tb-color: #876F6D;
+  --main-tb-color: #2A2E36;
   --main-tx-color: #6DD5D7;
 
-  --t1-fs: 32pt;
-  --t2-fs: 24pt;
-  --tx-fs: 18pt;
-  --tm-fs: 14pt;
-
-  --main-bl: 80vw;
-  --main-br: 10px;
+  --t1-fs: 1.4em;
+  --t2-fs: 1.3em;
+  --t3-fs: 1.2em;
+  --t4-fs: 1.1em;
 }
 
 * {
@@ -32,28 +29,25 @@
   height: 100%;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background: var(--main-bg-color);
+  align-items: center;
 }
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 10vh 0 0 0;
+  width: 80%;
+  margin: 55px 0 0 0;
   align-items: center;
   justify-content: center;
-}
-
-.industrys {
-	width: var(--main-bl);
-	margin: 1.5% 0;
-	text-align: center;
-	font-size: var(--tm-fs);
 }
 
 /* -- home ------------ */
 
 .title_home {
-  width: var(--main-bl);
+  width: 100%;
 	padding: .5% 0;
 	text-align: center;
 	font-size: var(--t1-fs);
@@ -61,28 +55,31 @@ main {
 
 /* news_title */
 .news_title {
-	width: var(--main-bl);
-	padding: .5% 0;
+	width: 100%;
+  margin: 15px 0 0 0;
+	padding: 5px 0;
 	text-align: center;
 	font-size: var(--t2-fs);
-	border-radius: var(--main-br);
+	border-radius: 10px;
 	background-color: var(--main-bl-color);
 }
 
 /* news_days */
 .news_days {
-	width: var(--main-bl);
+	width: 100%;
 	margin: 15px 0 0 0;
 	display: grid;
 	grid-gap: 5px;
-	grid-template-columns: calc(20% - 3.33px) calc(60% - 3.33px) calc(20% - 3.33px);
+	grid-template-columns: repeat(3, auto);
 }
 .news_days p {
+  display: flex;
 	padding: 5px 0;
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: var(--main-bl-color);
-  text-align: center;
-	font-size: 1.2em;
+	font-size: var(--t3-fs);
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -123,7 +120,7 @@ header {
   height: 45px;
   margin: 0 0 0 10px;
   padding: 5px;
-  border-radius: var(--main-br);
+  border-radius: 10px;
   transition: background-color .5s;
   justify-self: center;
   align-items: center;
@@ -146,12 +143,11 @@ header {
   justify-content: center;
 }
 
-#myBar[type=range] {
+/* #myBar[type=range] {
   width: 100%;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+  appearance: none; 
+} */
 #myBar[type=range]::-webkit-slider-runnable-track {
   height: 5px;
   background-color: var(--main-tx-color);
@@ -161,21 +157,6 @@ header {
   width: 14px;
   height: 14px;
   -webkit-appearance: none;
-  margin-top: -4px;
-  border-radius: 100%;
-  border: solid 1px var(--main-tx-color);
-  background: var(--main-bg-color);
-}
-
-#myBar[type=range]::-moz-range-track {
-  height: 5px;
-  background-color: var(--main-tx-color);
-}
-#myBar[type=range]::-moz-range-thumb {
-  cursor: pointer;
-  width: 14px;
-  height: 14px;
-  -moz-appearance: none;
   margin-top: -4px;
   border-radius: 100%;
   border: solid 1px var(--main-tx-color);
@@ -192,7 +173,7 @@ header {
   height: 50px;
   margin: 0 0 0 5px;
   padding: 5px;
-  border-radius: var(--main-br);
+  border-radius: 10px;
   background-color: #FFFFFF00;
   transition: background-color .3s;
 }
@@ -202,7 +183,7 @@ header {
 
 .timer, .duration, .title_m {
   margin: 0 0 0 10px;
-  font-size: 1.2em;
+  font-size: var(--t4-fs);
 }
 
 .popup__bg {
@@ -239,6 +220,8 @@ header {
 .playlist-ctn{
   height: 100%;
   overflow: auto;
+  scrollbar-color: var(--main-tx-color) var(--main-bl-color);
+  scrollbar-width: thin;
 }
 .playlist-ctn::-webkit-scrollbar {
   width: 6px;
@@ -252,26 +235,30 @@ header {
 
 .playlist-track-ctn{
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
   margin: 0 0 5px 0;
   cursor: pointer;
   background-color: var(--main-bl-color);
   transition: 0.2s;
+  align-items: center;
 }
 .playlist-track-ctn:hover {
   background-color: #00676F;
 }
 
 .playlist-info-track{
-  width: 80%;
-  padding: 2px;
-  font-size: 1.1em;
+  padding: 3px;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: var(--t4-fs);
 }
 .playlist-duration {
-  width: 20%;
-  padding: 2px;
-  font-size: 1.1em;
-  text-align: center;
+  padding: 3px;
+  font-size: var(--t4-fs);
+  text-align: right;
 }
 
 .active-track{
@@ -287,13 +274,13 @@ header {
 
 @media screen and (max-width: 720px) {
   :root {
-    --main-bl: 100vw;
-    --main-br: 0px;
-
-    --t1-fs: 24pt;
-    --t2-fs: 18pt;
-    --tx-fs: 14pt;
-    --tm-fs: 12pt;
+    --t1-fs: 1.3em;
+    --t2-fs: 1.2em;
+    --t3-fs: 1.1em;
+    --t4-fs: 1em;
+  }
+  main {
+    width: 95%;
   }
   .popup {
     width: 65%;
